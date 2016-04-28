@@ -36,13 +36,13 @@ DMPonline4::Application.configure do
   config.assets.debug = true
 
   #devise config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'faure:3000' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+  config.action_mailer.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
   
-  ActionMailer::Base.default :from => 'address@example.com'
+  ActionMailer::Base.default :from => 'info@dmp.inist.fr'
   ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = { :address => "localhost", :port => 1025 }
+  ActionMailer::Base.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
   
   
 	# Add the fonts path
@@ -56,7 +56,7 @@ DMPonline4::Application.configure do
 	  :email => {
 	    :email_prefix => "[DMPonline4 ERROR] ",
 	    :sender_address => %{"No-reply" <noreply@example.com>},
-	    :exception_recipients => %w{address@example.com}
+	    :exception_recipients => %w{benjamin.faure@inist.fr}
 	  }
 	  
 	

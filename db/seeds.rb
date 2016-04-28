@@ -80,23 +80,24 @@ end
  
  users = {
     'Super admin' => {
-        email: "super_admin@example.com",
-        password: "password1",
-        password_confirmation: "password1",
+        email: "benjamin.faure@inist.fr",
+        password: "password",
+        password_confirmation: "password",
         organisation: "DCC",
         roles: ['admin','org_admin'],
         accept_terms: true,
         confirmed_at: Time.zone.now
-    },
-    'Org admin' => {
-        email: "org_admin@example.com",
-        password: "password2",
-        password_confirmation: "password2",
-        organisation: "Institution_example",
-        roles: ['org_admin'],
-        accept_terms: true,
-        confirmed_at: Time.zone.now
     }
+#,
+#    'Org admin' => {
+#        email: "org_admin@example.com",
+#        password: "password2",
+#        password_confirmation: "password2",
+#        organisation: "Institution_example",
+#        roles: ['org_admin'],
+#        accept_terms: true,
+#        confirmed_at: Time.zone.now
+#    }
  }
  
  users.each do |user, details|

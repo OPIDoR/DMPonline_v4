@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.22'
 gem 'uglifier'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '~> 2.2.8'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'sass' 
 gem 'therubyracer', '0.11.4', platforms: :ruby
@@ -45,7 +45,7 @@ gem 'validate_url'
 #
 #    DATABASE/SERVER
 #
-gem 'mysql2', '0.3.10'
+gem 'mysql2', '~> 0.3.10'
 # Use unicorn as the app server
 # gem 'unicorn'
 #cancan for usergroups

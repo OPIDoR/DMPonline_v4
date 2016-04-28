@@ -74,7 +74,7 @@ DMPonline4::Application.configure do
 	  :email => {
 	    :email_prefix => "[DMPonline4 ERROR] ",
 	    :sender_address => %{"No-reply" <noreply@dcc.ac.uk>},
-	    :exception_recipients => %w{dmponline@dcc.ac.uk}
+	    :exception_recipients => %w{benjamin.faure@inist.fr}
 	  }
 
   # Log the query plan for queries taking more than this (works
