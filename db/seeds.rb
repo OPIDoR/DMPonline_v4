@@ -78,42 +78,16 @@ roles.each do |role, details|
 end
 
  
- users = {
-    'Super admin' => {
-        email: "benjamin.faure@inist.fr",
-        password: "password",
-        password_confirmation: "password",
-        organisation: "DCC",
-        roles: ['admin','org_admin'],
-        accept_terms: true,
-        confirmed_at: Time.zone.now
-    }
-#,
-#    'Org admin' => {
-#        email: "org_admin@example.com",
-#        password: "password2",
-#        password_confirmation: "password2",
-#        organisation: "Institution_example",
-#        roles: ['org_admin'],
-#        accept_terms: true,
-#        confirmed_at: Time.zone.now
-#    }
- }
+exists = User.find_by_email('benjamin.faure@inist.fr')
+if !exists
  
- users.each do |user, details|
-    user = User.new
-    user.email = details[:email]
-    user.password = details[:password]
-    user.password_confirmation = details[:password_confirmation]
-    user.confirmed_at = details[:confirmed_at]
-    user.user_org_roles << Organisation.find_by_abbreviation(details[:organisation])
-    details[:roles].each do |role|
-     user.roles << Role.find_by_name(role)
-    end
-    user.accept_terms = details[:accept_terms]
-    user.save!
-    
- end
+  admin = User.new(
+    {firstname: "DMP", surname: "Administrator", email: "benjamin.faure@inist.fr",
+     password: "password", password_confirmation: "password"})
+  admin.add_role(:admin)
+  admin.skip_confirmation!
+  admin.save!
+end
 
 
  themes = {

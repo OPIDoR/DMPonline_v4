@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 #
 #      RAILS
 #
-gem 'rails', '3.2.22'
+gem 'rails', '~>3.2.22'
 gem 'uglifier'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', '~> 2.2.8'
