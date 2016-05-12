@@ -45,7 +45,7 @@ gem 'validate_url'
 #
 #    DATABASE/SERVER
 #
-gem 'mysql2', '~> 0.3.10'
+gem 'mysql2', '~> 0.3.20'
 # Use unicorn as the app server
 # gem 'unicorn'
 #cancan for usergroups

@@ -59,6 +59,16 @@ DMPonline4::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
 
+
+  #devise config
+  config.action_mailer.default_url_options = { :host => 'faure:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
+  
+  ActionMailer::Base.default :from => 'info@dmp.inist.fr'
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
+
   # Enable threaded mode
   # config.threadsafe!
 
