@@ -65,7 +65,7 @@ DMPonline4::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
   
-  ActionMailer::Base.default :from => 'info@dmp.inist.fr'
+  ActionMailer::Base.default :from => 'dmp@inist.fr'
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
 
