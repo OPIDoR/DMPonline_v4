@@ -77,7 +77,7 @@ module DMPonline4
      # Enable shibboleth as an alternative authentication method
     # Requires server configuration and omniauth shibboleth provider configuration
     # See config/initializers/omniauth.rb
-    config.shibboleth_enabled = true
+    config.shibboleth_enabled = false
 
     # Absolute path to Shibboleth SSO Login
     config.shibboleth_login = 'https://faure/Shibboleth.sso/Login'
