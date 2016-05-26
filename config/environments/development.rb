@@ -36,7 +36,7 @@ DMPonline4::Application.configure do
   config.assets.debug = true
 
   #devise config
-  config.action_mailer.default_url_options = { :host => "<%= @server_name %>:<%= @http_port %>" }
+  config.action_mailer.default_url_options = { :host => ENV["DMP_SERVER_NAME"] + ":" +ENV["APP_HTTP_PORT"] }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
   
