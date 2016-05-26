@@ -71,7 +71,7 @@ module DMPonline4
     config.autoload_paths += %W(#{config.root}/lib)
 
     # Set the default host for mailer URLs
-    config.action_mailer.default_url_options = { :host => "<%= @server_name %>:<%= @http_port %>" }
+    config.action_mailer.default_url_options = { :host => request.host_with_port }
     config.active_record.whitelist_attributes = true
 
      # Enable shibboleth as an alternative authentication method
