@@ -2,6 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 require 'csv'
+require 'socket'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -71,7 +72,7 @@ module DMPonline4
     config.autoload_paths += %W(#{config.root}/lib)
 
     # Set the default host for mailer URLs
-    config.action_mailer.default_url_options = { :host => request.host_with_port }
+    config.action_mailer.default_url_options = { :host => Socket.gethostname }
     config.active_record.whitelist_attributes = true
 
      # Enable shibboleth as an alternative authentication method
