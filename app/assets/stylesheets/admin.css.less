@@ -22,8 +22,8 @@
 
 /*******************************
  *  DMPonline v4 stylesheet
- * 
- * 
+ *
+ *
  *  starting date: June 2013
  *******************************/
 
@@ -40,6 +40,9 @@
 @font_size_medium: 13px;
 @font_size_small: 11px;
 @font_colour: #3e3c3c;
+@blue_colour: #51a2da;
+@blue_lighter_colour: #bfd1d9;
+@blue_very_light_colour: #e6ed70;
 @orange_colour: #0057A7;
 @orange_darker_colour: #004A8E;
 @orange_lighter_colour: #005EB4;
@@ -53,6 +56,7 @@
 @red_colour: #ec563c; /*#e3000f*/
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
+@background_color: #fff;
 
 /************************************************************/
 /*              main structure of the t                     */
@@ -79,7 +83,7 @@ html.dmponline {
   *height: 1%;
    min-width: 850px;
 }
- 
+
 body.dmponline {
   font-family: @text_font;
   color: @font_colour;
@@ -92,46 +96,53 @@ body.dmponline {
 }
 
 .main_header{
-    height: 145px;
-    margin: 0 0 40px 0;
-    width:99%;
-    clear:both;
-    float:left;
+  height: 100px;
+  margin: 0 0 30px 0;
+  padding:0 10% 0 10%;
+  border-bottom: 3px solid #ccc;
+  background-color: @background_color;
 }
- 
+
 .main_page_container{
   clear: both;
   float: left;
-  width: 99%;
-  margin:0 0 30px 0;
+  min-width: 600px;
+  margin:0 10% 30px 10%;
+  background-color: @background_color;
+  width: 78%;
 }
- 
+
 footer {
   clear:both;
-  padding: 30px 0 100px 0;
-  margin-top: 70px;
+  border-top: 3px solid @blue_colour;
+  background-color: @blue_lighter_colour;
+  padding: 25px 10% 100px 10%;
   font-size: @font_size;
+  color: @font_colour;
 }
-   
+
 /*********************************************/
 /****              header                 ****/
 /*********************************************/
 /* left side*/
 div.header_left{
-    float: left;
-    clear:both;
-    width: 145px;
+  float: left;
+  clear:both;
+  width: 270px;
+  }
+  .home_logo{
+    margin-right:0px;
+    max-height: 100px;
+    img {
+      max-height: 100px;
     }
-    .home_logo{
-      margin-right:0px;
-    }
-
+}
 
 /* right side*/
 div.header_right{
-    margin-left: 146px;
-    height:145px;
-    position:relative;
+  margin-left: 270px;
+  height:100px;
+  position:relative;
 }
 
 /*****************************/
@@ -143,14 +154,14 @@ div.header_right{
     box-shadow: 0 !important;
     -webkit-box-shadow: none !important;
     position: static;
-    filter:none !important; 
+    filter:none !important;
     overflow: visible;
 }
 
 .main_nav_tabs{
     width: 500px;
     float:left;
-    position:absolute; 
+    position:absolute;
     bottom:0;
 }
 
@@ -158,7 +169,7 @@ div.header_right{
     margin-right :0px;
     margin-bottom:0px;
     float:left;
-    border-bottom: 2px solid @orange_colour;
+    border-bottom: 2px solid @blue_colour;
 }
 
 #main-nav-tabs li a{
@@ -175,10 +186,10 @@ div.header_right{
 }
 
 #main-nav-tabs li.active a, #main-nav-tabs li.active a:active, #main-nav-tabs li a:hover{
-    background-color: @orange_colour;
+    background-color: @blue_colour;
     color: @white_colour !important;
     font-weight: bold;
-    border: 1px solid @orange_colour;
+    border: 1px solid @blue_colour;
     padding: 4px 15px 4px 15px;
     text-decoration: none !important;
 }
@@ -188,7 +199,7 @@ div.header_right{
 /********************/
 .signIn {
     float:right;
-    position:absolute; 
+    position:absolute;
     top:0;
     right:0;
 }
@@ -253,7 +264,7 @@ ul#signIn_dropdown{
 
 ul#signIn_dropdown li , ul#signIn_dropdown li a.signIn_dropdown_link,
  ul#signIn_dropdown li a.signIn_dropdown_link:link,
- ul#signIn_dropdown li a.signIn_dropdown_link:active, 
+ ul#signIn_dropdown li a.signIn_dropdown_link:active,
  ul#signIn_dropdown li a.signIn_dropdown_link:visited{
     font-size:17px;
     text-decoration:none;
@@ -263,7 +274,7 @@ ul#signIn_dropdown li , ul#signIn_dropdown li a.signIn_dropdown_link,
     color: @white_colour;
 }
 
-ul#signIn_dropdown li a.signIn_dropdown_link:hover, 
+ul#signIn_dropdown li a.signIn_dropdown_link:hover,
 ul#signIn_dropdown li a.signIn_dropdown_link:focus{
     text-decoration:underline;
     background-color: @grey_colour !important;
@@ -271,10 +282,10 @@ ul#signIn_dropdown li a.signIn_dropdown_link:focus{
     filter: none;
     color: @white_colour !important;
 }
- 
+
 /********************/
 /*** Org Branding ***/
-/********************/ 
+/********************/
 .branding_container{
     width: 99%;
 }
@@ -282,7 +293,7 @@ ul#signIn_dropdown li a.signIn_dropdown_link:focus{
 .header_org_logo{
     padding:0 0 0 5px;
     float:left;
-} 
+}
 
 .header_org_logo_img{
     height: 110px;
@@ -291,13 +302,13 @@ ul#signIn_dropdown li a.signIn_dropdown_link:focus{
 .header_org_banner_text{
     position:relative;
     height:110px;
-    
-} 
+
+}
 
 .header_org_banner_text_vertical_align{
     position:absolute;
     text-align: center;
-    top:28%;     
+    top:28%;
 }
 
 /*********************************************/
@@ -306,31 +317,33 @@ ul#signIn_dropdown li a.signIn_dropdown_link:focus{
 footer .left_side_footer{
     float: left;
     clear:both;
-    width: 45%;
-  } 
-  footer .first_row{
-    float:left;
+    width: 30%;
+  }
 
-  }
-  footer .second_row{
-    clear:both;
-    float:left;
-  }
-   
+  footer .middle-side_footer{
+    float: left;
+    max-width: 40%;
+    }
+.footer_logo_bsn {
+  max-width: 70%;
+}
+.footer_logo_cnrs {
+  max-width: 25%;
+}
 footer .right_side_footer{
   float: right;
-  width: 45%;
-  
+  width: 20%;
+
   }
-  
+
 footer .right_side_footer p{
   text-decoration: none;
   text-align:center;
   color: #999999;
   float: right;
-  
+
 }
-  
+
 ul.footer-links {
   margin-left:0px;
 }
@@ -368,13 +381,13 @@ ul.footer-links li a:hover,  ul.footer-links li a:focus{
    text-decoration:underline;
   }
 
-    
+
 /*********************************************/
 /****              html tags              ****/
 /*********************************************/
 h1, h2, h3, h4 {
   font-family: @header_font;
-  color: @orange_colour;
+  color: @blue_colour;
   font-weight: lighter;
   font-style: normal;
 }
@@ -383,28 +396,28 @@ h1{
   font-size: 40px;
   line-height:53px;
 }
- 
+
 h2{
   font-size: 32px;
 }
- 
+
 h3{
   font-size: 26px;
 }
- 
+
 h4{
   font-size: @font_size;
 }
- 
+
 p{
   font-size: @font_size;
   font-family: @text_font;
 }
 
 label.text_colour{
-  font-size: @font_size; 
+  font-size: @font_size;
   font-family: @text_font;
-  color: @orange_colour;
+  color: @blue_colour;
 }
 
 p a:hover, a.a-orange:hover, div.signIn a:hover, td a:hover, .question-guidance .accordion-inner a:hover, div a:hover{
@@ -413,14 +426,14 @@ p a:hover, a.a-orange:hover, div.signIn a:hover, td a:hover, .question-guidance 
 }
 
 a, a:active, a:focus {
-  color: @orange_colour;
+  color: @blue_colour;
   text-decoration:underline;
   font-family: @text_font;
 }
 
 a.visited{
     background-color: none !important;
-    color: @orange_colour;
+    color: @blue_colour;
 }
 
 a:hover, a.btn:hover, div.nav-project-tabs ul.nav-tabs li a:hover, div#sections-accordion a.accordion-toggle:hover{
@@ -436,7 +449,7 @@ ul{
 hr.orange_break_line{
   clear: both;
   margin-top: 40px;
-  border-top-color: @orange_lighter_colour;
+  border-top-color: @blue_lighter_colour;
 }
 
 
@@ -444,7 +457,7 @@ hr.orange_break_line{
 .formtastic{
   width:99%;
 }
- 
+
 .inputs ol{
   margin-left:0px;
 }
@@ -473,7 +486,7 @@ hr.orange_break_line{
 .org_logo_admin_area{
     height: 120px;
     float:right;
-} 
+}
 
 
 div.institution_login_link{
@@ -490,7 +503,7 @@ ul.nav-pills li{
 ul.nav-pills li.last_li{
     margin: 0 0px 20px 0;
 }
-   
+
 ul.nav-pills li a.header_button{
   height: 18px;
   padding: 4px 10px 2px 10px;
@@ -508,24 +521,24 @@ ul.nav-pills li.last_li a.header_button{
 /*********************************************/
 
 body.dmponline .btn-primary, body.dmponline .btn-primary:active, body.dmponline .btn-primary:visited, body.dmponline .btn-primary:focus    {
-  background: @orange_colour;
+  background: @blue_colour;
   background-image: none;
   text-decoration:none;
   color: @white_colour;
   text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
   border-color: rgba(0, 0, 0, 0.247059);
-  border-color: @orange_colour @orange_colour @orange_lighter_colour;
+  border-color: @blue_colour @blue_colour @blue_lighter_colour;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
  }
 
 body.dmponline .btn-primary:hover{
-  background-image: -moz-linear-gradient(top, @orange_colour, @orange_lighter_colour 49px);
-  background-image: -webkit-linear-gradient(top , @orange_colour, @orange_lighter_colour 49px);
-  background-image: -o-linear-gradient(top , @orange_colour, @orange_lighter_colour 49px);
-  background-image: -ms-linear-gradient(top , @orange_colour, @orange_lighter_colour 49px);
-  background-image: linear-gradient(top , @orange_colour, @orange_lighter_colour 49px);
-  -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr= @orange_colour, endColorstr= @orange_lighter_colour, gradientType='0')';
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr= @orange_colour, endColorstr= @orange_lighter_colour) ;/*For IE7-8-9*/
+  background-image: -moz-linear-gradient(top, @blue_colour, @blue_lighter_colour 49px);
+  background-image: -webkit-linear-gradient(top , @blue_colour, @blue_lighter_colour 49px);
+  background-image: -o-linear-gradient(top , @blue_colour, @blue_lighter_colour 49px);
+  background-image: -ms-linear-gradient(top , @blue_colour, @blue_lighter_colour 49px);
+  background-image: linear-gradient(top , @blue_colour, @blue_lighter_colour 49px);
+  -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr= @blue_colour, endColorstr= @orange_lighter_colour, gradientType='0')';
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr= @blue_colour, endColorstr= @orange_lighter_colour) ;/*For IE7-8-9*/
   color: @white_colour;
    border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -570,7 +583,7 @@ body.dmponline .btn-primary:hover{
 }
 
 .welcome-message p{
-  color: @orange_colour;
+  color: @blue_colour;
   background-color: none !important;
   font-weight:lighter;
   font-size:20px;
@@ -580,7 +593,7 @@ body.dmponline .btn-primary:hover{
 }
 
 .welcome-message a, .welcome-message a:active, .welcome-message a:visited{
-  color: @orange_colour;
+  color: @blue_colour;
   background-color: none !important;
   font-weight: bold;
   text-decoration: none;
@@ -594,8 +607,8 @@ body.dmponline .btn-primary:hover{
   background-color: none !important;
   font-weight: bold;
   text-decoration: none;
-  
-}  
+
+}
 
 /** accordion **/
 
@@ -617,7 +630,7 @@ body.dmponline .btn-primary:hover{
 }
 
 #homepage-accordion .accordion-heading a.accordion-toggle{
-  color: @orange_colour;
+  color: @blue_colour;
   font-family: @header_font;
   font-size: 51px;
   font-weight: normal;
@@ -626,11 +639,11 @@ body.dmponline .btn-primary:hover{
   background-color: transparent !important;
   line-height: 51px;
  }
- 
- 
+
+
 #homepage-accordion .accordion-heading a.accordion-toggle:hover,
  #homepage-accordion .accordion-heading a.accordion-toggle:focus{
-   color: @orange_colour!important;
+   color: @blue_colour!important;
  }
 
 #homepage-accordion .accordion-inner{
@@ -639,14 +652,14 @@ body.dmponline .btn-primary:hover{
 }
 
 .minus-laranja:before{
-  content: "\2212"; 
+  content: "\2212";
   float:right;
   background-color: transparent !important;
   line-height: 13px;
   padding-top:10px;
 }
 .plus-laranja:before{
-  content: "+"; 
+  content: "+";
   float:right;
   background-color: transparent !important;
   padding-right:2px;
@@ -663,12 +676,12 @@ body.dmponline .btn-primary:hover{
 }
 
 #new_user a.forgot_password, #new_user a.forgot_password:active, #new_user a.forgot_password:visited, #new_user a.forgot_password:hover{
-  color: @orange_colour;
+  color: @blue_colour;
    font-size: @font_size_medium;
 }
 
 li.remember_me_li{
-  margin-top:18px;  
+  margin-top:18px;
 }
 
 li.remember_me_li label{
@@ -691,26 +704,26 @@ input#user_remember_me, input#user_accept_terms{
   width:10px;
   margin-top:4px;
 }
-  
+
 .sign_up_org_label{
   margin: 0 0 6px 0;
   float:left;
-} 
+}
 
 #s2id_user_organisation_id{
-  min-width:84% !important; 
+  min-width:84% !important;
   clear:both;
   float:left;
   margin: 0 0 10px 0;
 }
 /******************************
-        Project  page 
+        Project  page
 *******************************/
 /*** View projects table ***/
 
 table.dmp_table thead{
   margin: 0px 4px 0px 0px;
-  background-color: @orange_colour;
+  background-color: @blue_colour;
 }
 
 table.dmp_table thead th{
@@ -723,13 +736,13 @@ table.dmp_table thead th{
 table.dmp_table tbody td{
   background-color: @white_colour;
   color: @font_colour;
-  padding: 4px 4px 4px 15px;  
+  padding: 4px 4px 4px 15px;
 }
 
 table.dmp_table tbody th.dmp_th_border{
   font-weight: normal;
   text-align: left;
-  border-spacing: 4px;  
+  border-spacing: 4px;
   border-bottom: 1px solid @grey_very_light_colour;
   border-top: 10x solid @white_colour;
 }
@@ -739,7 +752,7 @@ table.dmp_table tbody th.dmp_th_border p{
 }
 
 table.dmp_table tbody td.dmp_td_border{
-  border-bottom: 1px solid @grey_very_light_colour; 
+  border-bottom: 1px solid @grey_very_light_colour;
   border-left: 1px solid @grey_very_light_colour;
 }
 
@@ -753,7 +766,7 @@ table.dmp_table a.dmp_table_link, table.dmp_table a.dmp_table_link:active, table
 }
 table.dmp_table a.dmp_table_link:hover{
   text-decoration: underline !important;
-  color: @orange_colour;
+  color: @blue_colour;
 }
 
 
@@ -762,7 +775,7 @@ table.dmp_table a.dmp_table_link:hover{
 /*****************************/
 
 .blue_border{
-  border: 1px solid @orange_colour;
+  border: 1px solid @blue_colour;
 }
 
 /*****************************/
@@ -770,8 +783,8 @@ table.dmp_table a.dmp_table_link:hover{
 /*****************************/
 
 div.phase_details{
-  background-color: @orange_colour;
-  border-bottom: 2px solid @orange_colour;
+  background-color: @blue_colour;
+  border-bottom: 2px solid @blue_colour;
   min-height: 50px;
   border-radius: 2px;
   margin-bottom: 5px;
@@ -779,17 +792,17 @@ div.phase_details{
   -moz-box-shadow: 7px 7px 2px 0px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 7px 7px 2px 0px rgba(168, 168, 168, 0.5);
   padding-top:2px;
-  
+
   div.phase_details_text{
     color: @white_colour;
     float:left;
     min-height: 20px;
     line-height: 24px;
     font-weight: bold;
-    padding: 0 0 8px 15px; 
-        
+    padding: 0 0 8px 15px;
+
   }
-  
+
   div.phase_details_body{
     background-color: @white_colour;
     padding: 10px 15px 25px 15px;
@@ -798,11 +811,11 @@ div.phase_details{
 }
 
 .versions_display_table{
-  padding: 30px 0 0 0;  
+  padding: 30px 0 0 0;
 }
 
 .dmp_details_table td.first_template{
-  border-right: 1px solid @orange_colour;
+  border-right: 1px solid @blue_colour;
   padding-right: 15px;
   vertical-align:top;
   text-align: right;
@@ -810,15 +823,15 @@ div.phase_details{
 }
 
 table td.phase_table_last_column {
-  padding-bottom: 25px;  
+  padding-bottom: 25px;
 }
 
 table.dmp_details_table .phase .text_area{
   width: 100%;
-} 
+}
 
 .number_field{
-  width: 30px; 
+  width: 30px;
 }
 .number_field .option{
   padding:2px;
@@ -829,7 +842,7 @@ table.dmp_details_table .phase .text_area{
 }
 
 .ques_format_option{
-  width: 99%;  
+  width: 99%;
 }
 
 .ques_format div select{
@@ -852,22 +865,22 @@ table.options_table{
     width: 100%;
     th{
       font-weight:normal;
-      
+
       float:left;
       padding: 2px;
       text-align:left;
-      border-bottom: 1px solid @orange_colour;
-    } 
+      border-bottom: 1px solid @blue_colour;
+    }
   }
   tr th.small{
     width: 15.5%;
-   
+
     a{
       float:right;
        padding-left:2px;
     }
   }
-  
+
   tr th.medium{
     width: 46.5%;
   }
@@ -889,7 +902,7 @@ table.options_table{
 }
 
 .border_bottom{
-  border-bottom: 1px solid @orange_colour;
+  border-bottom: 1px solid @blue_colour;
   width: 75%;
   margin-bottom: 6px;
 }
@@ -899,7 +912,7 @@ table.options_table{
 }
 
 a.cancel, a.cancel:hover{
-  color: @orange_colour !important;
+  color: @blue_colour !important;
   text-decoration: none;
 }
 
@@ -932,7 +945,7 @@ a.cancel, a.cancel:hover{
 
 li.select label, li.check_boxes .label{
   background-color: @white_colour;
-  color: @orange_colour;
+  color: @blue_colour;
   font-weight: bold;
   text-shadow: none;
   border-bottom-color: @white_colour;
@@ -944,7 +957,7 @@ li.select label, li.check_boxes .label{
 #project_guidance_groups_input legend.label label{
   font-weight: bold;
   font-size: 12px;
-  
+
  }
 
 div.select2-container {
@@ -1029,22 +1042,22 @@ li.choice label input{
 }
 
 .progress .bar{
-  background-color: @orange_colour;
-  padding-left: 1px; 
-  background-image: -moz-linear-gradient(top , @orange_colour, @orange_darker_colour 49px);
-  background-image: -webkit-linear-gradient(top , @orange_colour, @orange_darker_colour 49px);
-  background-image: -o-linear-gradient(top , @orange_colour, @orange_darker_colour 49px);
-  background-image: -ms-linear-gradient(top , @orange_colour, @orange_darker_colour 49px);
-  background-image: linear-gradient(top , @orange_colour, @orange_darker_colour 49px);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr= @orange_colour, endColorstr=  @orange_darker_colour , gradientType='0')";
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr= @orange_colour, endColorstr=  @orange_darker_colour) ;/*For IE7-8-9*/
-  
-} 
+  background-color: @blue_colour;
+  padding-left: 1px;
+  background-image: -moz-linear-gradient(top , @blue_colour, @orange_darker_colour 49px);
+  background-image: -webkit-linear-gradient(top , @blue_colour, @orange_darker_colour 49px);
+  background-image: -o-linear-gradient(top , @blue_colour, @orange_darker_colour 49px);
+  background-image: -ms-linear-gradient(top , @blue_colour, @orange_darker_colour 49px);
+  background-image: linear-gradient(top , @blue_colour, @orange_darker_colour 49px);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr= @blue_colour, endColorstr=  @orange_darker_colour , gradientType='0')";
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr= @blue_colour, endColorstr=  @orange_darker_colour) ;/*For IE7-8-9*/
+
+}
 
 .progress .color-text{
-  color: @orange_colour;
-  padding-left: 15px; 
-} 
+  color: @blue_colour;
+  padding-left: 15px;
+}
 
 
 /*** project nav tabs ***/
@@ -1054,7 +1067,7 @@ li.choice label input{
 .nav li a{
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  
+
 }
 
 #project-tabs ul{
@@ -1067,13 +1080,13 @@ li.choice label input{
   font-weight: bold;
   padding: 4px 20px 4px 20px;
   text-decoration: none !important;
-}  
+}
 
 #project-tabs li.active a, #project-tabs li.active a:active, #project-tabs li a:hover{
-  background-color: @orange_colour;
+  background-color: @blue_colour;
   color: @white_colour;
   font-weight: bold;
-  border: 1px solid @orange_colour;
+  border: 1px solid @blue_colour;
   padding: 4px 20px 4px 20px;
   text-decoration: none !important;
 }
@@ -1098,11 +1111,11 @@ li.choice label input{
 .project-title-edit h5{
    font-weight:normal;
 }
- 
+
 
 .dmp_details_body{
   background-color: @white_colour;
-  border: 2px solid @orange_colour;
+  border: 2px solid @blue_colour;
   border-radius: 1px;
   padding-bottom: 25px;
   padding-left: 15px;
@@ -1128,14 +1141,14 @@ li.choice label input{
 
 div.admin_left_smaller{
   width:48%;
-  
+
 }
 
 .div_right{
   float:right;
   width:25%;
   padding:0 2px 10px 0;
-  
+
   .btn{
     float:right;
     margin:0 0 0 4px;
@@ -1162,7 +1175,7 @@ table.dmp_details_table tr td{
 }
 
 table.dmp_details_table tr td.first{
-  border-right: 1px solid @orange_colour;
+  border-right: 1px solid @blue_colour;
   padding-right: 15px;
   vertical-align:top;
   text-align: right;
@@ -1171,12 +1184,12 @@ table.dmp_details_table tr td.first{
 
 table.dmp_details_table .text_area{
   width: 90%;
-} 
+}
 
 table.dmp_details_table .text_field{
   height: 17px;
   margin-bottom:5px;
-} 
+}
 
 .edit-project .actions{
   margin-top: 0px;
@@ -1193,11 +1206,11 @@ table.dmp_details_table .text_field{
   box-shadow:none !important;
   -moz-box-shadow: none !important;
   -webkit-box-shadow:none !important;
-} 
+}
 
 #project-accordion .accordion-heading{
   background-color:@white_colour;
-  border-bottom: 1px solid @orange_colour !important;
+  border-bottom: 1px solid @blue_colour !important;
   min-height: 50px;
 }
 
@@ -1244,20 +1257,20 @@ table.dmp_details_table .text_field{
 .new-line-tabs{
   margin: 5px 0 10px;
   border-top: 2px solid #e9eaea;
-  
+
 }
 
 ul.section_ul {
-  list-style-type: none; 
+  list-style-type: none;
   margin-left:0px;
 }
 
 ul.section_ul li{
-  color: @orange_colour;
+  color: @blue_colour;
  }
 
 ul.question_ul{
-  list-style-type: none; 
+  list-style-type: none;
    margin-bottom: 15px;
    margin-left:0px;
 }
@@ -1269,8 +1282,8 @@ ul.question_ul li{
 
 /*** Accordion  css ***/
 .accordion-group{
-  background-color: @orange_colour;
-  border-color:@orange_colour;
+  background-color: @blue_colour;
+  border-color:@blue_colour;
   border-radius: 1px;
   margin-bottom: 5px;
   box-shadow: 7px 7px 2px 0px rgba(168, 168, 168, 0.5);
@@ -1279,7 +1292,7 @@ ul.question_ul li{
 }
 
 .accordion-heading{
-  background-color: @orange_colour;
+  background-color: @blue_colour;
 
 }
 
@@ -1337,7 +1350,7 @@ div.accordion .make_div_smaller{
   clear:both;
 }
 .section-status{
-  background-color: @orange_colour;
+  background-color: @blue_colour;
 }
 
 .accordion-inner{
@@ -1356,7 +1369,7 @@ div.accordion .make_div_smaller{
         width:40%;
     }
     label {
-        font-size: 14px;  
+        font-size: 14px;
         font-weight:normal;
     }
     .guidance_header {
@@ -1368,7 +1381,7 @@ div.accordion .make_div_smaller{
     #sections-accordion {
         margin-bottom: 10px;
     }
-  
+
 }
 
 .div_left_icon{
@@ -1405,14 +1418,14 @@ div.suggested-answer-div{
 }
 
 div.suggested-answer-border {
-  border: 1px solid @orange_colour;
+  border: 1px solid @blue_colour;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
   padding: 10px 10px 5px 10px;
   margin-bottom:10px;
   overflow-y: auto;
-  max-height: 200px; 
+  max-height: 200px;
 }
 
 span.suggested-answer-intro{
@@ -1437,7 +1450,7 @@ span.suggested-answer-intro{
   box-shadow:none !important;
   -moz-box-shadow: none !important;
   -webkit-box-shadow:none !important;
-} 
+}
 
 
 .question-guidance .accordion-heading{
@@ -1445,17 +1458,17 @@ span.suggested-answer-intro{
  }
 
 .question-guidance .guidance-accordion-body {
-  border: 1px solid @orange_colour;
+  border: 1px solid @blue_colour;
   clear:both;
 }
- 
+
 .question-guidance .guidance-accordion-body ul{
-  font-size: @font_size;  
+  font-size: @font_size;
   list-style:none;
   margin-left:0;
   padding-left:1em;
 }
-.question-guidance .guidance-accordion-body ul li:before{ 
+.question-guidance .guidance-accordion-body ul li:before{
    display:inline-block;
     content:"\2212";
     width:1em;
@@ -1466,7 +1479,7 @@ span.suggested-answer-intro{
 .question-guidance .accordion-heading a, .question-guidance .accordion-heading a:hover{
     padding-left:0px;
     padding-right: 0px;
-    color:  @orange_colour !important;
+    color:  @blue_colour !important;
     font-weight: bold;
 }
 
@@ -1475,7 +1488,7 @@ span.suggested-answer-intro{
 }
 
 .question-divider {
-	border-bottom-color: @orange_colour;
+	border-bottom-color: @blue_colour;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	padding-bottom: 5px;
@@ -1501,7 +1514,7 @@ span.suggested-answer-intro{
 }
 
 .mce-panel i.mce-ico{
-  font-size: @font_size;  
+  font-size: @font_size;
   font-weight:normal;
 }
 
@@ -1517,7 +1530,7 @@ div {
 
 .field_with_errors input {
   border-color: red;
-  
+
 }
 
 #error_explanation {
@@ -1558,17 +1571,17 @@ div {
 .column_left{
   float:left;
   width:50%;
-  margin: 2px 5px 0 0; 
+  margin: 2px 5px 0 0;
   .white_background{
     min-height: 465px;
-    
+
       table.dmp_details_table tr td{
       padding-left: 10px;
       min-width:94px;
     }
-    
+
     table.dmp_details_table tr td.first{
-      border-right: 1px solid @orange_colour;
+      border-right: 1px solid @blue_colour;
       padding-right: 15px;
       vertical-align:top;
       text-align: right;
@@ -1583,13 +1596,13 @@ div {
 .column_right{
   float:left;
   width:48%;
- 
-  margin: 2px 0 0 5px; 
-  
-  
+
+  margin: 2px 0 0 5px;
+
+
   .white_background{
     min-height: 465px;
-    
+
   }
 }
 
@@ -1600,7 +1613,7 @@ div {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   padding: 20px 20px 20px 20px;
-  
+
   ul{
     list-style-type: none;
     margin-left:0px;
@@ -1628,7 +1641,7 @@ div {
 
 .mce-item-table th {
 	font-weight: normal;
-	background-color: @orange_colour;
+	background-color: @blue_colour;
 }
 
 .mce-foot, .mce-tinymce {
@@ -1637,7 +1650,7 @@ div {
 
 .mce-container iframe html{
   max-height:150px;
-  overflow-x:hidden !important; 
+  overflow-x:hidden !important;
   overflow-y:scroll !important;
 }
 
@@ -1653,7 +1666,7 @@ table.tablesorter thead tr .header {
   background-image: url(bg.gif);
   background-repeat: no-repeat;
   background-position: center right;
-  background-color: @orange_lighter_colour;
+  background-color: @blue_colour;
   cursor: pointer;
 }
 
@@ -1670,14 +1683,14 @@ table.tablesorter thead tr .headerSortDown {
 /******* Guidance group style *********/
 div#add_guidance_group_button_div{
   float:right;
-  margin-right: 2px; 
+  margin-right: 2px;
 }
 
 div#add_guidance_group_form_div{
   float:right;
   width: 380px;
-  margin-right: 2px; 
-  
+  margin-right: 2px;
+
   div#add_guid_gr_form{
     width: 58%;
     float: left;
@@ -1686,20 +1699,16 @@ div#add_guidance_group_form_div{
       width: 200px;
     }
   }
-  
+
   div#guidance_group_add_buttons{
     width: 140px;
     float: right;
     margin-left: 1px;
   }
 
-  
 
-  
-  
-  
+
+
+
+
 }
-
-
-
-
