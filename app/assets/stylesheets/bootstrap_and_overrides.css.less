@@ -41,10 +41,11 @@
 @font_size_small: 11px;
 @font_colour: #3e3c3c;
 @orange_darker_colour: #f47900;
+@rouille : #d6604d;
 @orange_lighter_colour: #fbb400;
 @blue_colour: #51a2d2;
-@blue_lighter_colour: #bfd1d9;
-@blue_very_light_colour: #e6ed70;
+@blue_lighter_colour: #4393c3;
+@blue_very_light_colour: #92c5de;
 @grey_colour: #656263;
 @grey_lighter_colour: #827d7e;
 @grey_very_light_colour: #cccccc;
@@ -84,7 +85,7 @@ body.dmpinist {
     height: 100px;
     margin: 0 0 30px 0;
     padding:0 10% 0 10%;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 3px solid @rouille ;
     background-color: @background_color;
 }
 
@@ -99,11 +100,12 @@ body.dmpinist {
 
 footer {
   clear:both;
-  border-top: 3px solid @blue_colour;
+  border-top: 3px solid @rouille ;
   background-color: @blue_lighter_colour;
   padding: 25px 10% 100px 10%;
   font-size: @font_size;
   color: @font_colour;
+ 
 }
 
 /*********************************************/
@@ -158,7 +160,8 @@ div.header_right{
 }
 
 #main-nav-tabs li a{
-    background-color: @grey_lighter_colour;
+    /* background-color: @grey_lighter_colour; change cf */
+    background-color: @blue_very_light_colour;
     color: @white_colour;
     font-weight: bold;
     padding: 4px 15px 4px 15px;
@@ -171,10 +174,10 @@ div.header_right{
 }
 
 #main-nav-tabs li.active a, #main-nav-tabs li.active a:active, #main-nav-tabs li a:hover{
-    background-color: @blue_colour;
+    background-color: @blue_lighter_colour;
     color: @white_colour !important;
     font-weight: bold;
-    border: 1px solid @blue_colour;
+    border: 1px solid @blue_lighter_colour;
     padding: 4px 15px 4px 15px;
     text-decoration: none !important;
 }
@@ -331,21 +334,27 @@ footer .right_side_footer p{
 
 ul.footer-links {
   margin-left:0px;
+color: @white_colour;
 }
 
 ul.footer-links li {
   display: inline;
   padding: 0 2px;
   line-height: 20px;
+color: @white_colour;
+
 }
 
 ul.footer-links li:first-child {
   padding-left: 0;
+color: @white_colour;
 }
 
 ul.footer-links li a, ul.footer-links li a:active, ul.footer-links li a:visited {
-  color: @grey_colour;
+   /* color: @grey_colour; change cf */
+  color: @white_colour;
   text-decoration: none;
+ 
 }
 
 ul.footer-links li a:hover,  ul.footer-links li a:focus{
@@ -372,7 +381,7 @@ ul.footer-links li a:hover,  ul.footer-links li a:focus{
 /*********************************************/
 h1, h2, h3, h4 {
   font-family: @header_font;
-  color: @blue_colour;
+  color: @blue_lighter_colour;
   font-weight: lighter;
   font-style: normal;
 }
@@ -406,7 +415,7 @@ label.text_colour{
 }
 
 p a:hover, a.a-orange:hover, div.signIn a:hover, td a:hover, .question-guidance .accordion-inner a:hover, div a:hover{
-  color: @orange_darker_colour !important;
+  color: @blue_lighter_colour !important;
   background-color: none !important;
 }
 
@@ -504,7 +513,7 @@ body.dmpinist .btn-primary, body.dmpinist .btn-primary:active, body.dmpinist .bt
  }
 
 body.dmpinist .btn-primary:hover{
-  background-image: -moz-linear-gradient(top, @blue_colour, @orange_lighter_colour 49px);
+  background-image: -moz-linear-gradient(top, @blue_colour, @blue_lighter_colour 49px);
   background-image: -webkit-linear-gradient(top , @blue_colour, @orange_lighter_colour 49px);
   background-image: -o-linear-gradient(top , @blue_colour, @orange_lighter_colour 49px);
   background-image: -ms-linear-gradient(top , @blue_colour, @orange_lighter_colour 49px);
@@ -555,7 +564,7 @@ body.dmpinist .btn-primary:hover{
 }
 
 .welcome-message p{
-  color: @blue_colour;
+  color: @blue_lighter_colour;
   background-color: none !important;
   font-weight:lighter;
   font-size:20px;

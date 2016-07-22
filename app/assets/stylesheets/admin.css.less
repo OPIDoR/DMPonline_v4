@@ -41,18 +41,19 @@
 @font_size_small: 11px;
 @font_colour: #3e3c3c;
 @blue_colour: #51a2da;
-@blue_lighter_colour: #bfd1d9;
-@blue_very_light_colour: #e6ed70;
-@orange_colour: #0057A7;
-@orange_darker_colour: #004A8E;
-@orange_lighter_colour: #005EB4;
+@blue_lighter_colour: #4393c3;
+@blue_very_light_colour: #92c5de;
+@orange_colour: #d6604d;
+@orange_darker_colour: #b2182b;
+@orange_lighter_colour: #f4a582;
 @grey_colour: #656263;
 @grey_lighter_colour: #827d7e;
 @grey_very_light_colour: #cccccc;
 @grey_darker_colour: #515151;
 @background_lighter_colour: #f9f9f9;
 @background_darker_colour: #d1d5d4;
-@green_colour: #57a47f;
+/*@green_colour: #57a47f;*/
+@green_colour: #d6604d;
 @red_colour: #ec563c; /*#e3000f*/
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
@@ -99,7 +100,7 @@ body.dmponline {
   height: 100px;
   margin: 0 0 30px 0;
   padding:0 10% 0 10%;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 3px solid @blue_lighter_colour;
   background-color: @background_color;
 }
 
@@ -114,8 +115,8 @@ body.dmponline {
 
 footer {
   clear:both;
-  border-top: 3px solid @green_colour;
-  background-color: @blue_lighter_colour;
+  border-top: 3px solid @blue_lighter_colour;
+  background-color: @green_colour;
   padding: 25px 10% 100px 10%;
   font-size: @font_size;
   color: @font_colour;
@@ -172,7 +173,7 @@ div.header_right{
 }
 
 #main-nav-tabs li a{
-    background-color: @grey_lighter_colour;
+    background-color: @orange_lighter_colour;
     color: @white_colour;
     font-weight: bold;
     padding: 4px 15px 4px 15px;
@@ -351,14 +352,16 @@ ul.footer-links li {
   display: inline;
   padding: 0 2px;
   line-height: 20px;
+  color: @white_colour;
 }
 
 ul.footer-links li:first-child {
   padding-left: 0;
+  color: @white_colour;
 }
 
 ul.footer-links li a, ul.footer-links li a:active, ul.footer-links li a:visited {
-  color: @grey_colour;
+color: @white_colour;
   text-decoration: none;
 }
 
