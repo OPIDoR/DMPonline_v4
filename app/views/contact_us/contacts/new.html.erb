@@ -6,98 +6,100 @@
 <h1>
 	<%= t('contact_page.title') %>
 </h1>
-<p>
-	<%= raw t('contact_page.intro_text_html') %>
-  <%= raw t('contact_page.github_text_html') %>
-</p>
-<div class='column_container'>
-	<!-- left column  content -->
-	<div class="column_left">
-		<div class="white_background">
-			<%= form_for @contact, :url => contacts_path do |f| %>
-				<div class="dmp_details">
-					<table class="dmp_details_table">
-						<% if ContactUs.require_name %>
+<div class="dmp_details_body">
+	<p>
+		<%= raw t('contact_page.intro_text_html') %>
+		<%= raw t('contact_page.github_text_html') %>
+	</p>
+	<div class='column_container'>
+		<!-- left column  content -->
+		<div class="column_left">
+			<div class="white_background">
+				<%= form_for @contact, :url => contacts_path do |f| %>
+					<div class="dmp_details">
+						<table class="dmp_details_table">
+							<% if ContactUs.require_name %>
+								<tr>
+									<td class='string required first' id='contact_us_contact_name_input'>
+										<%= f.label :name, (t('.name') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+									</td>
+									<td>
+										<% if user_signed_in? then %>
+											<%= f.text_field :name, :value => current_user.name(false) %>
+										<% else %>
+											<%= f.text_field :name %>
+										<% end %>
+										<% if f.object.errors[:name].present? %>
+											<p class='inline-error'><%= f.object.errors[:name].join(' and ') %></p>
+										<% end %>
+									</td>
+								</tr>
+							<% end %>
 							<tr>
-								<td class='string required first' id='contact_us_contact_name_input'>
-									<%= f.label :name, (t('.name') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+								<td class='string required first' id='contact_us_contact_email_input'>
+									<%= f.label :email, (t('.email') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
 								</td>
 								<td>
 									<% if user_signed_in? then %>
-										<%= f.text_field :name, :value => current_user.name(false) %>
+										<%= f.email_field :email, :value => current_user.email %>
 									<% else %>
-										<%= f.text_field :name %>
+										<%= f.email_field :email %>
 									<% end %>
-									<% if f.object.errors[:name].present? %>
-										<p class='inline-error'><%= f.object.errors[:name].join(' and ') %></p>
+									<% if f.object.errors[:email].present? %>
+										<p class='inline-error'><%= f.object.errors[:email].join(' and ') %></p>
 									<% end %>
 								</td>
 							</tr>
-						<% end %>
-						<tr>
-							<td class='string required first' id='contact_us_contact_email_input'>
-								<%= f.label :email, (t('.email') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
-							</td>
-							<td>
-								<% if user_signed_in? then %>
-									<%= f.email_field :email, :value => current_user.email %>
-								<% else %>
-									<%= f.email_field :email %>
-								<% end %>
-								<% if f.object.errors[:email].present? %>
-									<p class='inline-error'><%= f.object.errors[:email].join(' and ') %></p>
-								<% end %>
-							</td>
-						</tr>
-						<% if ContactUs.require_subject %>
+							<% if ContactUs.require_subject %>
+								<tr>
+									<td class='string required first' id='contact_us_contact_subject_input'>
+										<%= f.label :subject, (t('.subject') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+									</td>
+									<td>
+										<%= f.text_field :subject %>
+										<% if f.object.errors[:subject].present? %>
+											<p class='inline-error'><%= f.object.errors[:subject].join(' and ') %></p>
+										<% end %>
+									</td>
+								</tr>
+							<% end %>
 							<tr>
-								<td class='string required first' id='contact_us_contact_subject_input'>
-									<%= f.label :subject, (t('.subject') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+								<td class='text required first' id='contact_us_contact_message_input'>
+									<%= f.label :message, (t('.message') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
 								</td>
 								<td>
-									<%= f.text_field :subject %>
-									<% if f.object.errors[:subject].present? %>
-										<p class='inline-error'><%= f.object.errors[:subject].join(' and ') %></p>
+									<%= f.text_area :message, :rows => 10, :style => "width:95%;"%>
+									<% if f.object.errors[:message].present? %>
+										<p class='inline-error'><%= f.object.errors[:message].join(' and ') %></p>
 									<% end %>
 								</td>
 							</tr>
-						<% end %>
-						<tr>
-							<td class='text required first' id='contact_us_contact_message_input'>
-								<%= f.label :message, (t('.message') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
-							</td>
-							<td>
-								<%= f.text_area :message, :rows => 10, :style => "width:95%;"%>
-								<% if f.object.errors[:message].present? %>
-									<p class='inline-error'><%= f.object.errors[:message].join(' and ') %></p>
-								<% end %>
-							</td>
-						</tr>
-						<% if !user_signed_in? then %>
-							<tr>
-								<td class='text required first'>
-									Security check
-								</td>
-								<td>
-									<%= recaptcha_tags %>
-								</td>
-							</tr>
-						<% end %>
-					</table>
-				</div>
-				<div class="div_right">
-					<%= f.submit :submit, :class => 'btn btn-primary', :label => "Submit" %>
-				</div>
-			<% end %>
+							<% if !user_signed_in? then %>
+								<tr>
+									<td class='text required first'>
+										Security check
+									</td>
+									<td>
+										<%= recaptcha_tags %>
+									</td>
+								</tr>
+							<% end %>
+						</table>
+					</div>
+					<div class="div_right">
+						<%= f.submit :submit, :class => 'btn btn-primary', :label => "Submit" %>
+					</div>
+				<% end %>
+			</div>
 		</div>
-	</div>
-	<!-- right column information -->
-	<div class="column_right">
-		<div class="white_background">
-			<%= raw t('contact_page.address_text_html') %>
-			<!-- map -->
-			<div class="div_map">
-				<iframe width="90%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.6205514618828!2d6.147821815667206!3d48.65537377926815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a20d2501f331%3A0x608225daeea2a8ae!2sInstitute+Information+Scientific+And+Technical+-+Inist+Cnrs!5e0!3m2!1sen!2sus!4v1470224717033"></iframe>
+		<!-- right column information -->
+		<div class="column_right">
+			<div class="white_background">
+				<%= raw t('contact_page.address_text_html') %>
+				<!-- map -->
+				<div class="div_map">
+					<iframe width="90%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2635.6205514618828!2d6.147821815667206!3d48.65537377926815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794a20d2501f331%3A0x608225daeea2a8ae!2sInstitute+Information+Scientific+And+Technical+-+Inist+Cnrs!5e0!3m2!1sen!2sus!4v1470224717033"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>

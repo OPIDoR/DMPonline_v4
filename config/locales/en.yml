@@ -599,6 +599,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     </br>
     <h3>Additional Information</h3>
     <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    </br>
     <h3>Customise DMP OPIDoR</h3>
     <p>DMP OPIDoR can be customised by institutions and disciplines. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
 
@@ -749,7 +750,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     title: "Contact us"
     intro_text_html: "<p>DMP OPIDoR is provided by the Institute for scientific and technical information - CNRS. You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <p>DMP OPIDoR is based on software <a href='https://dmponline.dcc.ac.uk'>DMPonline</a> produced by the UK's <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
-    # github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to help us prioritise future developments.</p>"
+    github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to help us prioritise future developments.</p>"
     address_text_html: "<ul>
       <li>Equipe Valorisation Données de la recherche</li>
       <li>Inist-CNRS</li>
