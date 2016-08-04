@@ -737,9 +737,8 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Share plans</h3>
     <p>Insert the email address of any collaborators you would like to invite to read or edit your plan. Set the level of permissions you would like to grant them via the drop-down options and click to 'Add collaborator'</p>
     <h3>Export plans</h3>
-    <p>From here you can download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application and post-award. Choose what format you would like to view/download your plan in and click to export.</p>
-# <h3>Legacy data</h3>
-    # <p>If you need to access plans from the earlier version of the tool please visit <a href='https://dmponline3.dcc.ac.uk' target='_top'>DMPonline v3</a>.</p>"
+    <p>From here you can download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application and post-award. Choose what format you would like to view/download your plan in and click to export.</p>"
+
 
   contact_page:
     title: "Contact us"
