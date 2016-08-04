@@ -587,19 +587,16 @@ Select what format you wish to use and click to 'Export'.</p>"
     
     body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMP.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4'>GitHub</a> under a <a href='http://www.gnu.org/licenses/' target='_top'>GNU Affero General Public License</a> to permit others to reuse the code freely. DMP OPIDoR has been customised for French researchers.</p>    </br>
     <h3>How the tool works</h3>
-        <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by European Commission in Horizon 2020.</p>
-        <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and Digital Curation Centre.</p>
-    </br>
+        <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>European Commission in Horizon 2020</a>.</p>
+        <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and Digital Curation Centre. The thematic DCC guidance is listed in <a target='_blank' href='www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> by Jones S. and DCC (Licence CC-BY).</p>
     <h3>Getting Started</h3>
     <p>If you have an account please sign in and start creating or editing your DMP.</p>
     <p>If you do not have a DMP OPIDoR account, click on <a href='/'>'Sign up'</a> on the homepage.</p>
     <p>Please note that we are currently working on single sign-in authentication with your institutional credentials. You will have the option to link your existing account to your institutional credentials when that feature becomes available.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
     <p>If you have any questions or comments about DMP OPIDoR, please <a href='mailto:info-opidor@inist.fr' target='_top'>contact us</a>.</p>
-    </br>
     <h3>Additional Information</h3>
     <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
-    </br>
     <h3>Customise DMP OPIDoR</h3>
     <p>DMP OPIDoR can be customised by institutions and disciplines. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
 
@@ -687,20 +684,20 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Useful guides on Research Data Management in general</h3>
     <ul class='help_ul'>
       <li>
-        <a target='_blank' href='http://url.cirad.fr/ist/initiation-donnees-recherche'>S'initier en ligne aux données de la recherche et à leur gestion, en 4 points</a> [PDF, 5 pages]<br />
+        <a target='_blank' href='coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion, en 4 points</a> [PDF, 5 pages]<br />
         <i>Deboin, M.C. 2014 Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='http://url.cirad.fr/ist/rendre-publics-ses-donnees'>Rendre publics ses jeux de données scientifiques en 6 points </a> [PDF, 6 pages]<br />
+        <a target='_blank' href='coop-ist.cirad.fr/content/download/5705/42112/version/2/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points </a> [PDF, 6 pages]<br />
         <i>Dedieu L., Fily M.F. 2015. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='http://url.cirad.fr/ist/citer-jeu-donnees'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
+        <a target='_blank' href='coop-ist.cirad.fr/content/download/5979/43909/version/1/file/CoopIST-Citer-jeu-donnees-scientifiques-20160112.pdf'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
         <i>Deboin, M.C. 2016. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.donneesdelarecherche.fr/spip.php?article6'>Site d'information sur les Données de la Recherche</a> [webpage]<br />
-        <i>With the support of the French Ministry for Higher Education and Research, Inist-CNRS developed an information platform on research data. Editorial manager: Thérèse Hameau</i>
+        <i>With the support of the French Ministry for Higher Education and Research, Inist-CNRS developed an information platform on research data. Editorial manager: Thérèse Hameau.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.data-archive.ac.uk/media/2894/managingsharing.pdf'>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
@@ -741,14 +738,12 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>Insert the email address of any collaborators you would like to invite to read or edit your plan. Set the level of permissions you would like to grant them via the drop-down options and click to 'Add collaborator'</p>
     <h3>Export plans</h3>
     <p>From here you can download your plan in various formats. This may be useful if you need to submit your plan as part of a grant application and post-award. Choose what format you would like to view/download your plan in and click to export.</p>
-    <h3>Customise DMP OPIDoR</h3>
-    <p>DMP OPIDoR can be customised by institutions and disciplines. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>"
 # <h3>Legacy data</h3>
     # <p>If you need to access plans from the earlier version of the tool please visit <a href='https://dmponline3.dcc.ac.uk' target='_top'>DMPonline v3</a>.</p>"
 
   contact_page:
     title: "Contact us"
-    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for scientific and technical information - CNRS. You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <p>DMP OPIDoR is based on software <a href='https://dmponline.dcc.ac.uk'>DMPonline</a> produced by the UK's <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
     github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to help us prioritise future developments.</p>"
     address_text_html: "<ul>
@@ -822,23 +817,28 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Legal Notices</h3>
         <p>The site is published and hosted by:</p>
         <ul>
-            <li>The National Centre for Scientific Research (Centre National de la Recherche Scientifique - CNRS),</li>
+            <li><b>The National Centre for Scientific Research (Centre National de la Recherche Scientifique - CNRS)</b></li>
             <li>Headquarters: 3 rue Michel Ange</li>
             <li>75794 PARIS Cedex 16 – France</li>
         </ul>
-        <p>Tel. +33 (0)1 44 96 40 00</p>
-        <p>Fax. +33 (0)1 44 96 53 90</p><br/>
+        <ul>
+            <li>Tel. +33 (0)1 44 96 40 00</li>
+            <li>Fax. +33 (0)1 44 96 53 90</li><br/>
+        </ul>
         <p>and managed by:</p>
         <ul>
-            <li>Inist-CNRS (CNRS service unit),</li>
+            <li><b>Inist-CNRS (CNRS service unit)</b></li>
             <li>2, allée du Parc de Brabois</li>
-            <li>CS10310 F-54519 VANDOEUVRE-LES-NANCY Cedex – France</li>
+            <li>CS10310</li>
+            <li>F-54519 VANDOEUVRE-LES-NANCY Cedex – France</li>
         </ul>
-        <p>Tel. +33 (0)3 83 50 46 00</p>
-        <p>Fax. +33 (0)3 83 50 46 50</p><br/>
-    <p>Publisher: Alain Fuchs</p>
-    <p>Editorial Director: Dominique Wolf</p>
-    <p>User support Department: <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
+        <ul>
+            <li>Tel. +33 (0)3 83 50 46 00</li>
+            <li>Fax. +33 (0)3 83 50 46 50</li><br/>
+        </ul>
+    <p><b>Publisher:</b> Alain Fuchs</p>
+    <p><b>Editorial Director:</b> Dominique Wolf</p>
+    <p><b>User support Department:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Your personal details</h3>
     <p>In order to help identify and administer your account with DMP OPIDoR, we need to store specific user information, such as name and email address. We may also use it to contact you to obtain feedback on your use of the tool, or to inform you of the latest developments or releases. We will not sell, rent or trade any personal information you provide to us.</p>
     <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CNIL (in progress).</p>
@@ -852,11 +852,11 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>CNRS hosts DMP OPIDoR in France and stores your data management plans on your behalf, but the plans are your property and responsibility.</p>
     <h3>Disclaimer</h3>
     <p>The responsibility of the CNRS cannot in any way be held liable for the content of the information contained on this site or for the consequences arising from their use or interpretation.</p>
-    <p>Whenever possible, the DMP OPIDoR is accessible 24 hours a day, 7 days a week, except:</p>
+    <p>Whenever possible, the DMP OPIDoR is accessible 24 hours a day, 7 days a week, except:
     <ul>
         <li>- in events of force majeure as defined by the French law and case law,</li>
         <li>- for update or maintenance purposes materials and servers which may occasionally unavailability services or other technical difficulties and which the responsibility of the CNRS cannot in any way be held liable.</li>
-    </ul>
+    </ul></p>
     <h3>Hyperlinks</h3>
     <p>The creation of hyperlinks by third party to pages or documents in the website of the CNRS is permitted provided that the links are not contrary to the interests of the CNRS, and that they ensure the possibility for the user to identify the origin and author.</p>
     <p>The authorisation to establish a link is valid for any medium, with the exception of those displaying information of a controversial, pornographic or xenophobic nature or where any information might cause offence to the general public.</p>
