@@ -1,4 +1,4 @@
-# [+Project:+] DMP OPIDoR v1
+# [+Project:+] DMP OPIDoR en v1
 # [+Description:+] This file contains all the text present on DMP OPIDoR that is not being retrieve from the database.
 # [+Copyright:+] Digital Curation Centre 
 
@@ -41,7 +41,7 @@ en:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Welcome."
   # welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
-  welcome_text: "<p>Data management planning tool <a href='http://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> will help french researchers write Data Management Plans.</p>"
+  welcome_text: "<p><a href='http://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers write Data Management Plans.</p>"
 
   screencast_text: "Screencast on how to use DMP OPIDoR"
   screencast_error_text: "Your browser does not support the video tag."
@@ -295,7 +295,7 @@ en:
     institution_sign_in_link: "Or, sign in with your institutional credentials"
     
     
-    institution_sign_in: " (French users only)"
+    institution_sign_in: "Sign in with your institutional credentials is coming soon (French users only)"
 
     user_name: "Email address"
     email: "Email"
@@ -311,7 +311,7 @@ en:
     password_conf: "Password confirmation"
     change_password: "Change your password"
     forgot_password: "Forgot your password?"
-    password_too_small: "Your password must contain at least 8 characters."
+    password_too_small: "Your password must contain at least 8 characters (uppercase, lowercase , numerals, special characters )."
     password_no_match: "This must match what you entered in the previous field."
     no_pass_instructions: "Didn't receive confirmation instructions?"
     no_unlock_instructions: "Didn't receive unlock instructions?"
@@ -588,7 +588,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMP.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4'>GitHub</a> under a <a href='http://www.gnu.org/licenses/' target='_top'>GNU Affero General Public License</a> to permit others to reuse the code freely. DMP OPIDoR has been customised for French researchers.</p>    </br>
     <h3>How the tool works</h3>
         <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>European Commission in Horizon 2020</a>.</p>
-        <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and Digital Curation Centre. The thematic DCC guidance is listed in <a target='_blank' href='www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> by Jones S. and DCC (Licence CC-BY).</p>
+        <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and Digital Curation Centre. The thematic DCC guidance is listed in <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> by Jones S. and DCC (Licence CC-BY).</p>
     <h3>Getting Started</h3>
     <p>If you have an account please sign in and start creating or editing your DMP.</p>
     <p>If you do not have a DMP OPIDoR account, click on <a href='/'>'Sign up'</a> on the homepage.</p>
@@ -598,7 +598,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Additional Information</h3>
     <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Customise DMP OPIDoR</h3>
-    <p>DMP OPIDoR can be customised by institutions and disciplines. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
+    <p>DMP OPIDoR can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
 
     # body_text_tab_2_html: "<p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_top'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_top'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_top'>GitHub</a> under a GNU Affero General Public License to permit others to reuse the code freely.</p></br>"
         
@@ -614,7 +614,7 @@ Select what format you wish to use and click to 'Export'.</p>"
           <i>Cartier A., Moysan M., Reymonet N. 2015. Université Paris Diderot et Université Paris Descartes.</i>
         </li>
         <li>
-          <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5435/40362/version/4/file/CoopIST-plan-gestion-donnees-recherche-20140717.pdf'>Découvrir des plans de gestion des données de la recherche, en 4 points</a> [PDF, 6 pages]<br />
+          <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5435/40362/version/4/file/CoopIST-plan-gestion-donnees-recherche-20140717.pdf'>Découvrir des plans de gestion de données de la recherche, en 4 points</a> [PDF, 6 pages]<br />
           <i>Deboin M.C. 2014. Montpellier (FRA): CIRAD.</i>
         </li>
         <li>
@@ -674,29 +674,38 @@ Select what format you wish to use and click to 'Export'.</p>"
         <a target='_blank' href='http://library.umassmed.edu/necdmc/dmp'>Biology and chemistry DMPs</a> [webpage]<br />
   Three example DMPs from the USA shared by NECDMC, an instructional tool for teaching RDM to undergraduates, graduate students, and researchers in the health sciences, sciences and engineering.
       </li><li>
-        <a target='_blank' href='http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available'>Data management plans from successful grant applications (2011-2014) </a> [webpage]<br />
+        <a target='_blank' href='http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available'>Data management plans from successful grant applications (2011-2014)</a> [webpage]<br />
   National Endowment for the Humanities (NEH).
       </li><li>
-        <a target='_blank' href='http://www.wageningenur.nl/en/Expertise-Services/Data-Management-Support-Hub/Browse-by-Subject/Data-Management-Planning-1.htm'>What is a Data Management Plan? </a> [webpage]<br />
+        <a target='_blank' href='http://www.wageningenur.nl/en/Expertise-Services/Data-Management-Support-Hub/Browse-by-Subject/Data-Management-Planning-1.htm'>What is a Data Management Plan?</a> [webpage]<br />
   Example DMPs  produced by PhD candidates and Chair Group at Wageningen UR (Netherlands).
       </li>
     </ul>
     <h3>Useful guides on Research Data Management in general</h3>
     <ul class='help_ul'>
       <li>
-        <a target='_blank' href='coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion, en 4 points</a> [PDF, 5 pages]<br />
-        <i>Deboin, M.C. 2014 Montpellier (FRA) : CIRAD.</i>
+        <a target='_blank' href='https://www6.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [webpage]<br />
+        <i>Pôle Données de la recherche de l'IST : INRA.</i>
       </li>
       <li>
-        <a target='_blank' href='coop-ist.cirad.fr/content/download/5705/42112/version/2/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points </a> [PDF, 6 pages]<br />
+        <a target='_blank' href='http://www.doranum.fr/'>DoRANum Project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
+        <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i>
+        DoRANum project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage) aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources. 
+      </li>
+      <li>
+        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion, en 4 points</a> [PDF, 5 pages]<br />
+        <i>Deboin M.C. 2014. Montpellier (FRA) : CIRAD.</i>
+      </li>
+      <li>
+        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5705/42112/version/2/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points</a> [PDF, 6 pages]<br />
         <i>Dedieu L., Fily M.F. 2015. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='coop-ist.cirad.fr/content/download/5979/43909/version/1/file/CoopIST-Citer-jeu-donnees-scientifiques-20160112.pdf'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
-        <i>Deboin, M.C. 2016. Montpellier (FRA) : CIRAD.</i>
+        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5979/43909/version/1/file/CoopIST-Citer-jeu-donnees-scientifiques-20160112.pdf'>Citer un jeu de données scientifiques en 5 points</a> [PDF, 5 pages]<br />
+        <i>Deboin M.C. 2016. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
-        <a target='_blank' href='http://www.donneesdelarecherche.fr/spip.php?article6'>Site d'information sur les Données de la Recherche</a> [webpage]<br />
+        <a target='_blank' href='http://www.donneesdelarecherche.fr'>Site d'information sur les Données de la Recherche</a> [webpage]<br />
         <i>With the support of the French Ministry for Higher Education and Research, Inist-CNRS developed an information platform on research data. Editorial manager: Thérèse Hameau.</i>
       </li>
       <li>
@@ -706,7 +715,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       </li>
       <li>
         <a target='_blank' href='http://www.dcc.ac.uk/sites/default/files/documents/publications/reports/guides/How_to_Cite_Link.pdf'>How to Cite Datasets and Link to Publications</a> [PDF, 12 pages]<br />
-        <i>Ball, A., Duke, M. 2015. DCC How-to Guides. Edinburgh: Digital Curation Centre.</i><br />
+        <i>Ball A., Duke M. 2015. DCC How-to Guides. Edinburgh: Digital Curation Centre.</i><br />
         A guide by the Digital Curation Centre giving practical guidelines on how to cite data and the different tools and infrastructure that can be used to support data citation.
       </li>
       <li>
@@ -744,7 +753,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     title: "Contact us"
     intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <p>DMP OPIDoR is based on software <a href='https://dmponline.dcc.ac.uk'>DMPonline</a> produced by the UK's <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
-    github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to help us prioritise future developments.</p>"
+    github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to prioritise future developments.</p>"
     address_text_html: "<ul>
       <li>Equipe Valorisation Données de la recherche</li>
       <li>Inist-CNRS</li>
@@ -796,7 +805,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     # <p>Please let us know your interests and share your ideas for future developments via the mailing list so the community as a whole can feedback on them.</p>
     # </br>
     # <h3>Customise DMPonline</h3>
-    # <p>DMPonline can be customised by institutions and disciplines. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20Admin%20access' target='_top'>dmponline@dcc.ac.uk</a>.</p>
+    # <p>DMPonline can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20Admin%20access' target='_top'>dmponline@dcc.ac.uk</a>.</p>
     # <p>Futher guidance on customising DMPonline is available on the <a href='http://www.dcc.ac.uk/dmponline' target='_blank'>DCC website</a>.</p> 
     # </br>
     # <h3>Contribute to the code</h3>
@@ -811,7 +820,7 @@ Select what format you wish to use and click to 'Export'.</p>"
   terms_page:
     title: "Terms of use"
     body_text_html: "<div class='white_background'>
-    <p>DMP OPIDoR is provided by National Center for Scientific Research, or CNRS for the French research community, particularly the higher and further education sector.</p>
+    <p>DMP OPIDoR is provided by <a href='http://www.cnrs.fr' target='_blank'>the National Centre for Scientific Research, or CNRS</a> for the French research community, particularly the higher and further education sector.</p>
     <p>Use of the tool indicates that you understand and agree to these terms and conditions.</p>
     <h3>Legal Notices</h3>
         <p>The site is published and hosted by:</p>
