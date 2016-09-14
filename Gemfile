@@ -55,6 +55,7 @@ gem 'cancan'
 #    VIEWS
 #
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'tinymce-rails'
 gem 'friendly_id'
 gem 'contact_us' 

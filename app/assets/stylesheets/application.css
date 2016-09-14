@@ -10,7 +10,9 @@
  *
  * require jquery.ui.all
  *= require_self
+ *= require jquery-ui
  *= require bootstrap.css
  *= require bootstrap_and_overrides.css.less
  *= require select2.css
+ *= require bootstrap-datepicker
  */
