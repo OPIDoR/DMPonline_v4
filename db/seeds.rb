@@ -138,6 +138,9 @@ end
    "Multi select box" => {
      title: "Multi select box"
    },
+   "Date" => {
+     title: "Date"
+   },
  }
 
  question_formats.each do |qf, details|

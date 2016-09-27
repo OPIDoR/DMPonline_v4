@@ -12,14 +12,21 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap
 //= require v1.js
 //= require select2.min.js
 //= require jquery.placeholder.js
+//= require_self
 
 
 
 $( document ).ready(function() {
+
+	$(function(){
+		$(".question_date_field").datepicker({ dateFormat: 'dd-mm-yy' });
+	});
+
 
 	$(function(){
 		$('.dropdown-toggle').dropdown()
