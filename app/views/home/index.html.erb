@@ -23,6 +23,21 @@
 					</div>
 				</div>
 			</div>
+            <% if Rails.application.config.shibboleth_enabled %>
+            <div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#homepage-accordion" href="#collapse-inst-login">
+						<%= t('helpers.institution_sign_in')%><span class="plus-laranja"> </span></a>
+				</div>
+				<div id="collapse-inst-login" class="accordion-home collapse">
+					<div class="accordion-inner">
+						<div class="institution_login_link">
+                            <%= link_to t('helpers.institution_sign_in_link'), user_omniauth_shibboleth_path, :class => "a-orange" %>
+                        </div>
+					</div>
+				</div>
+			</div>
+            <% end %>
 			<div class="accordion-group">
 				<div class="accordion-heading">
 					<a class="accordion-toggle" data-toggle="collapse" data-parent="#homepage-accordion" href="#collapse-register">
