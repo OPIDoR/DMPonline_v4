@@ -41,7 +41,7 @@ fr:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Bienvenue,"
   
-  welcome_text: "<p><a href='http://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
+  welcome_text: "<p><a href='https://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
 
   screencast_text: "Vidéo en ligne sur l'utilisation de DMP OPIDoR"
   screencast_error_text: "La balise video n'est pas reconnue par votre navigateur."
@@ -533,7 +533,7 @@ fr:
       export:
         pdf:
           question_not_answered: "Question sans réponse."
-          generated_by: Ce document a été généré par DMP OPIDoR (http://opidor/dmpopidor)
+          generated_by: Ce document a été généré par DMP OPIDoR (https://opidor/dmpopidor)
         space_used: "env. %{space_used}% d'espace disponible utilisé (%{num_pages} pages maxi)"
         project_name: "Nom du projet"
         project_identifier: "Identifiant du projet"
@@ -586,7 +586,7 @@ fr:
     # tab_2: "Dernières nouvelles"
     # une page unique encadrée
     
-    body_text_html: "<div class='white_background'><p>Un plans de gestion de données (DMP) est un document qui spécifies quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMP.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
+    body_text_html: "<p>Un plans de gestion de données (DMP) est un document qui spécifies quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMP.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
       <h3>Fonctionnement de l'outil</h3>
       <p>DMP OPIDoR comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et d'établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher(par ex. : le modèle ESRC pour une soumission dans le cadre d'un appel à projet de l'ESRC). Des recommandations vous sont fournies pour vous permettre d'interpréter les questions posées et d'y répondre. Ces recommandations sont fournies selon les agences de financement, les universités et les disciplines.</p>
       <p>Des conseils sont fournis pour vous aider à interpréter et à répondre aux questions. Ces recommandations sont fournies par les financeurs, les organismes de recherche, les universités, les disciplines et du Digital Curation Centre. Les directives DCC sont listées dans le document suivant: <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> par Jones S. et le DCC (Licence CC-BY).</p>
@@ -598,7 +598,7 @@ fr:
       <p>Nous améliorons constamment l'interface utilisateur de DMP OPIDoR et ses fonctionnalités.
       <p>Si vous souhaitez apporter une contribution par un retour ou des suggestions, veuillez nous contacter par courriel : <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p><br/>
       <h3>Personnaliser DMP OPIDoR</h3>
-      <p>DMP OPIDoR peut être personnalisé par institutions et disciplines. Vous pouvez ajouter des modéles et des conseils pour les utilisateurs de votre organisme expliquant les différentes supports et services offerts par l'outil. Des exemples de réponses peuvent être proposés afin d'aider les utilisateurs à écrire leur plan de gestion des données. Pour ce faire vous aurez besoin de demander l'accés administrateur, donc s'il vous plait contactez nous à cette adresse <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div><br/>"
+      <p>DMP OPIDoR peut être personnalisé par institutions et disciplines. Vous pouvez ajouter des modéles et des conseils pour les utilisateurs de votre organisme expliquant les différentes supports et services offerts par l'outil. Des exemples de réponses peuvent être proposés afin d'aider les utilisateurs à écrire leur plan de gestion des données. Pour ce faire vous aurez besoin de demander l'accés administrateur, donc s'il vous plait contactez nous à cette adresse <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p><br/>"
   
 
 
@@ -819,22 +819,23 @@ fr:
     # <p>We are currently investigating options for revenue generation. This will help us serve the increased demand more effectively and safeguard the long-term sustainability of DMPonline. Plans will be released for consultation soon but we also welcome your suggestions on how best to support our work.</p> "
     
   terms_page:
-    title: "Conditions d'utilisation"
+    title: "Conditions générales d'utilisation"
     body_text_html: "<div class='white_background'>
-    <p>DMP OPIDoR est mis à disposition par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique (CNRS)</a> pour la communauté de l’Enseignement supérieur et de la recherche française.</p>
-    <p>Toute utilisation de DMP OPIDoR suppose l’acceptation et le respect de l’ensemble des termes des présentes conditions.</p>
+    <p>DMP OPIDoR est mis à disposition de la communauté de l’Enseignement supérieur et de la Recherche française par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique (CNRS)</a></p>
+    <p>Toute utilisation de DMP OPIDoR suppose l’acceptation et le respect de l’ensemble des termes des présentes conditions générales d’utilisation.</p>
+    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>Charte de la Sécurité des Systèmes d’information du CNRS.</a></p>
     <h3>Mentions légales</h3>
-        <p>Le site est édité et hébergé par:</p>
+        <p>Le site est édité par:</p>
         <ul>
             <li><b>CNRS - Centre National de la Recherche Scientifique</b></li>
             <li>3 rue Michel Ange</li>
             <li>75794 PARIS Cedex 16 – France</li>
         </ul>
         <ul>
-            <li>Tel. +33 (0)1 44 96 40 00</li>
-            <li>Fax. +33 (0)1 44 96 53 90</li><br/>
+            <li>Téléphone: +33 (0)1 44 96 40 00</li>
+            <li>Télécopie: +33 (0)1 44 96 53 90</li><br/>
         </ul>
-        <p>et géré par:</p>
+        <p>Il est géré et hébergé par:</p>
         <ul>
             <li><b>Inist-CNRS</b></li>
             <li>2, allée du Parc de Brabois</li>
@@ -842,39 +843,36 @@ fr:
             <li>F-54519 VANDOEUVRE-LES-NANCY Cedex – France</li>
         </ul>
         <ul>
-            <li>Tel. +33 (0)3 83 50 46 00</li>
-            <li>Fax. +33 (0)3 83 50 46 50</li><br/>
+            <li>Téléphone: +33 (0)3 83 50 46 00</li>
+            <li>Télécopie: +33 (0)3 83 50 46 50</li><br/>
         </ul>
     <p><b>Directeur de la publication:</b> Alain Fuchs</p>
     <p><b>Directeur de rédaction:</b> Dominique Wolf</p>
     <p><b>Service utilisateurs:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Données personnelles</h3>
-    <p>Afin de nous aider à identifier et administrer votre compte utilisateur, nous avons besoin de collecter et stocker des informations qui vous sont propres, telles que nom et courriel. Il est possible que nous utilisions ces informations pour vous contacter afin de recueillir vos retours sur l’utilisation de cet outil, ou pour vous informer de ses derniers développements ou versions. Nous nous engageons à ne pas vendre ni louer ni échanger à des tiers les informations recueillies vous concernant.</p>
-    <p>Ce site, qui comporte des informations nominatives concernant les utilisateurs de DMP OPIDoR, a fait l'objet d'une déclaration auprès de la CNIL (en cours).</p>
+    <p>Afin de nous aider à identifier et gérer votre compte utilisateur, nous avons besoin de collecter et stocker des informations qui vous sont propres : courriel, nom, prénom, organisme d'appartenance, identifiant ORCID, date de dernière connexion. Il est possible que nous utilisions ces informations pour vous contacter afin de connaître votre opinion sur l’utilisation de cet outil, ou pour vous informer de ses derniers développements ou versions. Nous nous engageons à ne pas vendre ni louer ni échanger ni distribuer à des tiers les informations recueillies vous concernant.</p>
+    <p>Ce site, qui comporte des informations nominatives concernant les utilisateurs de DMP OPIDoR, a fait l'objet d'une déclaration auprès de la Commission nationale de l’informatique et des libertés (CNIL) (en cours).</p>
     <p>Conformément à la loi n° 78-17 du 6 janvier 1978, relative à l'Informatique, aux fichiers et aux Libertés (article 38, 39 et 40), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant, en ligne sur ce site.</p> 
     <p>Pour exercer ce droit, vous pouvez nous contacter par courriel: <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
+    <p>Les données des comptes non utilisés (du fait de la non-utilisation du service par l’utilisateur) seront systématiquement anonymisées dans un délai de 10 ans à compter de la dernière connexion : vous n’aurez dans ce cas plus accès à l’application et par conséquent à vos plans de gestion de données.</p>
+    <p>D’autre part, les agents habilités par votre institution (CNRS ou autres organismes de recherche) ont accès aux données à caractère personnel  suivantes : votre courriel, vos nom/prénom,  dates de dernière connexion et le nombre de plans de gestion que vous avez créés. <b>Il appartient à ces agents d'en faire un usage conforme aux réglementations en vigueur et aux recommandations de la CNIL.</b></p>
     <h3>Politique de confidentialité</h3>
-    <p>Les informations que vous entrez dans l’application peuvent être vues par vous, les personnes avec qui vous avez partagé l’accès, et –exclusivement à des fins de maintien du service – les administrateurs CNRS de l’application. Il est possible que nous compilions des informations anonymisées, traitées et agrégées à partir des plans, mais nous n’aurons pas accès directement, nous n’utiliserons et ne partagerons pas le contenu avec quiconque sans votre permission.</p>
-    <p>Il est possible que des agents habilités de votre institution puissent avoir accès à vos plans à des fins spécifiques, comme par exemple le suivi de conformité avec les exigences des agences de financement ou des institutions.</p>
+    <p>Les informations que vous entrez dans l’application peuvent être vues par vous, les personnes avec qui vous avez partagé l’accès, et –exclusivement à des fins de maintenance du service – les administrateurs CNRS de l’application. Nous n’aurons pas accès directement, nous n’utiliserons et ne partagerons pas le contenu de vos plans de gestion de données avec quiconque sans votre permission.</p>
     <h3>Propriété intellectuelle</h3>
-    <p>DMP OPIDoR est basé sur le logiciel libre appelé DMPonline qui a été mis au point par le Digital Curation Centre (DCC) et partagé en vertu de la licence publique générale GNU Affero. Le code source de la version modifiée sera partagé sur GitHub sous la même licence.</p>
-    <p>Le CNRS héberge DMP OPIDoR sur un serveur localisé en France et stocke vos plans de gestion de données en votre nom. Mais ces plans sont votre propriété et sous votre responsabilité.</p>
+    <p>L’outil DMP OPIDoR est basé sur le logiciel libre appelé DMPonline qui a été mis au point par le Digital Curation Centre (DCC) et partagé en vertu de la licence publique générale GNU Affero. Le code source de la version modifiée sera partagé sur GitHub sous la même licence.</p>
+    <p>Le CNRS héberge l’outil DMP OPIDoR sur un serveur localisé en France et stocke vos plans de gestion de données en votre nom. Mais ces plans sont votre propriété et sous votre responsabilité.</p>
     <h3>Clause de non-responsabilité</h3>
     <p>La responsabilité du CNRS ne peut, en aucune manière, être engagée quant au contenu des informations figurant sur ce site ou aux conséquences pouvant résulter de leur utilisation ou interprétation.</p>
-    <p>Dans la mesure du possible, le CNRS assure la disponibilité des contenus 7 jours sur 7 et 24 heures sur 24 (obligation de moyens) à compter de sa mise en ligne à l'exception de :</p>
-    <ul>
-        <li>- la survenance d'événements de force majeure telle que définie par la loi et la jurisprudence française,</li>
-        <li>- d'opérations de mises à jour, d'entretien ou de maintenance du matériel et des centres serveurs occasionnant l'indisponibilité d'accès résultant de ces évènements et dont le CNRS ne peut être tenu pour responsable.</li>
-    </ul>
+    <p>L’hébergeur peut fermer le site à tout moment, sans préavis, en cas d’atteinte à la sécurité.</p>
     <h3>Liens hypertextes</h3>
-    <p>La mise en place de liens hypertextes par des tiers vers des pages ou des documents diffusés sur le site du CNRS, est autorisée sous réserve que les liens ne contreviennent pas aux intérêts du CNRS, et, qu'ils garantissent la possibilité pour l'utilisateur d'identifier l'origine et l'auteur du document.</p>
-    <p>L’autorisation de mise en place d’un lien est valable pour tout support, à l’exception de ceux diffusant des informations à caractère polémique, pornographique, xénophobe ou pouvant, dans une plus large mesure porter atteinte à la sensibilité du plus grand nombre.</p>
+    <p>La mise en place de liens hypertextes par des tiers vers des pages ou des documents diffusés sur le site du CNRS, est autorisée sous réserve que les liens ne contreviennent pas aux intérêts du CNRS ou du MENESR, et, qu'ils garantissent la possibilité pour l'utilisateur d'identifier l'origine et l'auteur du document.</p>
     <h3>Mots de passe</h3>
     <p>Votre mot de passe est mémorisé sous forme cryptée et ne peut pas être récupéré. Si vous avez oublié votre mot de passe, vous devez le réinitialiser.</p>
     <h3>Cookies et statistiques</h3>
-    <p>En vue d’adapter le site aux demandes de ses visiteurs, nous mesurons le nombre de visites, le nombre de pages vues ainsi que de l’activité des visiteurs sur le site et leur fréquence de retour.</p>
+    <p>En vue d’adapter le site aux demandes de ses visiteurs, nous mesurons le nombre de visites, le nombre de pages vues ainsi que l’activité des visiteurs sur le site et leur fréquence de retour.</p>
     <p><a target='_blank' href='https://piwik.org/'>Piwik</a>, l’outil de statistiques utilisé par le CNRS, génère un cookie avec un identifiant unique, dont la durée de conservation est limitée à 13 mois.</p>
-    <p>Nous collectons également votre adresse IP, afin de déterminer la ville depuis laquelle vous vous connectez. Celle-ci est immédiatement anonymisée. Le CNRS ne peut donc en aucun cas remonter par ce biais à une personne physique. Les données ne sont pas cédées à des tiers ni utilisées à d’autres fins.</p>
+    <p>Nous collectons également votre adresse IP, afin de déterminer la ville depuis laquelle vous vous connectez. Celle-ci est immédiatement anonymisée. Le CNRS ne peut donc en aucun cas remonter par ce biais à une personne physique.</p>
+    <p>Les données ne sont pas cédées à des tiers ni utilisées à d’autres fins.</p>
     <p>Vous pouvez paramétrer votre navigateur afin qu’il vous signale la présence de cookies et vous propose de les accepter ou non. Vous pouvez accepter ou refuser les cookies au cas par cas ou bien les refuser une fois pour toutes. Il est rappelé que ce paramétrage est susceptible de modifier vos conditions d’accès aux services du site nécessitant l’utilisation de cookies.</p>
     <p>Le paramétrage des cookies est différent pour chaque navigateur et en général décrit dans les menus d’aide.</p>
     <h3>Droit applicable</h3>

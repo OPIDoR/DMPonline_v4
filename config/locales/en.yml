@@ -41,7 +41,7 @@ en:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Welcome."
   # welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
-  welcome_text: "<p><a href='https://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers write Data Management Plans.</p>"
+  welcome_text: "<p><a href='https://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers to write Data Management Plans.</p>"
 
   screencast_text: "Screencast on how to use DMP OPIDoR"
   screencast_error_text: "Your browser does not support the video tag."
@@ -292,7 +292,7 @@ en:
     sign_up: "Create an account"
     sign_up_text: "New to DMP OPIDoR? Sign up today."
     signed_in: "Signed in as "
-    institution_sign_in_link: "Sign in with your institutional credentials"
+    institution_sign_in_link: "Log in with your institutional credentials"
     
     
     institution_sign_in: "Log in with your institutional credentials"
@@ -824,7 +824,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>Use of the tool indicates that you understand and agree to all the terms and conditions.</p>
     <p>Furthermore, all users of DMP OPIDoR acknowledge that they have previously read the <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>safety of information systems charter from CNRS.</a></p>
     <h3>Legal Notices</h3>
-        <p>The site is published and hosted by:</p>
+        <p>The site is published by:</p>
         <ul>
             <li><b>The National Centre for Scientific Research (Centre National de la Recherche Scientifique - CNRS)</b></li>
             <li>Headquarters: 3 rue Michel Ange</li>
@@ -834,7 +834,7 @@ Select what format you wish to use and click to 'Export'.</p>"
             <li>Tel. +33 (0)1 44 96 40 00</li>
             <li>Fax. +33 (0)1 44 96 53 90</li><br/>
         </ul>
-        <p>and managed by:</p>
+        <p>It hosted and managed by:</p>
         <ul>
             <li><b>Inist-CNRS (CNRS service unit)</b></li>
             <li>2, allée du Parc de Brabois</li>
@@ -849,36 +849,33 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p><b>Editorial Director:</b> Dominique Wolf</p>
     <p><b>User support Department:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Your personal details</h3>
-    <p>In order to help identify and administer your account with DMP OPIDoR, we need to store specific user information, such as name and email address. We may also use it to contact you to obtain feedback on your use of the tool, or to inform you of the latest developments or releases. We will not sell, rent or trade any personal information you provide to us.</p>
+    <p>To help identify and administer your account with DMP OPIDoR, we need to store specific user information: email address, surname, first name, home institution, ORCID, last login. We may also use it to contact you to obtain feedback on your use of the tool, or to inform you of the latest developments or releases. We will not sell, rent, deliver or trade any personal information you provide us with.</p>
     <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CNIL (in progress).</p>
-    <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data that concerns you personally on this site.</p> 
+    <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data on this site that concerns you personally.</p> 
     <p>To exercise this right, please contact us at <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
+    <p>Data from an unused account (as a result of non-use of the service by the user) will be systematically anonymized within the 10 years following the last connection and you will no longer have access to the application and consequently to your data management plans.</p>
+    <p>Moreover, authorized officers of your home institution (CNRS or other research organizations) have access to your email address, your surname/first name, last logged in and how many data management plans you have created. <b>It is up to these officers to make use of this information in accordance with regulations in force and recommendations of the CNIL.</b></p>
     <h3>Privacy policy</h3>
-    <p>The information you enter into this system can be seen by you, people you have chosen to share access with, and - solely for the purposes of maintaining the service - system administrators from CNRS. We may compile anonymised, automated and aggregated information from plans, but we will not directly access, make use of, or share your content with anyone else without your permission.</p>
-    <p>Authorised officers of your home institution may access your plans for specific purposes – for example, to track compliance with funder/institutional requirements.</p>
+    <p>The information you enter into this system can be seen by you, people you have chosen to share access with, and - solely for the purposes of maintaining the service - system administrators of the CNRS. We will not directly access, make use of, or share your data management plans content with anyone else without your permission. </p>
     <h3>Intellectual property</h3>
-    <p>DMP OPIDoR tool is built with an open source software called DMPonline, which is developed by the UK’s Digital Curation Centre (DCC) and made available under a GNU Affero General Public License. We will share the source code of our modified version on GitHub under the same license.</p>
-    <p>CNRS hosts DMP OPIDoR in France and stores your data management plans on your behalf, but the plans are your property and responsibility.</p>
+    <p>The DMP OPIDoR tool is built with an open source software called DMPonline, which is developed by the UK’s Digital Curation Centre (DCC) and is made available under a GNU Affero General Public License. We will share the source code of our modified version on GitHub under the same license.</p>
+    <p>The CNRS hosts the DMP OPIDoR tool in France and stores your data management plans on your behalf, but the plans remain your property and are under your responsibility.</p>
     <h3>Disclaimer</h3>
-    <p>The responsibility of the CNRS cannot in any way be held liable for the content of the information contained on this site or for the consequences arising from their use or interpretation.</p>
-    <p>Whenever possible, the DMP OPIDoR is accessible 24 hours a day, 7 days a week, except:
-    <ul>
-        <li>- in events of force majeure as defined by the French law and case law,</li>
-        <li>- for update or maintenance purposes materials and servers which may occasionally unavailability services or other technical difficulties and which the responsibility of the CNRS cannot in any way be held liable.</li>
-    </ul></p>
+    <p>The CNRS cannot in any way be held liable for the content of the information contained on this site or for the consequences arising from their use or interpretation.</p>
+    <p>The host can interrupt access to the site at any time, without prior notice, in the event of a security issue.</p>
     <h3>Hyperlinks</h3>
-    <p>The creation of hyperlinks by third party to pages or documents in the website of the CNRS is permitted provided that the links are not contrary to the interests of the CNRS, and that they ensure the possibility for the user to identify the origin and author.</p>
-    <p>The authorisation to establish a link is valid for any medium, with the exception of those displaying information of a controversial, pornographic or xenophobic nature or where any information might cause offence to the general public.</p>
+    <p>The creation of hyperlinks by third parties to pages or documents in the CNRS website is permitted provided that the links are not contrary to the interests of the CNRS, and that they ensure the possibility for the user to identify the origin and author.</p>
     <h3>Passwords</h3>
-    <p>Your password is stored in encrypted form and cannot be retrieved. If forgotten it has to be reset.</p>
+    <p>Your password is stored in an encrypted form and cannot be retrieved. If forgotten, it has to be reset</p>
     <h3>Cookies and statistics</h3>
-    <p>In order to adapt our site to our users' needs, we measure the number of visits, page views, visitors' activity and return frequency.</p>
+    <p>To adapt our site to the users' needs, we measure the number of visits, page views, visitors' activity and return frequency.</p>
     <p><a target='_blank' href='https://piwik.org/'>Piwik</a>, the statistics tool used by the Inist-CNRS generates a cookie with a unique ID, whose storage is limited to 13 months.</p>
-    <p>We also collect your IP address in order to identify your geographical location, which is then immediately anonymized and cannot be used by the Inist-CNRS to trace a physical person. The information collected is not disclosed to third parties nor used for other purpose. </p>
-    <p>Your browser can be configured to notify you of the cookies stored on your computer and ask you to accept them or not. You can accept or reject cookies on a case-by-case basis or choose to systematically reject them. Remember that changing settings may modify your access conditions to our services which require the use of cookies.</p>
-    <p>Each browser has a different cookies configuration. This configuration is mostly described in your browser's help menu. </p>
+    <p>We also collect your IP address to identify your geographical location, which is then immediately anonymized and cannot be used by the Inist-CNRS to trace a physical person.</p>
+    <p>The information collected is not disclosed to third parties nor used for other purposes.</p>
+    <p>Your browser can be configured to notify you of the cookies stored on your computer and to ask you to accept them or not. You can accept or reject cookies on a case-by-case basis or choose to systematically reject them. Remember that changing settings may modify your access conditions to our services which require the use of cookies.</p>
+    <p>Each browser has a different cookies configuration. This configuration is mostly described in your browser's help menu.</p>
     <h3>Law applicable</h3>
-    <p>The site are governed by French legislation no matter where the website is used. In the event of potential disputes and following failed attempts to find an amicable solution, the French courts alone shall handle the dispute.</p>
+    <p>The site is governed by French legislation, no matter where the website is used. In the event of potential disputes and following failed attempts to find an amicable solution, the French courts alone shall handle the dispute.</p>
     <p>If you have any comments or queries about our terms of use, please do not hesitate to contact us, e.g. by sending an email to <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Changes to the terms of use</h3>
     <p>The CNRS reserves the right to modify, without notice and at any time, the present terms of use to adapt to the changing of the site and/or its holding.</p>
