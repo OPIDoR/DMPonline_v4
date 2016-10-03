@@ -32,6 +32,9 @@
 		<%= f.text_field :other_organisation, placeholder: (t('helpers.org_type.org_name') + ' *'), :as => :string , :autocomplete => "off", :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "Please enter the name of your organisation." %>
 	</li>
 	<li>
+        <div class="alert alert-warning">
+			<%= t('helpers.password_advice')%>
+		</div>
 		<%= f.password_field :password, placeholder: (t('helpers.password') + ' *'), :autocomplete => "off", :required => true, :as => :password, :class => 'text_field has-tooltip reg-input', 'data-toggle' => "tooltip", 'data-container' => "body", 'title' => "This must be at least 8 characters long." %>
 		<div class="alert alert-error" style="display:none">
 			<strong><%= t('helpers.error')%></strong> <%= t('helpers.password_too_small')%>

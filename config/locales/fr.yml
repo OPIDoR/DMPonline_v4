@@ -41,7 +41,7 @@ fr:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Bienvenue,"
   
-  welcome_text: "<p><a href='https://opidor/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
+  welcome_text: "<p><a href='http://www.opidor.fr/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
 
   screencast_text: "Vidéo en ligne sur l'utilisation de DMP OPIDoR"
   screencast_error_text: "La balise video n'est pas reconnue par votre navigateur."
@@ -289,13 +289,13 @@ fr:
 
     sign_in: "Se connecter"
     sign_out: "Se déconnecter"
-    sign_up: "S'inscrire"
-    sign_up_text: "Nouvel utilisateur de DMP OPIDoR? Inscrivez-vous..."
+    sign_up: "Créer un compte"
+    sign_up_text: "<b>Nouvel utilisateur de DMP OPIDoR?</b> Inscrivez-vous..."
     signed_in: "Connecté en tant que "
-    institution_sign_in_link: "ou encore, connectez-vous avec l'authentifiant de votre établissement"
-    
-    
-    institution_sign_in: "Authentification à l'aide du compte institutionnel bientôt disponible!"
+    institution_sign_in_link: "Compte institutionnel"  
+    institution_sign_in: "Authentification à l'aide du compte institutionnel"
+    institution_sign_in_text: " (Chercheurs Français exclusivement)"
+    classic_sign_in: "Authentification classique"
 
     user_name: "Adresse électronique"
     email: "Courriel"
@@ -304,6 +304,7 @@ fr:
     user_details_paragraph_html: "Vous pouvez modifier les renseignements ci-dessous."
     remember_me: "Se souvenir de moi"
     org_not_listed: "Mon organisme n'est pas inscrit sur la liste."
+    password_advice: "Votre mot de passe doit comprendre au moins 8 caractères. Il est conseillé d'utiliser des minuscules, des majuscules, des chiffres et des caractères spéciaux."
 
     password: "Mot de passe"
     current_password: "Mot de passe actuel"
@@ -311,8 +312,7 @@ fr:
     password_conf: "Confirmation du mot de passe"
     change_password: "Modifier votre mot de passe"
     forgot_password: "Vous avez oublié votre mot de passe?"
-    password_too_small: "Votre mot de passe doit comprendre au moins 8 caractères (majuscules, minuscules, chiffres, caractères spéciaux)
-    ."
+    password_too_small: "Votre mot de passe doit comprendre au moins 8 caractères."
     password_no_match: "La saisie doit correspondre à ce que vous avez indiqué dans le champ précédent."
     no_pass_instructions: "Vous n'avez pas reçu les instructions de confirmation?"
     no_unlock_instructions: "Vous n'avez pas reçu les instructions de déverrouillage?"
@@ -366,7 +366,7 @@ fr:
     orcid_html: "Le numéro ORCID est un identifiant numérique permanent qui différencie chaque chercheur, <a href='http://orcid.org/content/initiative' target='_blank' rel='external' class='a_orange'>pour de plus amples renseignements</a>."
     sign_up_shibboleth_alert_text_html: "DMP OPIDoR ne reconnaît pas votre authentifiant d'établissement : soit vous n'avez pas créé de compte chez nous, soit vous n'avez pas lié ces renseignements à votre compte.</br>
       --> Si vous <strong>n'avez pas</strong> de compte sur DMP OPIDoR, veuillez compléter le formulaire qui suit.</br>
-      --> Si vous <strong>avez</strong> un compte sur DMPonline, <a href='#header-login-form' data-toggle='modal' class='a_orange'>Connectez-vous</a> pour associer votre compte et votre authentifiant d'établissement.</br>
+      --> Si vous <strong>avez</strong> un compte sur DMP OPIDoR, <a href='#header-login-form' data-toggle='modal' class='a_orange'>Connectez-vous</a> pour associer votre compte et votre authentifiant d'établissement.</br>
       Une fois que vous avez créé votre compte ou l'avez associé, vous pourrez vous connecter directement avec votre authentifiant d'établissement."
     shibboleth_linked_text: "Votre compte est associé à votre authentifiant d'établissement."
     shibboleth_to_link_text: "Associez votre compte DMP OPIDoR à votre authentifiant d'établissement"
@@ -487,7 +487,7 @@ fr:
       share:
         tab_share: "Partager"
         shared_label: "Partagé?"
-        share_text_html: "<p>Vous pouvez permettre aux autres d'avoir accès à votre plan. Il y a trois niveaux d'autorisation.<ul><li>Les utilisateurs ayant un accès en \"lecture seule\" peuvent seulement lire le plan.</li><li>Les éditeurs peuvent collaborer au plan.</li><li>Les copropriétaires peuvent également collaborer au plan, en plus de pouvoir modifier les renseignements sur le plan et contrôler l'accès au plan.</li></ul></p><p>Ajoutez chaque collaborateur à tour de rôle en indiquant son adresse électronique ci-dessous, en choisissant un niveau d'autorisation et en cliquant sur \"Ajouter un collaborateur\".</p><p>Les personnées invitées recevront un avis par courriel leur indiquant qu'ils ont accès à ce plan et pour les inviter à s'inscrire à DMP OPIDoR si elles n'ont pas déjà un compte. Un avis est également émis lorsque le niveau d'autorisation d'un utilisateur est modifié.</p>"
+        share_text_html: "<p>Vous pouvez permettre aux autres d'avoir accès à votre plan. Il y a trois niveaux d'autorisation.<ul><li>- Les utilisateurs ayant un accès en \"lecture seule\" peuvent seulement lire le plan.</li><li>- Les éditeurs peuvent collaborer au plan.</li><li>- Les copropriétaires peuvent également collaborer au plan, en plus de pouvoir modifier les renseignements sur le plan et contrôler l'accès au plan.</li></ul></p><p>Ajoutez chaque collaborateur à tour de rôle en indiquant son adresse électronique ci-dessous, en choisissant un niveau d'autorisation et en cliquant sur \"Ajouter un collaborateur\".</p><p>Les personnées invitées recevront un avis par courriel leur indiquant qu'ils ont accès à ce plan et pour les inviter à s'inscrire à DMP OPIDoR si elles n'ont pas déjà un compte. Un avis est également émis lorsque le niveau d'autorisation d'un utilisateur est modifié.</p>"
         collaborators: "Collaborateurs"
         add_collaborator: "Ajouter un collaborateur"
         add: "Ajouter"
@@ -533,7 +533,7 @@ fr:
       export:
         pdf:
           question_not_answered: "Question sans réponse."
-          generated_by: Ce document a été généré par DMP OPIDoR (https://opidor/dmpopidor)
+          generated_by: Ce document a été généré par DMP OPIDoR (http://www.opidor.fr/dmpopidor)
         space_used: "env. %{space_used}% d'espace disponible utilisé (%{num_pages} pages maxi)"
         project_name: "Nom du projet"
         project_identifier: "Identifiant du projet"
@@ -586,13 +586,13 @@ fr:
     # tab_2: "Dernières nouvelles"
     # une page unique encadrée
     
-    body_text_html: "<p>Un plans de gestion de données (DMP) est un document qui spécifies quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMP.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
+    body_text_html: "<p>Un plans de gestion de données (DMP) est un document qui spécifies quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMP.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
       <h3>Fonctionnement de l'outil</h3>
       <p>DMP OPIDoR comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et d'établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher(par ex. : le modèle ESRC pour une soumission dans le cadre d'un appel à projet de l'ESRC). Des recommandations vous sont fournies pour vous permettre d'interpréter les questions posées et d'y répondre. Ces recommandations sont fournies selon les agences de financement, les universités et les disciplines.</p>
       <p>Des conseils sont fournis pour vous aider à interpréter et à répondre aux questions. Ces recommandations sont fournies par les financeurs, les organismes de recherche, les universités, les disciplines et du Digital Curation Centre. Les directives DCC sont listées dans le document suivant: <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> par Jones S. et le DCC (Licence CC-BY).</p>
       <h3>Pour commencer...</h3>
       <p>Si vous possédez un compte, veuillez vous connecter, puis commencez à créer ou modifier votre DMP.</p>
-      <p>En l'absence de compte DMP OPIDoR, cliquez sur <a href='/'>'S'enregistrer'</a> en page d'accueil.</p>
+      <p>En l'absence de compte DMP OPIDoR, cliquez sur <a href='/'>'Créer un compte'</a> en page d'accueil.</p>
       <p>Visitez la page d'<a href='/help'>'Aide'</a> pour quelques conseils.</p>
       <h3>Autres informations</h3>
       <p>Nous améliorons constamment l'interface utilisateur de DMP OPIDoR et ses fonctionnalités.
@@ -619,7 +619,7 @@ fr:
           <i>Deboin M.C. 2014. Montpellier (FRA): CIRAD.</i>
         </li>
         <li>
-          <a target='_blank' href='http://www.inist.fr/?-Tutoriels-multimedias-H2020-'>Tutoriels « Le libre accès aux résultats de la recherche dans le cadre d’Horizon 2020 »</a> [online resource]<br />
+          <a target='_blank' href='http://www.inist.fr/?-Tutoriels-multimedias-H2020-'>Tutoriels « Le libre accès aux résultats de la recherche dans le cadre d’Horizon 2020 »</a> [pageWeb]<br />
           <i>Inist-CNRS. 2015.</i>
         </li>
         <li>
@@ -628,10 +628,10 @@ fr:
         </li>
         <li>
           <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf'>Guidelines on Open Access to Scientific Publications and Research Data in Horizon 2020</a> [PDF, 10 pages]<br />
-          <i>European Commission. 2016, v3.0.</i>
+          <i>European Commission. 2016, v3.1.</i>
         </li>
         <li>
-          <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans'>Checklist du DCC pour les DMP</a> [PDF, 4 pages]<br />
+          <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/checklist'>Checklist du DCC pour les DMP</a> [PDF, 4 pages]<br />
           <i>Digital Curation Centre. 2013, v.4.0. Edinburgh: Digital Curation Centre.</i><br />
   Une liste de 13 questions et de recommandations associées, qui représentent les principales problématiques qui se présentent dans la gestion et le partage de DMP. Cette liste sert de modèle générique pour DMPonline, cette liste est proposée quand aucune prescription financière ou organisationnelle ne s'impose à l'utilisateur.
         </li>
@@ -660,8 +660,8 @@ fr:
         Un DMP fictif très détaillé en psychologie élaboré par le projet pédagogique DMTpsych RDM, à partir de travaux expérimentaux précurseurs
       </li>
       <li>
-        <a target='_blank' href='http://rci.ucsd.edu/data-curation/examples.html'>Exemples de DMP de l'Université de San Diego</a> [pageWeb]<br />
-        Un vingtaine d'exemples de DMP proposés à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de l'Université de Californie à San Diego
+        <a target='_blank' href='http://libraries.ucsd.edu/services/data-curation/data-management/dmp-samples.html'>Exemples de DMP de l'Université de San Diego</a> [pageWeb]<br />
+        Une vingtaine d'exemples de DMP proposés à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de l'Université de Californie à San Diego
       </li>
       <li>
         <a target='_blank' href='http://inside.mines.edu/RDS-example-plans'>Exemples de l'École des Mines du Colorado (<i>Colorado School of Mines examples</i>)</a> [pageWeb]<br />
@@ -684,17 +684,17 @@ fr:
     </ul>
     <h3>Guides utiles sur la gestion des données de la recherche en général</h3>
     <ul class='help_ul'>
+      # <li>
+        # <a target='_blank' href='https://www6.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [pageWeb]<br />
+        # <i>Pôle Données de la recherche de l'IST : INRA.</i>
+      # </li>
       <li>
-        <a target='_blank' href='https://www6.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [webpage]<br />
-        <i>Pôle Données de la recherche de l'IST : INRA.</i>
-      </li>
-      <li>
-        <a target='_blank' href='http://www.doranum.fr/'>Le projet DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
+        <a target='_blank' href='http://www.doranum.fr/'>Le projet DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [pageWeb]<br />
         <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i>
         Le projet DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage) a pour objectif de mettre en place un dispositif de formation à distance d’accès coordonné, intégrant différentes ressources d’auto-formation sur la thématique de la gestion et du partage des données de la recherche. 
       </li>
       <li>
-        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion, en 4 points</a> [PDF, 5 pages]<br />
+        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
         <i>Deboin M.C. 2014. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
@@ -730,7 +730,7 @@ fr:
         Un cours en ligne destiné aux chercheurs ou d'autres acteurs désireux de gérer des données dans le cadre de leurs opérations de recherche. Ce cours comporte un certain nombre de considérations d'ordre pratique dans le domaine logiciel, sur l'utilisation de SPSS, R, ArcGIS et NVivo.
       </li>
     </ul>"
-    body_text_tab_1_html: "<p>Quand vous vous connectez à DMPonline, vous êtes redirigé vers la page intitulée 'Mes plans'. À partir de là, vous pouvez éditer, partager, exporter ou supprimer l'un de vos plans. Vous verrez à cet endroit aussi les plans que d'autres ont partagé avec vous.</p>
+    body_text_tab_1_html: "<p>Quand vous vous connectez à DMP OPIDoR, vous êtes redirigé vers la page intitulée 'Mes plans'. À partir de là, vous pouvez éditer, partager, exporter ou supprimer l'un de vos plans. Vous verrez à cet endroit aussi les plans que d'autres ont partagé avec vous.</p>
     <h3>Créer un plan</h3>
     <p>Pour créer un plan, cliquez sur le bouton 'Créer un plan' à la page 'Mes plans' ou dans le menu du haut. Faites des choix dans les listes déroulantes et les zones à cocher afin de déterminer les questions et les recommandations qui seront affichées. Confirmez votre choix en cliquant sur'Oui, créer un plan'.</p>
     <h3>Rédiger votre plan</h3>
@@ -747,14 +747,14 @@ fr:
     <h3>Partager les plans</h3> 
     <p>Inscrivez l'adresse électronique de tout collaborateur que vous aimeriez inviter à lire ou à modifier votre plan. Choisissez le niveau d'autorisation que vous souhaitez lui accorder dans les options de la liste déroulante et cliquez sur'Ajouter un collaborateur'.</p> 
     <h3>Exporter les plans</h3>
-    <p>En choisissant cette option, vous pouvez télécharger votre plan en divers formats, ce qui peut être utile si vous devez joindre votre plan à une demande de subvention. Choisissez le format dans lequel vous aimeriez voir ou télécharger votre plan et cliquez pour l'exporter. Lorsque vous vous connectez à DMPonline, vous êtes dirigé vers la page'Mes plans'. À partir de cette page, vous pouvez modifier, partager, exporter ou supprimer l'un ou l'autre de vos plans. Vous voyez également les plans qui ont été partagés avec vous par d'autres personnes.</p>"
+    <p>En choisissant cette option, vous pouvez télécharger votre plan en divers formats, ce qui peut être utile si vous devez joindre votre plan à une demande de subvention. Choisissez le format dans lequel vous aimeriez voir ou télécharger votre plan et cliquez pour l'exporter. Lorsque vous vous connectez à DMP OPIDoR, vous êtes dirigé vers la page'Mes plans'. À partir de cette page, vous pouvez modifier, partager, exporter ou supprimer l'un ou l'autre de vos plans. Vous voyez également les plans qui ont été partagés avec vous par d'autres personnes.</p>"
 
 
   contact_page:
     title: "Contactez-nous"
-    intro_text_html: "<p>DMP OPIDoR est fourni par l' Institut de l'Information Scientifique et Technnique du CNRS (Inist-CNRS). Pour plus de renseignements, consultez notre <a href='http://www.inist.fr/' target='_blank'>site Web</a>. Pour nous contacter à propos de DMP OPIDoR, veuillez remplir le formulaire ci-après ou envoyez un courriel à <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
-    <p>DMP OPIDoR est basé sur l'outil <a href='https://dmponline.dcc.ac.uk'>DMPonline</a> produit par le <a href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
-    github_text_html: "<p>Si une fonctionnalité vous paraît souhaitable, ou si vous pensez constater une erreur, veuillez consulter la <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open'>liste des questions à traiter sur GitHub (DCC)</a>. Si votre question n'est pas répertoriée, merci de l'ajouter. Si elle y figure, merci d'ajouter un commentaire si vous disposez d'informations supplémentaires ou souhaitez nous informer de l'importance qu'elle revêt pour vous. Ceci nous permettra de prioriser de futurs développements.</p>"
+    intro_text_html: "<p>DMP OPIDoR est fourni par l' Institut de l'Information Scientifique et Technnique du CNRS (Inist-CNRS). Pour plus de renseignements, consultez notre <a href='http://www.inist.fr/' target='_blank'>site Web</a>. Pour nous contacter à propos de DMP OPIDoR, veuillez remplir le formulaire ci-après ou envoyez un courriel à <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>. Nous vous répondrons dans un délai maximum de 3 jours.</p>
+      <p>DMP OPIDoR est basé sur l'outil <a href='https://dmponline.dcc.ac.uk' target='_blank'>DMPonline</a> produit par le <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a>.</p>"
+    github_text_html: "<p>Si une fonctionnalité vous paraît souhaitable, ou si vous pensez constater une erreur, veuillez consulter la <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open' target='_blank'>liste des questions à traiter sur GitHub (DCC)</a>. Si votre question n'est pas répertoriée, merci de l'ajouter. Si elle y figure, merci d'ajouter un commentaire si vous disposez d'informations supplémentaires ou souhaitez nous informer de l'importance qu'elle revêt pour vous. Ceci nous permettra de prioriser de futurs développements.</p>"
     address_text_html: "<ul>
       <li>Equipe Valorisation Données de la recherche</li>
       <li>Inist-CNRS</li>
@@ -788,7 +788,7 @@ fr:
       # <li>- <a href='/files/DMPonline-ReleaseNote-August2015.pdf' target='_blank'>Release Note</a></li>
       # <li>- <a href='/files/DMPonline-v4-InstitutionalBranding.pdf' target='_blank'>Customise DMPonline tool with institutional branding</a></li>
     # </ul>
-    # <p>The code is available on <a target='_blank' href='https://github.com/DigitalCurationCentre/DMPonline_v4'>GitHub</a></p>
+    # <p>The code is available on <a target='_blank' href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_blank'>GitHub</a></p>
     # </br>
     # <h3>Previous release</h3>
     # <p>The previous version of DMPonline is 4.1.  This was released in May 2015 and included a comment feature, improved guidance on signing in with institutional credentials, enhanced deployment guidance and proposed methods for internationalisation. Full details can be found in the release note and associated documents.</p>
@@ -821,9 +821,9 @@ fr:
   terms_page:
     title: "Conditions générales d'utilisation"
     body_text_html: "<div class='white_background'>
-    <p>DMP OPIDoR est mis à disposition de la communauté de l’Enseignement supérieur et de la Recherche française par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique (CNRS)</a></p>
+    <p>DMP OPIDoR est mis à disposition de la communauté de l’Enseignement supérieur et de la Recherche française par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique</a> (CNRS)</p>
     <p>Toute utilisation de DMP OPIDoR suppose l’acceptation et le respect de l’ensemble des termes des présentes conditions générales d’utilisation.</p>
-    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>Charte de la Sécurité des Systèmes d’information du CNRS.</a></p>
+    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>charte de la Sécurité des Systèmes d’Information du CNRS.</a></p>
     <h3>Mentions légales</h3>
         <p>Le site est édité par:</p>
         <ul>
@@ -851,7 +851,7 @@ fr:
     <p><b>Service utilisateurs:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Données personnelles</h3>
     <p>Afin de nous aider à identifier et gérer votre compte utilisateur, nous avons besoin de collecter et stocker des informations qui vous sont propres : courriel, nom, prénom, organisme d'appartenance, identifiant ORCID, date de dernière connexion. Il est possible que nous utilisions ces informations pour vous contacter afin de connaître votre opinion sur l’utilisation de cet outil, ou pour vous informer de ses derniers développements ou versions. Nous nous engageons à ne pas vendre ni louer ni échanger ni distribuer à des tiers les informations recueillies vous concernant.</p>
-    <p>Ce site, qui comporte des informations nominatives concernant les utilisateurs de DMP OPIDoR, a fait l'objet d'une déclaration auprès de la Commission nationale de l’informatique et des libertés (CNIL) (en cours).</p>
+    <p>Ce site, qui comporte des informations nominatives concernant les utilisateurs de DMP OPIDoR, a fait l'objet d'une déclaration auprès du Correspondant informatique et libertés (CIL) du CNRS (en cours).</p>
     <p>Conformément à la loi n° 78-17 du 6 janvier 1978, relative à l'Informatique, aux fichiers et aux Libertés (article 38, 39 et 40), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant, en ligne sur ce site.</p> 
     <p>Pour exercer ce droit, vous pouvez nous contacter par courriel: <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <p>Les données des comptes non utilisés (du fait de la non-utilisation du service par l’utilisateur) seront systématiquement anonymisées dans un délai de 10 ans à compter de la dernière connexion : vous n’aurez dans ce cas plus accès à l’application et par conséquent à vos plans de gestion de données.</p>

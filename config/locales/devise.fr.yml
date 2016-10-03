@@ -5,47 +5,30 @@ fr:
     confirmations:
       confirmed: "Votre compte a bien été validé. Veuillez vous connecter."
       send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les directives pour activer votre compte."
-      resend_instructions: "Envoyer de nouveau les directives" 
-      send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez dans quelques minutes un courriel contenant les directives pour valider votre compte."
+      send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez dans quelques minutes un courriel contenant les instructions pour valider votre compte."
     failure:
       already_authenticated: "Vous êtes déjà connecté(e)."
       inactive: "Votre compte n'est pas encore activé."
       invalid: "Courriel ou mot de passe incorrect."
-      invalid_token: "Jeton d'authentification incorrect."
+      invalid_token: "Authentification incorrecte."
       locked: "Votre compte est verrouillé."
       not_found_in_database: "Courriel ou mot de passe incorrect."
       timeout: "Votre session est expirée. Veuillez vous reconnecter pour continuer."
-      unauthenticated: "Vous devez vous connecter ou vous inscrire pour continuer."
+      unauthenticated: "Vous devez vous connecter ou créer un compte pour continuer."
       unconfirmed: "Vous devez confirmer votre compte pour continuer."
     mailer:
-      app_name: "Assistant PGD"
       confirmation_instructions:
-        subject: "Valider votre compte Assistant PGD"
-        link: "Cliquer ici pour activer votre compte"
-        email: "<p>Bienvenue dans l'Assistant PGD, %{email}</p>
-        <p>Merci de vous être inscrit(e) à %{app_link}. Veuillez confirmer votre adresse électronique : </p>
-        <p>%{confirmation_link} (ou copier %{confirmation_direct_url} dans votre navigateur).</p>"
+        subject: "Valider votre compte DMP OPIDoR"
       reset_password_instructions:
-        subject: "Directives pour réinitialiser le mot de passe"
-        link: "Réinitialiser mon mot de passe"
-        email: "<p>Bonjour %{resource_email}!</p>
-        <p>Un changement de mot de passe a été demandé pour %{app_link}. Vous pouvez le faire en cliquant sur le lien ci-dessous.</p>
-        <p>%{reset_password_link}</p>
-        <p>Si vous n'avez pas demandé ce changement, veuillez ignorer ce message.</p>
-        <p>Votre mot de passe ne sera pas changé tant que vous n'aurez pas accédé au lien ci-dessus pour en créer un nouveau.</p>"
+        subject: "Instructions de réinitialisation de mot de passe"
       unlock_instructions:
-        subject: "Directives de déverrouillage"
-        link: "Déverrouiller mon compte"
-        email: "<p>Bonjour %{resource_email}!</p>
-        <p>Votre compte %{app_link} a été verrouillé à la suite d'un trop grand nombre de tentatives d'authentification.</p>
-        <p>Cliquez sur le lien ci-dessous pour déverrouiller votre compte :</p>
-        <p>%{unlock_link}</p>"
+      subject: "Instructions de déverrouillage"
     omniauth_callbacks:
       failure: "Nous n'avons pas pu vous authentifier à partir de %{kind} parce que '%{reason}'."
       success: "Authentification réussie à partir du compte %{kind}."
     passwords:
       no_token: "Vous ne pouvez pas accéder à cette page sans y avoir été dirigé par un courriel de réinitialisation du mot de passe. Si vous avez été dirigé vers cette page à partir d’un courriel de réinitialisation, assurez-vous d'utiliser l'adresse URL complète fournie."
-      send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les directives pour réinitialiser le mot de passe."
+      send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les instructions de réinitialisation de mot de passe."
       send_paranoid_instructions: "Si votre adresse électronique existe dans notre base de données, vous recevrez dans quelques minutes un lien de récupération du mot de passe par courriel."
       updated: "Votre mot de passe a bien été modifié. Vous êtes maintenant connecté."
       updated_not_active: "Votre mot de passe a bien été modifié."
@@ -61,9 +44,8 @@ fr:
       signed_in: "Connecté"
       signed_out: "Déconnecté"
     unlocks:
-      send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les directives pour déverrouiller votre compte."
-      send_paranoid_instructions: "Si votre compte existe, vous recevrez dans quelques minutes un courriel contenant les directives pour le déverrouiller."
-      resend_unlock_instructions: "Envoyer de nouveau les directives de déverouillage." 
+      send_instructions: "Vous recevrez dans quelques minutes un courriel contenant les instructions de déverrouillage de votre compte."
+      send_paranoid_instructions: "Si votre compte existe, vous recevrez dans quelques minutes un courriel contenant les instructions pour le déverrouiller."
       unlocked: "Votre compte a bien été déverrouillé. Veuillez vous connecter pour continuer."
   errors:
     messages:
@@ -75,9 +57,4 @@ fr:
       not_saved:
         one: "Une erreur a empêché d’enregistrer ce(tte) %{resource} :"
         other: "%{count} erreurs ont empêché d’enregistrer ce(tte) %{resource} :"
-      blank: "Ce champ ne peut être vide"
-  activerecord:
-    attributes:
-      user:
-        email: "Courriel: "
-
+        
