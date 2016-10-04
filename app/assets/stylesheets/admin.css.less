@@ -97,11 +97,12 @@ body.dmponline {
 }
 
 .main_header{
-  height: 100px;
+  /*height: 130px;*/
   margin: 0 0 30px 0;
-  padding:0 10% 0 10%;
+  padding:1% 10% 0 10%;
   border-bottom: 3px solid @blue_lighter_colour;
   background-color: @background_color;
+  display: flex;
 }
 
 .main_page_container{
@@ -127,23 +128,23 @@ footer {
 /*********************************************/
 /* left side*/
 div.header_left{
-  float: left;
   clear:both;
-  width: 270px;
+  height: 130px;
   }
   .home_logo{
     margin-right:0px;
-    max-height: 100px;
+    max-height: 130px;
     img {
-      max-height: 100px;
+      max-height: 130px;
     }
 }
 
 /* right side*/
 div.header_right{
-  margin-left: 270px;
-  height:100px;
-  position:relative;
+    flex: 1;    
+    height:130px;
+    padding-left: 40px;
+    position:relative;
 }
 
 /*****************************/

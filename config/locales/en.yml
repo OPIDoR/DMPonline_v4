@@ -292,10 +292,10 @@ en:
     sign_up: "Create an account"
     sign_up_text: "<b>New to DMP OPIDoR?</b> Create an account today."
     signed_in: "Logged in as "
-    institution_sign_in_link: "Institutional Log in"
+    institution_sign_in_link: "Log in"
     institution_sign_in_text: " (French researchers only)"
-    institution_sign_in: "Institutional Log in"
-    classic_sign_in: "Classic Log in"
+    institution_sign_in: "Institutional Access"
+    classic_sign_in: "Individual Access"
 
     user_name: "Email address"
     email: "Email"
