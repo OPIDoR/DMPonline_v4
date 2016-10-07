@@ -1,5 +1,4 @@
 //= require jquery.timeago.js
-//= require tinymce
 
 var dirty = {};
 

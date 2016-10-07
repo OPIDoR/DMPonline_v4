@@ -1,4 +1,3 @@
-//= require tinymce
 /* 
 **Project: DMPonline v4
 **Description: This file include all javascript regarding admin interface
