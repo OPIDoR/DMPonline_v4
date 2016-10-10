@@ -21,7 +21,7 @@ in the admin interface.
 			<!--Question text -->
 			<tr>
 				<td class="first_template"><%= t("org_admin.questions.question_text_label")%></td>
-				<td><%= f.text_area :text, :rows => "5" , :class => "tinymce"%>
+				<td><%= f.text_area :text, :rows => "5" %>
 					<div class="border_bottom"></div>
 				</td>
 			</tr>
@@ -96,7 +96,7 @@ in the admin interface.
 					<div class="clearfix"></div>	
 					<div id="default-value-field-<%= question.id %>" style="display:none;" class="ques_format">
 						<div class="div_left_icon">
-							<%= text_area_tag("question-default-value-#{question.id}", question.default_value, class: "tinymce") %>
+							<%= text_area_tag("question-default-value-#{question.id}", question.default_value) %>
 						</div>
 						<div class="div_right_icon">
 							<%= link_to( image_tag("help_button.png"), "#", :class => "default_answer_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.default_answer_help_text_html"))%>
@@ -138,7 +138,7 @@ in the admin interface.
 			<tr>
 				<td class="first_template"><%= t("org_admin.questions.guidance_label")%></td>
 				<td><div class="div_left_icon">
-						<%= text_area_tag("question-guidance-#{question.id}", question.guidance , class: "tinymce") %>
+						<%= text_area_tag("question-guidance-#{question.id}", question.guidance) %>
 					</div>
 					<div class="div_right_icon">
 						<%= link_to( image_tag("help_button.png"), "#", :class => "question_guidance_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.question_guidance_help_text_html"))%>

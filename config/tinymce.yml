@@ -1,3 +1,4 @@
+mode : "none"
 statusbar: false
 menubar: false
 toolbar: bold italic | bullist numlist | link | table

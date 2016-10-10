@@ -7,7 +7,7 @@
 
 $( document ).ready(function() {
 
-	if($('.in').length > 0) {
+    if($('.in').length > 0) {
 		if ($('.in .current_question').length > 0) {
 			$(document.body).animate({
 				'scrollTop': $('.in .current_question').offset().top
