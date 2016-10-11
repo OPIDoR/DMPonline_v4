@@ -9,9 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  * require jquery.ui.all
- *= require_self
  *= require jquery-ui
  *= require bootstrap.css
  *= require bootstrap_and_overrides.css.less
  *= require select2.css
+ *= require_self
  */
