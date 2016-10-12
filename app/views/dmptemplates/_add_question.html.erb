@@ -99,7 +99,7 @@ in the admin interface.
 					<div class="clearfix"></div>	
 					<div id="new-default-value-field-<%= section.id%>" style="display:none;" class="ques_format">
 						<div class="div_left_icon">
-							<%= text_area_tag("new-question-default-value", "") %>
+							<%= text_area_tag("new-question-default-value-#{section.id}", "") %>
 						</div>
 						<div class="div_right_icon">
 							<%= link_to( image_tag("help_button.png"), "#", :class => "default_answer_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.default_answer_help_text_html"))%>
@@ -121,7 +121,7 @@ in the admin interface.
 							<%= s.hidden_field :organisation_id, :value => current_user.organisation.id %>
 							<ul>
 								<li><%= s.select :is_example, {t("org_admin.questions.example_answer_label") => true, t("org_admin.questions.suggested_answer_label") => false} %></li>
-								<li><%= s.text_area :text, :rows => 5 %></li>
+								<li><%= s.text_area :text, :rows => 5 , :id => "new_question_example_#{section.id}"%></li>
 							</ul>
 						<%end%>
 					</div>
@@ -138,7 +138,7 @@ in the admin interface.
 			<tr>
 				<td class="first_template"><%= t("org_admin.questions.guidance_label")%></td>
 				<td><div class="div_left_icon">
-						<%= text_area_tag("new-question-guidance", "") %>
+						<%= text_area_tag("new-question-guidance-#{section.id}", "") %>
 					</div>
 					<div class="div_right_icon">
 						<%= link_to( image_tag("help_button.png"), "#", :class => "question_guidance_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.question_guidance_help_text_html"))%>
