@@ -21,7 +21,7 @@ in the admin interface.
 			<!--Question text -->
 			<tr>
 				<td class="first_template"><%= t("org_admin.questions.question_text_label")%></td>
-				<td><%= f.text_area :text, :rows => "5"  %>
+				<td><%= f.text_area :text, :rows => "5", :id => "question-text-#{question.id}"  %>
 					<div class="border_bottom"></div>
 				</td>
 			</tr>
@@ -121,7 +121,7 @@ in the admin interface.
 						<%= s.hidden_field :organisation_id, :value => current_user.organisation.id %>
 						<ul>
 							<li><%= s.select :is_example, {t("org_admin.questions.example_answer_label") => true, t("org_admin.questions.suggested_answer_label") => false} %></li>
-							<li><%= s.text_area :text, :rows => 5 %>
+							<li><%= s.text_area :text, :rows => 5, :id => "question_suggested_answers-#{question.id}" %>
 							</li>
 						</ul>
 					<%end%>

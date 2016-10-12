@@ -207,7 +207,6 @@ $( document ).ready(function() {
 		 $('#show_question_div_'+ q_id).hide();
          
          $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
-            console.log($(ta));
             tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
         });
          
@@ -236,7 +235,6 @@ $( document ).ready(function() {
          $('#add_question_button_div_'+ s_id).hide();
         
           $('#add_question_block_div_'+ s_id).find("textarea").each(function(index, ta) {
-            console.log($(ta));
             tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
          });
          
@@ -261,7 +259,6 @@ $( document ).ready(function() {
          
          
         $('#add_question_block_div_'+ s_id_new).find("textarea").each(function(index, ta) {
-            console.log($(ta));
             tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
          });
          
