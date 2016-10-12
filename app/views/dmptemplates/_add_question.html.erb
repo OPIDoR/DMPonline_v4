@@ -99,7 +99,7 @@ in the admin interface.
 					<div class="clearfix"></div>	
 					<div id="new-default-value-field-<%= section.id%>" style="display:none;" class="ques_format">
 						<div class="div_left_icon">
-							<%= text_area_tag("new-question-default-value", "", class: "tinymce") %>
+							<%= text_area_tag("new-question-default-value", "") %>
 						</div>
 						<div class="div_right_icon">
 							<%= link_to( image_tag("help_button.png"), "#", :class => "default_answer_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.default_answer_help_text_html"))%>
@@ -138,7 +138,7 @@ in the admin interface.
 			<tr>
 				<td class="first_template"><%= t("org_admin.questions.guidance_label")%></td>
 				<td><div class="div_left_icon">
-						<%= text_area_tag("new-question-guidance", "", class: "tinymce") %>
+						<%= text_area_tag("new-question-guidance", "") %>
 					</div>
 					<div class="div_right_icon">
 						<%= link_to( image_tag("help_button.png"), "#", :class => "question_guidance_popover", :rel => "popover", "data-html" => "true", "data-content" => t("org_admin.questions.question_guidance_help_text_html"))%>

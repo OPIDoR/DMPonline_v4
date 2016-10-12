@@ -205,6 +205,12 @@ $( document ).ready(function() {
 		 var q_id = $(this).prev(".question_id").val();
 		 $('#edit_question_div_'+ q_id).show();
 		 $('#show_question_div_'+ q_id).hide();
+         
+         $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
+            console.log($(ta));
+            tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
+        });
+         
 		 e.preventDefault();
 	 });
 
@@ -213,14 +219,27 @@ $( document ).ready(function() {
 		 var q_id = $(this).prev(".question_id").val();
 		 $('#edit_question_div_'+ q_id).hide();
 		 $('#show_question_div_'+ q_id).show();
+        
+        $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
+            console.log($(ta));
+            tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
+         });
+        
 		 e.preventDefault();
 	 });
 
+    
 	 //action for adding a new question
 	 $('.add_question_button').click(function(e){
          var s_id = $(this).prev(".section_id").val();
          $('#add_question_block_div_'+ s_id).show();
          $('#add_question_button_div_'+ s_id).hide();
+        
+          $('#add_question_block_div_'+ s_id).find("textarea").each(function(index, ta) {
+            console.log($(ta));
+            tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
+         });
+         
          e.preventDefault();
             
 	 });
@@ -239,6 +258,13 @@ $( document ).ready(function() {
         var s_id_new = $(this).prev(".section_id_new").val();
         $('#add_question_block_div_'+ s_id_new).hide();
         $('#add_question_button_div_'+ s_id_new).show();
+         
+         
+        $('#add_question_block_div_'+ s_id_new).find("textarea").each(function(index, ta) {
+            console.log($(ta));
+            tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
+         });
+         
         e.preventDefault();
 	 });
 
