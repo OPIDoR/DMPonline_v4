@@ -66,7 +66,7 @@ module Settings
 
       end
 
-      if max_pages.present? && (!max_pages.is_a?(Integer) || max_pages <= 0)
+      if max_pages.present? && (!max_pages.is_a?(Integer) || max_pages < 0)
         errors.add(:max_pages, I18n.t('helpers.settings.plans.errors.invalid_max_pages'))
       end
     end
