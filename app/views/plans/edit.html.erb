@@ -7,10 +7,14 @@
 <%= render :partial => "/projects/project_title", locals: {project: @plan.project} %>
 
 <!-- progress bar -->
-<% status = @plan.status %>
+<% 
+   status = @plan.status 
+   max_pages = @plan.dmptemplate.settings(:export).max_pages
+%>
+<% if max_pages > 0 %>
     <div class="progress">
         <%space_used = status["space_used"].to_i
-          space_title = t("helpers.plan.export.space_used", space_used: space_used, num_pages: @plan.dmptemplate.settings(:export).max_pages)
+          space_title = t("helpers.plan.export.space_used", space_used: space_used, num_pages: max_pages)
           answered = %(#{status["num_answers"]}/#{status["num_questions"]})%>
         <div class="bar-container">
             <span id="questions-progress-title"><%= answered -%> <% t("helpers.project.questions_answered")%></span>
@@ -22,7 +26,7 @@
             <span id="export-progress" class="bar <%= space_used >= 100 ? "full" : "space" -%>" style="width: <%= space_used -%>%;" title="<%= space_title -%>"></span>
         </div>
     </div>
-
+<% end %>
 <% readonly = nil %>
 <% if ! @plan.editable_by(current_user.id) then %>
 	<% readonly = "always" %>

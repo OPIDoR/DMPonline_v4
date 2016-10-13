@@ -378,6 +378,8 @@ private
 		page_height      = A4_PAGE_HEIGHT - margin_height # 297mm for A4 portrait
 		available_height = page_height * self.dmptemplate.settings(:export).max_pages
 
+        return 0 unless available_height > 0
+        
 		percentage = (used_height / available_height) * 100
 		(percentage / ROUNDING).ceil * ROUNDING # round up to nearest five
 	end
