@@ -47,7 +47,7 @@ end
     
     @exported_plan.questions_for_section(section.id).each do |question|
         cleaned_q =  Nokogiri::HTML.fragment question.text
-        docx.p strip_tags(cleaned_q.gsub(/<li>/, ' * ')), bold: true
+        docx.p strip_tags(cleaned_q.to_s.gsub(/<li>/, ' * ')), bold: true
         
         
         answer = @exported_plan.plan.answer(question.id, false)
@@ -183,7 +183,6 @@ end
                             end_counter = tags_type.size
                             
                             docx.p do 
-                            text inner_txt
                                  inner_txt.each.with_index do |text_val, i|
                                     #text_val = inner_txt[start_count].to_s
                                     #-- TEXT
