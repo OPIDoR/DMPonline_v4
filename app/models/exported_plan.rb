@@ -96,7 +96,7 @@ class ExportedPlan < ActiveRecord::Base
       output += "\n#{section.title}\n"
 
       self.questions_for_section(section).each do |question|
-        qtext = sanitize_text( question.text.gsub(/<li>/, '  * ') )
+        qtext = raw sanitize_text( question.text.gsub(/<li>/, '  * ') )
         output += "\n#{qtext}\n"
         answer = self.plan.answer(question.id, false)
 
