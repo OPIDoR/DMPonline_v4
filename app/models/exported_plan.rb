@@ -90,12 +90,14 @@ class ExportedPlan < ActiveRecord::Base
 
   def as_txt
     output = "#{self.plan.project.title}\n\n#{self.plan.version.phase.title}\n"
+    
 
     self.sections.each do |section|
       output += "\n#{section.title}\n"
 
       self.questions_for_section(section).each do |question|
-        output += "\n#{question.text}\n"
+        qtext = sanitize_text( question.text.gsub(/<li>/, '  * ') )
+        output += "\n#{qtext}\n"
         answer = self.plan.answer(question.id, false)
 
         if answer.nil? || answer.text.nil? then

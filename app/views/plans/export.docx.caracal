@@ -168,8 +168,9 @@ end
                     high_count = 0
                     high_end_count = higher_level.size
                   
+                  
                     while high_count < high_end_count do
-                       
+                    
                         if higher_level[high_count] == 'p' then
                             inner_txt_with_tags = Nokogiri::HTML::DocumentFragment.parse "<p>"
                             inner_txt_with_tags.at(".//p").inner_html = all_text[high_count]
@@ -178,17 +179,17 @@ end
                             
                             start_count = 0 
                             end_counter = tags_type.size
-                                                     
+                            
                             docx.p do 
-                                while start_count < end_counter do 
-                                    text_val = inner_txt[start_count].to_s
+                                 inner_txt.each.with_index do |text_val, i|
+                                    #text_val = inner_txt[start_count].to_s
                                     #-- TEXT
-                                    if tags_type[start_count] == 'text' && text_val != "" then
+                                    if tags_type[i] == 'text' && text_val != "" then
                                         text text_val
                                         text ' '
                                     #-- LINK
                                     else 
-                                        if tags_type[start_count] == 'a' && text_val != "" then 
+                                        if tags_type[i] == 'a' && text_val != "" then 
                                             l_text = text_val
                                             l_address = ""
                                             # all links
@@ -200,20 +201,20 @@ end
                                             link text_val, l_address
                                         #-- BOLD TEXT
                                         else
-                                            if tags_type[start_count] == 'strong' && text_val != "" then 
+                                            if tags_type[i] == 'strong' && text_val != "" then 
                                                 text text_val, bold: true
                                                 text ' '
                                             #-- ITALIC TEXT
                                             else
-                                                if tags_type[start_count] == 'em' && text_val != "" then 
+                                                if tags_type[i] == 'em' && text_val != "" then 
                                                     text text_val, italic: true
                                                     text ' '
                                                 end
                                             end
                                         end    
                                     end
-                                    start_count +=1
-                                end
+                                    start_count += 1
+                                end 
                             end
                             #-- END OF P
                         else

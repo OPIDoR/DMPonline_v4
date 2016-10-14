@@ -29,6 +29,15 @@ class Question < ActiveRecord::Base
 	def to_s
         "#{text}"
     end
+    
+    def select_text
+        cleantext = text.gsub(/<[^<]+>/, '')
+        if cleantext.length > 120
+            cleantext = cleantext.slice(0,120)
+        end
+        cleantext
+    end
+    
 
     amoeba do
         include_field :options

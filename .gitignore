@@ -70,3 +70,4 @@ config/environments/development.rb
 db/schema.rb
 
 .project
+.brackets.json
