@@ -41,7 +41,7 @@ fr:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Bienvenue,"
   
-  welcome_text: "<p><a href='http://www.opidor.fr/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
+  welcome_text: "<p><a href='https://www.opidor.fr/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
 
   screencast_text: "Vidéo en ligne sur l'utilisation de DMP OPIDoR"
   screencast_error_text: "La balise video n'est pas reconnue par votre navigateur."
@@ -533,7 +533,7 @@ fr:
       export:
         pdf:
           question_not_answered: "Question sans réponse."
-          generated_by: Ce document a été généré par DMP OPIDoR (http://www.opidor.fr/dmpopidor)
+          generated_by: Ce document a été généré par DMP OPIDoR (https://www.opidor.fr/dmpopidor)
         space_used: "env. %{space_used}% d'espace disponible utilisé (%{num_pages} pages maxi)"
         project_name: "Nom du projet"
         project_identifier: "Identifiant du projet"
@@ -586,7 +586,7 @@ fr:
     # tab_2: "Dernières nouvelles"
     # une page unique encadrée
     
-    body_text_html: "<p>Un plans de gestion de données (DMP) est un document qui spécifies quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMP.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
+    body_text_html: "<p>Un plan de gestion de données (DMP) est un document qui spécifie quelle donnée doit être collectée ou générée, comment celle-ci doit être gérée, partagée et préservée pendant et après le projet. la préparation d'un plan suit des normes de bonne pratique pour la génération des données de chaque projet. En outre, les organismes et les institutions de financement exigent de plus en plus de leurs chercheurs la production de DMPs.</p><p>DMP OPIDoR est un outil d'aide à la rédaction de DMP</p><p>DMP OPIDoR est basé sur le code de l'outil <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> developpé par l'organisme anglais <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). Le <a href='http://www.dcc.ac.uk/' target='_blank'>DCC</a> a coopéré étroitement avec des agences de financement de la recherche et des universités pour réaliser au profit des chercheurs un outil les assistant dans l’élaboration d'un DMP (un plan de gestion de données) efficace qui couvre le cycle de vie complet d’un projet de recherche, de l’étape de préparation de sa soumission jusqu’à son achèvement.</p></br>
       <h3>Fonctionnement de l'outil</h3>
       <p>DMP OPIDoR comprend un certain nombre de modèles qui sont représentatifs des prescriptions de différents organismes financeurs et d'établissements. Au départ, les utilisateurs doivent répondre à trois questions pour que nous puissions déterminer le modèle qu'il convient d'afficher(par ex. : le modèle ESRC pour une soumission dans le cadre d'un appel à projet de l'ESRC). Des recommandations vous sont fournies pour vous permettre d'interpréter les questions posées et d'y répondre. Ces recommandations sont fournies selon les agences de financement, les universités et les disciplines.</p>
       <p>Des conseils sont fournis pour vous aider à interpréter et à répondre aux questions. Ces recommandations sont fournies par les financeurs, les organismes de recherche, les universités, les disciplines et du Digital Curation Centre. Les directives DCC sont listées dans le document suivant: <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> par Jones S. et le DCC (Licence CC-BY).</p>
@@ -684,10 +684,10 @@ fr:
     </ul>
     <h3>Guides utiles sur la gestion des données de la recherche en général</h3>
     <ul class='help_ul'>
-      # <li>
-        # <a target='_blank' href='https://www6.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [pageWeb]<br />
-        # <i>Pôle Données de la recherche de l'IST : INRA.</i>
-      # </li>
+      <li>
+        <a target='_blank' href='http://www.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [webpage]<br />
+        <i>Pôle IST sur les Données de la Recherche (DIGITALIST) - INRA.</i>
+      </li>
       <li>
         <a target='_blank' href='http://www.doranum.fr/'>Le projet DoRANum (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [pageWeb]<br />
         <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i>

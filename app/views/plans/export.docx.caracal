@@ -45,9 +45,9 @@ end
     docx.p
     docx.h3 section.title.mb_chars.upcase, italic: false, font: 'Arial', color: '000000' 
     
-    @exported_plan.questions_for_section(section.id).each do |question|
-        cleaned_q =  Nokogiri::HTML.fragment question.text
-        docx.p strip_tags(cleaned_q.to_s.gsub(/<li>/, ' * ')), bold: true
+    @exported_plan.questions_for_section(section.id).each do |question|		        
+        cleaned_q =  Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')).text
+        docx.p strip_tags(cleaned_q.to_s), bold: true
         
         
         answer = @exported_plan.plan.answer(question.id, false)
