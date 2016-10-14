@@ -19,8 +19,8 @@ end
 #   Structure for docx format 
 #--------------------------------------------- 
 
-docx.h1 @exported_plan.plan.project.title.upcase, font: 'Arial', color: '000000' 
-docx.h2 @exported_plan.plan.title.upcase, font: 'Arial', color: '000000' 
+docx.h1 @exported_plan.plan.project.title.mb_chars.upcase, font: 'Arial', color: '000000' 
+docx.h2 @exported_plan.plan.title.mb_chars.upcase, font: 'Arial', color: '000000' 
 
 #---- PLAN ADMIN DETAILS -----
 if @exported_plan.admin_details.present?
@@ -43,10 +43,10 @@ end
 #---- PLAN SECTIONS, QUESTIONS AND ANSWERS -----
 @exported_plan.sections.each do |section|
     docx.p
-    docx.h3 section.title.upcase, italic: false, font: 'Arial', color: '000000' 
+    docx.h3 section.title.mb_chars.upcase, italic: false, font: 'Arial', color: '000000' 
     
     @exported_plan.questions_for_section(section.id).each do |question|
-        docx.p question.text, bold: true
+        docx.p strip_tags(question.text.gsub(/<li>/, '  * ')), bold: true
         
         answer = @exported_plan.plan.answer(question.id, false)
         if answer.nil?
@@ -249,4 +249,3 @@ end
         docx.p
     end
 end
-
