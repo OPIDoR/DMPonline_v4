@@ -369,7 +369,7 @@ en:
      --> If you <strong>have</strong> an account with DMP OPIDoR, please <a href='#header-login-form' data-toggle='modal' class='a_orange'>Log in</a> so we can link your account to your institutional credentials.</br>
     Once you have created and/or linked your account, you'll be able to log in with your institutional credentials directly."
     shibboleth_linked_text: "Your account is linked to your institutional credentials."
-    shibboleth_to_link_text: "Link your DMP OPIDoR account to your institutional credentials (French users only)"
+    shibboleth_to_link_text: "Link your DMP OPIDoR account to your institutional credentials (French researchers only)"
     shibboleth_unlink_label: "Unlink your institutional credentials"
     shibboleth_unlink_alert: "Unlink institutional credentials alert"
     shibboleth_unlink_dialog_text: "<p>You are about to unlink DMP OPIDoR of your institutional credentials, would you like to continue?</p>"
@@ -591,11 +591,16 @@ Select what format you wish to use and click to 'Export'.</p>"
         <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>European Commission in Horizon 2020</a>.</p>
         <p>Guidance is provided to help you interpret and answer the questions. This guidance is provided by research funders, research organisations, universities, disciplines and the Digital Curation Centre. The thematic DCC guidance is listed in <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/1703'>'Using the DMPonline admin interface: a guide to customising the tool'</a> by Jones S. and DCC (Licence CC-BY).</p>
     <h3>Getting Started</h3>
-    <p>If you have an account please log in and start creating or editing your DMP.</p>
     <p>If you do not have a DMP OPIDoR account, click on <a href='/'>'Create an account'</a> on the homepage.</p>
+    <p>If you have an account, please log in :</p>
+    <ul>
+      <li>- with the institutional access. Your DMP OPIDoR account will be linked to your institutional credentials.</li>
+      <li>- or with the individual access.</li>
+    </ul>
+    <p>And start creating or editing your DMP.</p>
     <p>Please note that we are currently working on single sign-in authentication with your institutional credentials. You will have the option to link your existing account to your institutional credentials when that feature becomes available.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
-    <p>If you have any questions or comments about DMP OPIDoR, please <a href='mailto:info-opidor@inist.fr' target='_top'>contact us</a>.</p>
+    <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Additional Information</h3>
     <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Customise DMP OPIDoR</h3>
@@ -752,7 +757,7 @@ Select what format you wish to use and click to 'Export'.</p>"
 
   contact_page:
     title: "Contact us"
-    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>. We will reply within 3 days</p>
+    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <p>DMP OPIDoR is based on software <a href='https://dmponline.dcc.ac.uk' target='_blank'>DMPonline</a> produced by the UK's <a target='_blank' href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
     github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open' target='_blank'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to prioritise future developments.</p>"
     address_text_html: "<ul>
