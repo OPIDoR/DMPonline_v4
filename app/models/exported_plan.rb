@@ -5,7 +5,7 @@ class ExportedPlan < ActiveRecord::Base
   belongs_to :plan
   belongs_to :user
 
-  VALID_FORMATS = %i( csv html json pdf text xml docx)
+  VALID_FORMATS = %i( html pdf docx)
 
   validates :format, inclusion: { in: VALID_FORMATS, message: '%{value} is not a valid format' }
 
@@ -96,7 +96,7 @@ class ExportedPlan < ActiveRecord::Base
       output += "\n#{section.title}\n"
 
       self.questions_for_section(section).each do |question|
-        qtext = raw sanitize_text( question.text.gsub(/<li>/, '  * ') )
+        qtext = sanitize_text( question.text.gsub(/<li>/, '  * ') )
         output += "\n#{qtext}\n"
         answer = self.plan.answer(question.id, false)
 
