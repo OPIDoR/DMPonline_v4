@@ -60,6 +60,8 @@ gem 'tinymce-rails'
 gem 'friendly_id'
 gem 'contact_us' 
 gem 'recaptcha'
+gem 'owlcarousel-rails'
+gem 'colorbox-rails'
 #implementation of forms
 gem 'activeadmin', '1.0.0.pre1'
 

@@ -43,7 +43,7 @@ ActiveAdmin.register GuidanceGroup do
             column :text do |gtext|
                 link_to gtext.text.html_safe, [:admin, gtext]
             end
-            column I18n.t('admin.theme'), :theme_id do |themelist|
+            column I18n.t('admin.theme') do |themelist|
                 (themelist.themes.map{|t_q| link_to t_q.title, [:admin, t_q]}).join(', ').html_safe
             end
         end

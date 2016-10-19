@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+//= require owl.carousel
+//= require colorbox-rails
 //= require bootstrap
 //= require v1.js
 //= require select2.min.js
@@ -28,6 +30,16 @@ $( document ).ready(function() {
 	$(function() {
 		$(".question_date_field").datepicker({ dateFormat: 'dd-mm-yy' });
 	});
+    
+    $(function() {
+       $("#tutorials").owlCarousel({
+        navigation : true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem : true,
+        autoPlay: 5000
+       }); 
+    });
 
 
 	$(function() {
