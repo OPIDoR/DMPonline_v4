@@ -48,14 +48,10 @@ $( document ).ready(function() {
 
 	$('.accordion-body').on('show', function() {
 		var plus = $(this).parent().children(".accordion-heading").children(".accordion-toggle").children(".icon-plus").removeClass("icon-plus").addClass("icon-minus");
-        $(this).find(".tinymce").each(function(index, ta) {
-            tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
-        });
+        
 	}).on('hide', function(){
 		var minus = $(this).parent().children(".accordion-heading").children(".accordion-toggle").children(".icon-minus").removeClass("icon-minus").addClass("icon-plus");
-        $(this).find(".tinymce").each(function(index, ta) {
-            tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
-        });
+    
 	});
 
 	//accordion home page

@@ -11,6 +11,10 @@ $( document ).ready(function() {
     if($('#comment_section_id').length) {
         var section_id = $('#comment_section_id').val();
         
+       $("#collapse-" + section_id).find(".tinymce").each(function(index, ta) {
+            tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
+        });
+        
         $("#collapse-" + section_id).addClass("in");
         $("#collapse-" + section_id).children(".accordion-inner").find(".loading").show();
         $("#collapse-" + section_id).children(".accordion-inner").find(".loaded").hide();
@@ -102,10 +106,15 @@ $( document ).ready(function() {
 		var section = $(this);
         section.find(".loaded").hide();
 		section.find(".loading").show();
+        
+        section.find(".tinymce").each(function(index, ta) {
+            tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
+        });
+        
 		// Only lock if there are forms on the page (not read-only)
 		if ($('.question-form').length > 0) {
 			section.check_section_lock();
-    }
+        }
     // check for updated answers
     $.getJSON("status.json", function(data) {
     	$.fn.update_plan_progress(data);
@@ -126,7 +135,14 @@ $( document ).ready(function() {
 		section.find(".loaded").show();
     });
    }).on('hide', function(){
-  	var section = $(this);
+        
+    var section = $(this);
+            
+        
+    section.find(".tinymce").each(function(index, ta) {
+        tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
+    });
+        
   	// Only attempt unlock if there are forms on the page (not read-only)
   	if ($('.question-form').length > 0) {
 			var section_id = section.attr("id").split('-')[1];
@@ -143,6 +159,7 @@ $( document ).ready(function() {
 				$('#section-' + section_id + '-collapse-alert').modal();
 			}
         }
+  	
     });
 
     $(".cancel-section-collapse").click(function () {
@@ -209,6 +226,8 @@ $( document ).ready(function() {
         $("#collapse-" + s_id).children(".accordion-inner").find(".loaded").hide();
         $(".alert-notice").hide();
         $("#new_comment_form_" + q_id).submit();
+        
+       
         
     });
     

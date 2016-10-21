@@ -224,7 +224,6 @@ return false;
 		 $('#show_question_div_'+ q_id).show();
         
         $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
-            console.log($(ta));
             tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
          });
         
