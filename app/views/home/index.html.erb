@@ -7,10 +7,10 @@
 			<div class="screencast_home_page">
 				<p><%= t('screencast_text') %></p>
 				<div class="clear"></div>
-                <div id="tutorials">
-                    <div><%= link_to image_tag("1ere-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#first-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
-                    <div><%= link_to image_tag("2eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#second-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
-                    <div><%= link_to image_tag("3eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#third-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+                <div id="tutorials" class="tutorials">
+                    <div class="item"><%= link_to image_tag("1ere-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#first-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+                    <div class="item"><%= link_to image_tag("2eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#second-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
+                    <div class="item"><%= link_to image_tag("3eme-scene.png"), "#", :data => { :colorbox => true, :colorbox_inline => true, :colorbox_href => "#third-video", :colorbox_width => "80%", :colorbox_height => "auto" } %></div>
                 </div>
                 <div style='display:none'>
                     <div id="first-video">
