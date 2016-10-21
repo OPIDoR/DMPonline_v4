@@ -105,7 +105,7 @@ en:
     user_list_label: "Users"
     org_details_label:  "Organisation details"
     org_text: "These are the basic details for your organisation."
-    org_abbr_help_text_html: "This is what displays as a label on your guidance, e.g. 'INRA guidance on Metadata'. It's best to use an abbreviation or short name."
+    org_abbr_help_text_html: "This is what displays as a label on your guidance, e.g. 'CNRS guidance on Metadata'. It's best to use an abbreviation or short name."
     users_list: "List of users"
     user_full_name: "Name"
     user_name: "Email address"
@@ -173,7 +173,7 @@ en:
       help_text_add: "Please enter the group title"
       subset_option_help_text: "If the guidance is only meant for a subset of users e.g. those in a specific college or institute, check this box.  Users will be able to select to display this subset guidance when answering questions in the 'create plan' wizard."
       template_help_text_html: "Select which templates you want the guidance to display on. This will usually be all templates."
-      title_help_text_html: "Add an appropriate name for your guidance group e.g. INRA guidance. This name will be used to tell the end user where the guidance has come from e.g. 'INRA Guidance on Metadata'"
+      title_help_text_html: "Add an appropriate name for your guidance group e.g. CNRS guidance. This name will be used to tell the end user where the guidance has come from e.g. 'CNRS Guidance on Metadata'"
       guidance_group_text_html: "<p>First create a guidance group. This could be institution wide or a subset e.g. a particular Institute, Department, School ou Unit. When you create guidance you'll be asked to assign it to a guidance group.</p>"
       delete_message: "You are about to delete '%{guidance_group_name}'. This will affect guidance. Are you sure?"
       created_message: "Guidance group was successfully created."
@@ -202,7 +202,7 @@ en:
       phase_details_label: "Phase details"
       phase_order_label: "Order of display"
       phase_details_text_html: "<p>Here you set the title that users will see. If you intend to have multiple phases for you DMP, this should be clear in the title and description.<p/>"
-      phase_title_help_text: "Enter a title for the phase e.g. intial DMP, full DMP... This is what users will see in the tabs when completing a plan. If you only have one phase, call it something generic e.g. INRA DMP"
+      phase_title_help_text: "Enter a title for the phase e.g. intial DMP, full DMP... This is what users will see in the tabs when completing a plan. If you only have one phase, call it something generic e.g. CNRS DMP"
       phase_number_help_text: "This allows you to order the phases of your template."
       phase_desc_help_text_html: "Enter a basic description. This will be presented to users above the summary of the sections and questions they will be asked to answer."
       phase_delete_message: "You are about to delete '%{phase_title}'. This will affect versions, sections and questions linked to this phase. Are you sure?"
@@ -598,6 +598,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>- or with the individual access.</li>
     </ul>
     <p>And start creating or editing your DMP.</p>
+    <p>Please note that we are currently working on single sign-in authentication with your institutional credentials. You will have the option to link your existing account to your institutional credentials when that feature becomes available.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
     <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Additional Information</h3>
@@ -690,12 +691,12 @@ Select what format you wish to use and click to 'Export'.</p>"
     <ul class='help_ul'>
       <li>
         <a target='_blank' href='http://www.inra.fr/datapartage/'>Gestion et partage des données scientifiques</a> [webpage]<br />
-        <i>Pôle IST sur les Données de la Recherche (DIGITALIST) - INRA.</i>
+        <i>Pôle IST sur les Données de la Recherche (Digitalist) - INRA.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.doranum.fr/'>DoRANum Project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
-        <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i>
-        DoRANum project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage) aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources. 
+        <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i><br />
+        DoRANum project aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources. 
       </li>
       <li>
         <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
@@ -712,6 +713,10 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>
         <a target='_blank' href='http://www.donneesdelarecherche.fr'>Site d'information sur les Données de la Recherche</a> [webpage]<br />
         <i>With the support of the French Ministry for Higher Education and Research, Inist-CNRS developed an information platform on research data. Editorial manager: Thérèse Hameau.</i>
+      </li>
+      <li>
+        <a target='_blank' href='http://guides-formadoct.ueb.eu/donnees_recherche?hs=a'>Les données de la recherche</a> [webpage]<br />
+        <i>Serres A., Vignale F. In UEB (Université Européenne de Bretagne). Form@doct. Rennes : UEB, janvier  2016</i>
       </li>
       <li>
         <a target='_blank' href='http://www.data-archive.ac.uk/media/2894/managingsharing.pdf'>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
@@ -854,17 +859,16 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p><b>Editorial Director:</b> Dominique Wolf</p>
     <p><b>User support Department:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Your personal details</h3>
-    <p>To help identify and administer your account with DMP OPIDoR, we need to store specific user information: email address, surname, first name, home institution, ORCID, last login. We may also use it to contact you to obtain feedback on your use of the tool, or to inform you of the latest developments or releases. We will not sell, rent, deliver or trade any personal information you provide us with.</p>
+    <p>To help identify and administer your account with DMP OPIDoR, we need to store specific user information: email address, surname, first name, home institution, ORCID, last login. We may also use it to inform you of the latest developments of the tool, maintenance and security issues. We will not sell, rent, deliver or trade any personal information you provide us with.</p>
     <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CIL-CNRS (in progress).</p>
     <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data on this site that concerns you personally.</p> 
     <p>To exercise this right, please contact us at <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
-    <p>Data from an unused account (as a result of non-use of the service by the user) will be systematically anonymized within the 10 years following the last connection and you will no longer have access to the application and consequently to your data management plans.</p>
+    <p>Data from an unused account (as a result of non-use of the service by the user) will be systematically anonymized within the 5 years following the last connection and you will no longer have access to the application and consequently to your data management plans.</p>
     <p>Moreover, authorized officers of your home institution (CNRS or other research organizations) have access to your email address, your surname/first name, last logged in and how many data management plans you have created. <b>It is up to these officers to make use of this information in accordance with regulations in force and recommendations of the CNIL.</b></p>
     <h3>Privacy policy</h3>
     <p>The information you enter into this system can be seen by you, people you have chosen to share access with, and - solely for the purposes of maintaining the service - system administrators of the CNRS. We will not directly access, make use of, or share your data management plans content with anyone else without your permission. </p>
     <h3>Intellectual property</h3>
     <p>The DMP OPIDoR tool is built with an open source software called DMPonline, which is developed by the UK’s Digital Curation Centre (DCC) and is made available under a GNU Affero General Public License. We will share the source code of our modified version on GitHub under the same license.</p>
-    <p>The CNRS hosts the DMP OPIDoR tool in France and stores your data management plans on your behalf, but the plans remain your property and are under your responsibility.</p>
     <h3>Disclaimer</h3>
     <p>The CNRS cannot in any way be held liable for the content of the information contained on this site or for the consequences arising from their use or interpretation.</p>
     <p>The host can interrupt access to the site at any time, without prior notice, in the event of a security issue.</p>
