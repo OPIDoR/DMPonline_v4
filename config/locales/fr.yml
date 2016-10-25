@@ -41,7 +41,7 @@ fr:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Bienvenue,"
   
-  welcome_text: "<p><a href='https://www.opidor.fr/dmpopidor' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
+  welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
 
   screencast_text: "Vidéo en ligne sur l'utilisation de DMP OPIDoR"
   screencast_error_text: "La balise video n'est pas reconnue par votre navigateur."
@@ -290,7 +290,8 @@ fr:
     sign_in: "Se connecter"
     sign_out: "Se déconnecter"
     sign_up: "Créer un compte"
-    sign_up_text: "<b>Nouvel utilisateur de DMP OPIDoR?</b> Inscrivez-vous..."
+    sign_up_text: "Nouvel utilisateur de DMP OPIDoR? Inscrivez-vous..."
+    sign_up_cil_message: ""
     signed_in: "Connecté en tant que "
     institution_sign_in_link: "Compte institutionnel"  
     institution_sign_in: "Authentification à l'aide du compte institutionnel"
@@ -533,7 +534,7 @@ fr:
       export:
         pdf:
           question_not_answered: "Question sans réponse."
-          generated_by: Ce document a été généré par DMP OPIDoR (https://www.opidor.fr/dmpopidor)
+          generated_by: Ce document a été généré par DMP OPIDoR (https://dmp.opidor.fr)
         space_used: "env. %{space_used}% d'espace disponible utilisé (%{num_pages} pages maxi)"
         project_name: "Nom du projet"
         project_identifier: "Identifiant du projet"

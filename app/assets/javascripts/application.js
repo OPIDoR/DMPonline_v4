@@ -36,8 +36,7 @@ $( document ).ready(function() {
         navigation : true,
         slideSpeed : 300,
         paginationSpeed : 400,
-        singleItem : true,
-        autoPlay: 5000
+        singleItem : true
        }); 
     });
 
