@@ -872,7 +872,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <h3>Intellectual property</h3>
     <p>The DMP OPIDoR tool is built with an open source software called DMPonline, which is developed by the UK’s Digital Curation Centre (DCC) and is made available under a GNU Affero General Public License. We will share the source code of our modified version on GitHub under the same license.</p>
     <h3>Disclaimer</h3>
-    <p>The CNRS cannot in any way be held liable for the content of the information contained on this site or for the consequences arising from their use or interpretation.</p>
+    <p>The CNRS cannot in any way be held liable for any damage, no matter the nature, resulting from the interpretation or use of information and/or documents available on this site.</p>
     <p>The host can interrupt access to the site at any time, without prior notice, in the event of a security issue.</p>
     <h3>Hyperlinks</h3>
     <p>The creation of hyperlinks by third parties to pages or documents in the CNRS website is permitted provided that the links are not contrary to the interests of the CNRS, and that they ensure the possibility for the user to identify the origin and author.</p>
@@ -889,6 +889,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>The site is governed by French legislation, no matter where the website is used. In the event of potential disputes and following failed attempts to find an amicable solution, the French courts alone shall handle the dispute.</p>
     <p>If you have any comments or queries about our terms of use, please do not hesitate to contact us, e.g. by sending an email to <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Changes to the terms of use</h3>
-    <p>The CNRS reserves the right to modify, without notice and at any time, the present terms of use to adapt to the changing of the site and/or its holding.</p>
+    <p>The CNRS reserves the right to modify at any time the present terms of use to adapt to the changing of the site and/or its holding.</p>
+    <p>Users will be provided with information on such modifications on the home page. If users do not agree with the new terms of use, they will be able to close their accounts.</p>
     <br/>
    </div>"
