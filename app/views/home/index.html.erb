@@ -17,12 +17,11 @@
                         <video preload="metadata" controls="controls" poster="<%= asset_path('1ere-scene.png')%>" width="100%" height="auto"  title="1662">
                             <source src="<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" type="video/mp4" />
                             <source src="<%= asset_path('index.files/html5video/1ere-scene.webm')%>" type="video/webm" />
-                            <source src="<%= asset_path('index.files/html5video/1ere-scene.ogv')%>" type="video/ogg" />
                             <object type="application/x-shockwave-flash" data="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;">
                                 <param name="movie" value="<%= asset_path('index.files/html5video/flashfox.swf')%>" />
                                 <param name="allowFullScreen" value="true" />
-                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" />
-                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('1ere-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" />
+                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('1ere-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
                                 <img alt="screencast" src="<%= asset_path('1ere-scene.png')%>" style="position:absolute;left:0;" width="100%" title="<%= t('screencast_error_text')%>" />
                             </object>
                         </video>
@@ -31,14 +30,13 @@
                 <div style='display:none'>
                     <div id="second-video">
                         <video preload="metadata"  controls="controls" poster="<%= asset_path('2eme-scene.png')%>" width="100%" height="auto"  title="1662">
-                            <source src="<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" type="video/mp4" />
-                            <source src="<%= asset_path('index.files/html5video/1ere-scene.webm')%>" type="video/webm" />
-                            <source src="<%= asset_path('index.files/html5video/1ere-scene.ogv')%>" type="video/ogg" />
+                            <source src="<%= asset_path('index.files/html5video/2eme-scene.mp4')%>" type="video/mp4" />
+                            <source src="<%= asset_path('index.files/html5video/2eme-scene.webm')%>" type="video/webm" />
                             <object type="application/x-shockwave-flash" data="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;">
                                 <param name="movie" value="<%= asset_path('index.files/html5video/flashfox.swf')%>" />
                                 <param name="allowFullScreen" value="true" />
-                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" />
-                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('2eme-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/2eme-scene.mp4')%>" />
+                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('2eme-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/2eme-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
                                 <img alt="screencast" src="<%= asset_path('2eme-scene.png')%>" style="position:absolute;left:0;" width="100%" title="<%= t('screencast_error_text')%>" />
                             </object>
                         </video>
@@ -49,12 +47,11 @@
                         <video preload="metadata"  controls="controls" poster="<%= asset_path('3eme-scene.png')%>" width="100%" height="auto"  title="1662">
                             <source src="<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" type="video/mp4" />
                             <source src="<%= asset_path('index.files/html5video/1ere-scene.webm')%>" type="video/webm" />
-                            <source src="<%= asset_path('index.files/html5video/1ere-scene.ogv')%>" type="video/ogg" />
                             <object type="application/x-shockwave-flash" data="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;">
                                 <param name="movie" value="<%= asset_path('index.files/html5video/flashfox.swf')%>" />
                                 <param name="allowFullScreen" value="true" />
-                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" />
-                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('screencast.jpg')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                                <param name="flashVars" value="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('3eme-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>" />
+                                <embed src="<%= asset_path('index.files/html5video/flashfox.swf')%>" width="100%" height="200" style="position:relative;"  flashVars="autoplay=true&amp;controls=true&amp;fullScreenEnabled=true&amp;posterOnEnd=true&amp;loop=false&amp;poster=<%= asset_path('3eme-scene.png')%>&amp;src=<%= asset_path('index.files/html5video/1ere-scene.mp4')%>"	allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
                                 <img alt="screencast" src="<%= asset_path('3eme-scene.png')%>" style="position:absolute;left:0;" width="100%" title="<%= t('screencast_error_text')%>" />
                             </object>
                         </video>
