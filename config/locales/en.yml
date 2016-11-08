@@ -43,7 +43,7 @@ en:
   # welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
   welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers to write Data Management Plans.</p>"
 
-  screencast_text: "Screencast on how to use DMP OPIDoR"
+  screencast_text: "Screencasts on how to use DMP OPIDoR"
   screencast_error_text: "Your browser does not support the video tag."
 
   admin:
@@ -291,8 +291,8 @@ en:
     sign_out: "Sign out"
     sign_up: "Create an account"
     sign_up_text: "New to DMP OPIDoR? Create an account today."
-    sign_up_cil_message: "Les informations portées sur ce formulaire sont obligatoires. Elles font l’objet d’un traitement informatisé destiné à la gestion des comptes des utilisateurs. Les destinataires des données sont l’inist-CNRS (UPS 76).
-    Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent. Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez-vous adresser à <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>."
+    sign_up_cil_message: "<p>The information collected that concerns you will be treated and is destined for: the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are: administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>
+                            <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their treatment. You can oppose the treatment of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. You can also direct a complaint at a controlling body.</p>"
     signed_in: "Logged in as "
     institution_sign_in_link: "Log in"
     institution_sign_in_text: " (French researchers only)"
@@ -328,6 +328,7 @@ en:
     checkbox: "Check box"
     dropdown: "Dropdown"
     multi_select_box: "Multi select box"
+    date: "Date"
 
     error: "Error!"
     comment: "Comment"

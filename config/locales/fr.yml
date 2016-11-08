@@ -43,7 +43,7 @@ fr:
   
   welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) vous aidera dans la rédaction de plans de gestion de données, ou DMP.</p>"
 
-  screencast_text: "Vidéo en ligne sur l'utilisation de DMP OPIDoR"
+  screencast_text: "Vidéos en ligne sur l'utilisation de DMP OPIDoR"
   screencast_error_text: "La balise video n'est pas reconnue par votre navigateur."
 
   admin:
@@ -291,8 +291,8 @@ fr:
     sign_out: "Se déconnecter"
     sign_up: "Créer un compte"
     sign_up_text: "Nouvel utilisateur de DMP OPIDoR? Inscrivez-vous..."
-    sign_up_cil_message: "Les informations portées sur ce formulaire sont obligatoires. Elles font l’objet d’un traitement informatisé destiné à la gestion des comptes des utilisateurs. Les destinataires des données sont l’inist-CNRS (UPS 76).
-    Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent. Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez-vous adresser à <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>."
+    sign_up_cil_message: "<p>Les informations recueillies vous concernant vont faire l’objet d’un traitement destiné à : Inist-CNRS (UPS76) et correspondant Informatique et Libertés. Pour la finalité suivante : gestion des comptes des utilisateurs. Les destinataires de ces données sont : administrateurs DMP OPIDoR de l’Inist-CNRS. La durée de conservation des données est de 5 ans suite à la dernière connexion.</p>
+                            <p>Vous bénéficiez d’un droit d’accès, de rectification, de portabilité, d’effacement de celles-ci ou une limitation du traitement. Vous pouvez vous opposer au traitement des données vous concernant et disposez du droit de retirer votre consentement à tout moment en vous adressant à <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. Vous avez la possibilité d’introduire une réclamation auprès d’une autorité de contrôle.</p>"
     signed_in: "Connecté en tant que "
     institution_sign_in_link: "Compte institutionnel"  
     institution_sign_in: "Authentification à l'aide du compte institutionnel"
@@ -328,6 +328,7 @@ fr:
     checkbox: "Case à cocher"
     dropdown: "Liste déroulante"
     multi_select_box: "Case à options multiples"
+    date: "Date"
 
     error: "Erreur!"
     comment: "Commentaire"
