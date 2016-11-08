@@ -9,6 +9,9 @@
 	<li>
 		<%= f.password_field :password, placeholder: (t('helpers.password') + ' *'), :as => :password %>
 	</li>
+    <li class="mandatory_field">
+        <%= t('helpers.mandatory_field') %>
+	</li>
 	<li class="remember_me_li">
 		<%= f.check_box :remember_me %><%= f.label :remember_me, :class => "remember_div" do %>
 			<%= t('helpers.remember_me') %>

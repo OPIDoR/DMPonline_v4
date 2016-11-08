@@ -46,6 +46,9 @@
 			<strong><%= t('helpers.error')%></strong>&nbsp;<%= t('helpers.password_no_match')%>
 		</div>
 	</li>
+    <li class="mandatory_field">
+        <%= t('helpers.mandatory_field') %>
+	</li>
 	<li class="remember_me_li">
 		<%= f.check_box :accept_terms, :required => true %> <%= f.label :accept_terms, :class => "remember_div"  do %>
 		  <%= raw t('helpers.accept_terms_html')%>

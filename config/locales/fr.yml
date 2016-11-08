@@ -291,7 +291,7 @@ fr:
     sign_out: "Se déconnecter"
     sign_up: "Créer un compte"
     sign_up_text: "Nouvel utilisateur de DMP OPIDoR? Inscrivez-vous..."
-    sign_up_cil_message: "<p>Les informations recueillies vous concernant vont faire l’objet d’un traitement destiné à : Inist-CNRS (UPS76) et correspondant Informatique et Libertés. Pour la finalité suivante : gestion des comptes des utilisateurs. Les destinataires de ces données sont : administrateurs DMP OPIDoR de l’Inist-CNRS. La durée de conservation des données est de 5 ans suite à la dernière connexion.</p>
+    sign_up_cil_message: "<p>Les informations recueillies vous concernant vont faire l’objet d’un traitement destiné à l'Inist-CNRS (UPS76) et au correspondant Informatique et Libertés. Pour la finalité suivante : gestion des comptes des utilisateurs. Les destinataires de ces données sont les administrateurs DMP OPIDoR de l’Inist-CNRS. La durée de conservation des données est de 5 ans suite à la dernière connexion.</p>
                             <p>Vous bénéficiez d’un droit d’accès, de rectification, de portabilité, d’effacement de celles-ci ou une limitation du traitement. Vous pouvez vous opposer au traitement des données vous concernant et disposez du droit de retirer votre consentement à tout moment en vous adressant à <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. Vous avez la possibilité d’introduire une réclamation auprès d’une autorité de contrôle.</p>"
     signed_in: "Connecté en tant que "
     institution_sign_in_link: "Compte institutionnel"  
@@ -320,6 +320,7 @@ fr:
     no_unlock_instructions: "Vous n'avez pas reçu les instructions de déverrouillage?"
     send_password_info: "Instructions pour réinitialiser le mot de passe"
     edit_password_info: "Si vous souhaitez modifier votre mot de passe, veuillez remplir les champs suivants."
+    mandatory_field: "* Champs obligatoires"
     accept_terms_html: "J'accepte les <a href='/terms'>conditions générales d'utilisation."
 
     text_area: "Zone de texte"
@@ -835,7 +836,7 @@ fr:
     body_text_html: "<div class='white_background'>
     <p>DMP OPIDoR est mis à disposition de la communauté de l’Enseignement supérieur et de la Recherche française par le <a href='http://www.cnrs.fr' target='_blank'>Centre National de la Recherche Scientifique</a> (CNRS)</p>
     <p>Toute utilisation de DMP OPIDoR suppose l’acceptation et le respect de l’ensemble des termes des présentes conditions générales d’utilisation.</p>
-    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>charte de la Sécurité des Systèmes d’Information du CNRS.</a></p>
+    <p>De plus, tout utilisateur de DMP OPIDoR reconnaît avoir lu, au préalable, la <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>charte de la Sécurité des Systèmes d’Information du CNRS (voir page 20).</a></p>
     <h3>Mentions légales</h3>
         <p>Le site est édité par:</p>
         <ul>

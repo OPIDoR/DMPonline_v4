@@ -290,9 +290,9 @@ en:
     sign_in: "Log in"
     sign_out: "Sign out"
     sign_up: "Create an account"
-    sign_up_text: "New to DMP OPIDoR? Create an account today."
-    sign_up_cil_message: "<p>The information collected that concerns you will be treated and is destined for: the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are: administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>
-                            <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their treatment. You can oppose the treatment of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. You can also direct a complaint at a controlling body.</p>"
+    sign_up_text: "New to DMP OPIDoR? Create an account today."                 
+    sign_up_cil_message: "<p>The information collected that concerns you will be processed and is destined for the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are the administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>
+                            <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their processing. You can oppose the processing of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. You can also direct a complaint at a controlling body.</p>"
     signed_in: "Logged in as "
     institution_sign_in_link: "Log in"
     institution_sign_in_text: " (French researchers only)"
@@ -320,6 +320,7 @@ en:
     no_unlock_instructions: "Didn't receive unlock instructions?"
     send_password_info: "Reset password instructions"
     edit_password_info: "If you would like to change your password please complete the following fields."
+    mandatory_field: "* These fields are mandatory."
     accept_terms_html: " I accept the <a href='/terms'>terms and conditions</a> *"
 
     text_area: "Text area"
@@ -601,7 +602,6 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>- or with the individual access.</li>
     </ul>
     <p>And start creating or editing your DMP.</p>
-    <p>Please note that we are currently working on single sign-in authentication with your institutional credentials. You will have the option to link your existing account to your institutional credentials when that feature becomes available.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
     <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
     <h3>Additional Information</h3>
@@ -835,7 +835,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     body_text_html: "<div class='white_background'>
     <p>DMP OPIDoR is provided by <a href='http://www.cnrs.fr' target='_blank'>the National Centre for Scientific Research</a> (CNRS) for the French Higher Education and Research community.</p>
     <p>Use of the tool indicates that you understand and agree to all the terms and conditions.</p>
-    <p>Furthermore, all users of DMP OPIDoR acknowledge that they have previously read the <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>Safety of Information Systems charter from CNRS</a>.</p>
+    <p>Furthermore, all users of DMP OPIDoR acknowledge that they have previously read the <a href='http://www.dgdr.cnrs.fr/bo/2014/BOavrilV2.pdf' target='_blank'>Safety of Information Systems charter from CNRS</a> (see page 20).</p>
     <h3>Legal Notices</h3>
         <p>The site is published by:</p>
         <ul>
