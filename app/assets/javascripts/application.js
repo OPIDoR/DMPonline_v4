@@ -28,7 +28,7 @@
 $( document ).ready(function() {
 
 	$(function() {
-		$(".question_date_field").datepicker({ dateFormat: 'dd-mm-yy' });
+		$(".question_date_field").datepicker({ dateFormat: 'yy-mm-dd' });
 	});
     
     $(function() {
