@@ -19,9 +19,9 @@
     <fieldset>
       <ol>
         <li>
-          <%= label_tag("export[title]", t("helpers.settings.plan.title")) %>
+          <%= label_tag("export[title]-#{plan.version.phase.id}", t("helpers.settings.plan.title")) %>
           <div class="move_2_right">
-            <%= text_field_tag("export[title]", plan.title) %>
+            <%= text_field_tag("export[title]-#{plan.version.phase.id}", plan.title) %>
           </div>
         </li>
       </ol>
