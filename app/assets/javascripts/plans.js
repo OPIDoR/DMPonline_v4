@@ -153,6 +153,7 @@ $( document ).ready(function() {
             
 			if ($.fn.is_dirty(section_id)) {
 				$('#unsaved-answers-'+section_id).text("");
+                console.log($.fn.get_unsaved_questions(section_id));
 				$.each($.fn.get_unsaved_questions(section_id), function(index, question_text){
 					$('#unsaved-answers-'+section_id).append("<li>"+question_text+"</li>");
 				});
@@ -175,7 +176,9 @@ $( document ).ready(function() {
 
     $(".save-section-collapse").click(function () {
         var section_id = $(this).attr('data-section');
-        $("#collapse-" + section_id).find("input[type='submit']").click();
+        $('#collapse-' + section_id + ' .answer-unsaved:visible').each(function(id, element){
+            $(this).parent().find("input[type=submit]").click();
+        });
         $('#section-' + section_id + '-collapse-alert').modal("hide");
     });
 
