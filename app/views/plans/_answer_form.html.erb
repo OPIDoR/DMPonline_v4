@@ -102,8 +102,8 @@
                     
                     <!-- Comment text area for the multiple choice answers-->
                     <% if question.option_comment_display == true then%>
-                        <%= label_tag("answer-text-#{question.id}".to_sym, t("helpers.comment")) %>
-                        <%= text_area_tag("answer-text-#{question.id}".to_sym, answer.text, class: "tinymce") %>
+                        <%= label_tag("answer-text-comment-#{question.id}".to_sym, t("helpers.comment")) %>
+                        <%= text_area_tag("answer-text-comment-#{question.id}".to_sym, answer.text, class: "tinymce") %>
                     <%end%>
                     
                 <!--text field display-->
