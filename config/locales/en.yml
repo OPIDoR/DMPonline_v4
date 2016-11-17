@@ -43,7 +43,7 @@ en:
   # welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
   welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers to write Data Management Plans.</p>"
 
-  screencast_text: "Screencasts on how to use DMP OPIDoR"
+  screencast_text: "Videos on how to use DMP OPIDoR"
   screencast_error_text: "Your browser does not support the video tag."
 
   admin:
@@ -306,7 +306,7 @@ en:
     user_details_paragraph_html: "You can edit any of the details below."
     remember_me: "Remember me"
     org_not_listed: "My organisation isn't listed."
-    password_advice: "Your password must contain at least 8 characters and should contain uppercase, lowercase, numerals and special characters."
+    password_advice: "Your password must contain at least 8 characters and should contain uppercase, lowercase, numbers and special characters."
 
     password: "Password"
     current_password: "Current password"
@@ -320,7 +320,7 @@ en:
     no_unlock_instructions: "Didn't receive unlock instructions?"
     send_password_info: "Reset password instructions"
     edit_password_info: "If you would like to change your password please complete the following fields."
-    mandatory_field: "* These fields are mandatory."
+    mandatory_field: "* These fields are mandatory"
     accept_terms_html: " I accept the <a href='/terms'>terms and conditions</a> *"
 
     text_area: "Text area"
@@ -460,7 +460,7 @@ en:
 Select what format you wish to use and click to 'Export'.</p>"
 
       questions_answered: "questions answered"
-      not_saved_answers_text_alert: "You have altered answers but have not saved them:"
+      not_saved_answers_text_alert: "You have modified answers but have not saved them:"
       not_saved_answers_confirmation_alert: "Would you like to save them now?"
       
       not_saved_answers_header: "Unsaved answers"
