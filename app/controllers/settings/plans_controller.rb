@@ -22,7 +22,8 @@ module Settings
         else
           s.formatting = export_params[:formatting]
           s.fields = export_params[:fields]
-          s.title  = export_params[:title]
+          
+          s.title  = export_params[:title].values.first
         end
       end
 
