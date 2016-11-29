@@ -1,6 +1,6 @@
 # [+Project:+] DMP OPIDoR en v1
 # [+Description:+] This file contains all the text present on DMP OPIDoR that is not being retrieve from the database.
-# [+Copyright:+] Digital Curation Centre 
+# [+Copyright:+] Digital Curation Centre
 
 en:
   date:
@@ -16,8 +16,8 @@ en:
     day_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
     abbr_day_names: [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
     # Don't forget the nil at the beginning; there's no such thing as a 0th month
-    
-    
+
+
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
     # Used in date_select and datetime_select.
@@ -32,7 +32,7 @@ en:
       short: "%d %b %H:%M"
       custom: "%d/%m/%Y %H:%M"
       long: "%B %d, %Y %H:%M"
-      
+
     am: "am"
     pm: "pm"
 
@@ -290,7 +290,7 @@ en:
     sign_in: "Log in"
     sign_out: "Sign out"
     sign_up: "Create an account"
-    sign_up_text: "New to DMP OPIDoR? Create an account today."                 
+    sign_up_text: "New to DMP OPIDoR? Create an account today."
     sign_up_cil_message: "<p>The information collected that concerns you will be processed and is destined for the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are the administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>
                             <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their processing. You can oppose the processing of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. You can also direct a complaint at a controlling body.</p>"
     signed_in: "Logged in as "
@@ -415,8 +415,8 @@ en:
       archive_comment_button_label: "Remove"
       clear_by: "Note removed by"
       retracted: "Note removed by you"
-      
-    
+
+
     org_type:
       funder: "Funder"
       institution: "Institution"
@@ -449,10 +449,10 @@ en:
       # Principal Investigator/Researcher ID
       principal_investigator_id: "Principal Investigator/Researcher ID"
       principal_investigator_id_help_text: "E.g ORCID http://orcid.org/."
-      
+
       funder_help_text: "Research funder if relevant"
       funder_name: "Funder name"
-      
+
       project_question_desc_label: "Summary about the questions"
       tab_plan: "Plan details"
       tab_export: "Export"
@@ -462,7 +462,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       questions_answered: "questions answered"
       not_saved_answers_text_alert: "You have modified answers but have not saved them:"
       not_saved_answers_confirmation_alert: "Would you like to save them now?"
-      
+
       not_saved_answers_header: "Unsaved answers"
       # Plan data contact
       project_data_contact: "Plan data contact"
@@ -589,7 +589,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     # tab_1: "DMP OPIDoR"
     # tab_2: "Background"
     # une page unique encadrée
-    
+
     body_text_html: "<div class='white_background'><p>A Data Management Plan (DMP) is a document that specifies which data will be collected or generated, how they will be managed, shared and preserved during and after the project. Preparing a plan is a good practice of any research project generating data. Moreover, funding bodies and institutions increasingly require their researchers to produce DMPs.</p><p>DMP OPIDoR is a tool to help you write a DMP.</p><p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_blank'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_blank'>GitHub</a> under a <a href='http://www.gnu.org/licenses/' target='_blank'>GNU Affero General Public License</a> to permit others to reuse the code freely. DMP OPIDoR has been customised for French researchers.</p>    </br>
     <h3>How the tool works</h3>
         <p>DMP OPIDoR includes a number of templates that represent the requirements of different funders and institutions. Where funder or institution doesn't have specific requirements, the tool includes a default DMP, which is the template provided by <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf'>European Commission in Horizon 2020</a>.</p>
@@ -610,7 +610,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>DMP OPIDoR can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
 
    # body_text_tab_2_html: "<p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_top'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_top'>GitHub</a> under a GNU Affero General Public License to permit others to reuse the code freely.</p></br>"
-        
+
 
   help_page:
     title: "Help"
@@ -699,7 +699,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>
         <a target='_blank' href='http://www.doranum.fr/'>DoRANum Project (Données de la Recherche : Apprentissage NUMérique à la gestion et au partage)</a> [webpage]<br />
         <i>Inist-CNRS, Urfist, BSN9, Dist-CNRS.</i><br />
-        DoRANum project aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources. 
+        DoRANum project aims to establish a coordinated access remote training system, integrating different self-training on the theme of the management and sharing of research data resources.
       </li>
       <li>
         <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
@@ -777,7 +777,7 @@ Select what format you wish to use and click to 'Export'.</p>"
      </ul>
         <p>Tel. +33 (0) 383504632</p>
         <p>Email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>"
-  
+
   # roadmap_page:
     # title: "Roadmap"
     # tab_1: "Future plans"
@@ -810,7 +810,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       # <li>- <a href='/files/DMPonline-v4-LocaleSupport.pdf' target='_blank'>Developing Locale-Aware Support for DMPonline version 4</a></li>
     # </ul>
     # </br>"
-     
+
     # body_text_tab_2_html: "<p>DMPonline is developed and maintained by the UK Digital Curation Centre. We’re a small team, and are happy to collaborate with others. There are various ways you can get involved:</p>
     # <h3>Join the user group</h3>
     # <p>We want to engage with our users more actively so invite you to join the user group. We run a <a target='_blank' href='https://www.jiscmail.ac.uk/cgi-bin/webadmin?A0=DMPONLINE-USER-GROUP'>listserv</a> for the group that you can request to join. We also host periodic meetings to consult on our plans</p>
@@ -819,7 +819,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     # </br>
     # <h3>Customise DMPonline</h3>
     # <p>DMPonline can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:dmponline@dcc.ac.uk?Subject=DMPonline%20Admin%20access' target='_top'>dmponline@dcc.ac.uk</a>.</p>
-    # <p>Futher guidance on customising DMPonline is available on the <a href='http://www.dcc.ac.uk/dmponline' target='_blank'>DCC website</a>.</p> 
+    # <p>Futher guidance on customising DMPonline is available on the <a href='http://www.dcc.ac.uk/dmponline' target='_blank'>DCC website</a>.</p>
     # </br>
     # <h3>Contribute to the code</h3>
     # <p>DMPonline is a Ruby on Rails application. The source code is made available under a GNU Affero General Public License. This permits others to reuse the code freely, but obligates you to share the source code for any extensions in the same way. Please inform us if you install an instance of DMPonline and offer your contributions back to the community.</p>
@@ -829,7 +829,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     # <h3>Support our work</h3>
     # <p>We are impressed by the uptake of DMPonline both in the UK and internationally and are really keen to hear  how you are using the tool and promoting it in your context. We are aware that others have run training courses, developed guidance materials and advocated use of the tool. Please notify us of this as it helps to show impact.</p>
     # <p>We are currently investigating options for revenue generation. This will help us serve the increased demand more effectively and safeguard the long-term sustainability of DMPonline. Plans will be released for consultation soon but we also welcome your suggestions on how best to support our work.</p> "
-    
+
   terms_page:
     title: "Terms of use"
     body_text_html: "<div class='white_background'>
@@ -863,8 +863,8 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p><b>User support Department:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <h3>Your personal details</h3>
     <p>To help identify and administer your account with DMP OPIDoR, we need to store specific user information: email address, surname, first name, home institution, ORCID, last login. We may also use it to inform you of the latest developments of the tool, maintenance and security issues. We will not sell, rent, deliver or trade any personal information you provide us with.</p>
-    <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CIL-CNRS (in progress).</p>
-    <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data on this site that concerns you personally.</p> 
+    <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CIL-CNRS (record number : 2-16052).</p>
+    <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data on this site that concerns you personally.</p>
     <p>To exercise this right, please contact us at <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
     <p>Data from an unused account (as a result of non-use of the service by the user) will be systematically anonymized within the 5 years following the last connection and you will no longer have access to the application and consequently to your data management plans.</p>
     <p>Moreover, authorized officers of your home institution (CNRS or other research organizations) have access to your email address, your surname/first name, last logged in and how many data management plans you have created. <b>It is up to these officers to make use of this information in accordance with regulations in force and recommendations of the CNIL.</b></p>
