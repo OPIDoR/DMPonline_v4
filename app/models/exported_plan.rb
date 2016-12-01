@@ -5,7 +5,7 @@ class ExportedPlan < ActiveRecord::Base
   belongs_to :plan
   belongs_to :user
 
-  VALID_FORMATS = %i( html pdf docx)
+  VALID_FORMATS = %i( html pdf docx csv json)
 
   validates :format, inclusion: { in: VALID_FORMATS, message: '%{value} is not a valid format' }
 
@@ -81,8 +81,10 @@ class ExportedPlan < ActiveRecord::Base
         self.questions_for_section(section).each do |question|
           answer = self.plan.answer(question.id)
           options_string = answer.options.collect {|o| o.text}.join('; ')
+          cleaned_q = Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')).text
+          cleaned_a = Nokogiri::HTML(answer.try(:text).gsub(/<li>/, ' * ')).text
 
-          csv << [section.title, question.text, sanitize_text(answer.text), options_string, answer.try(:user).try(:name), answer.created_at]
+          csv << [section.title, cleaned_q, sanitize_text(cleaned_a), options_string, answer.try(:user).try(:name), answer.created_at]
         end
       end
     end
@@ -90,7 +92,7 @@ class ExportedPlan < ActiveRecord::Base
 
   def as_txt
     output = "#{self.plan.project.title}\n\n#{self.plan.version.phase.title}\n"
-    
+
 
     self.sections.each do |section|
       output += "\n#{section.title}\n"
@@ -108,7 +110,7 @@ class ExportedPlan < ActiveRecord::Base
             output += "\n#{sanitize_text(answer.text)}\n"
           else
             output += "\n"
-          end  
+          end
         end
       end
     end

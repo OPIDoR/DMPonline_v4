@@ -19,12 +19,13 @@ json.sections do
       json.questions do
         @exported_plan.questions_for_section(section.id).each do |question|
           json.set! question.number do
-            json.question_text question.text
+            cleaned_q = Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')).text
+            json.question_text strip_tags(cleaned_q)
 
             answer = @exported_plan.plan.answer(question.id, false)
             q_format = question.question_format
-										
-            if answer.present? 
+
+            if answer.present?
                 if (q_format.title == "Check box" || q_format.title == "Multi select box" ||
                                         q_format.title == "Radio buttons" || q_format.title == "Dropdown")
                   json.selections do
@@ -36,7 +37,8 @@ json.sections do
                     json.comment_text (answer.try(:text) || 'No comment')
                   end
                 else
-                    json.answer_text (answer.try(:text) || 'Question not answered')
+                    cleaned_a = Nokogiri::HTML((answer.try(:text) || 'Question not answered').gsub(/<li>/, ' * ')).text
+                    json.answer_text strip_tags(cleaned_a)
                 end
             end
           end
