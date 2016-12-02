@@ -7,7 +7,7 @@ gem 'uglifier'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', '~> 2.2.8'
 gem 'sass-rails',   '~> 3.2.3'
-gem 'sass' 
+gem 'sass'
 gem 'therubyracer', '0.11.4', platforms: :ruby
 gem 'libv8'
 # To use debugger
@@ -56,9 +56,9 @@ gem 'cancan'
 #
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'tinymce-rails'
+gem 'tinymce-rails', '~> 4.4.0'
 gem 'friendly_id'
-gem 'contact_us' 
+gem 'contact_us'
 gem 'recaptcha'
 gem 'owlcarousel-rails'
 #gem 'owlcarousel-rails', :git => "git://github.com/acrogenesis/owlcarousel-rails", :branch => "OwlCarousel2"
@@ -76,5 +76,3 @@ gem 'feedzirra', '0.5.0'
 # WORD DOC EXPORTING
 gem 'caracal', '~> 1.0'
 gem 'caracal-rails', '~> 1.0'
-
-
