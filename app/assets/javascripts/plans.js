@@ -31,7 +31,7 @@ $( document ).ready(function() {
             $('html, body').animate({
                     'scrollTop': $("#current_question").offset().top
                     },1000);
-        },8000);
+        },1000);
     }
 
 	window.onbeforeunload = function(){
