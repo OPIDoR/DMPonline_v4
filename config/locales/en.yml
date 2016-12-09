@@ -41,7 +41,7 @@ en:
   # dcc_name: "Digital Curation Centre"
   welcome_title: "Welcome."
   # welcome_text: "<p>DMPonline has been developed by the <a href='http://dcc.ac.uk' target='_blank'>Digital Curation Centre</a> to help you write data management plans.</p>"
-  welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help french researchers to write Data Management Plans.</p>"
+  welcome_text: "<p><a href='https://dmp.opidor.fr' target='_blank'>DMP OPIDoR</a> (DMP pour une Optimisation du Partage et de l’Interopérabilité des Données de la Recherche) will help French researchers to write Data Management Plans.</p>"
 
   screencast_text: "Videos on how to use DMP OPIDoR"
   screencast_error_text: "Your browser does not support the video tag."
