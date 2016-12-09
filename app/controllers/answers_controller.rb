@@ -11,12 +11,16 @@ class AnswersController < ApplicationController
 			if (old_answer.nil? && @answer.text != "") || ((!old_answer.nil?) && (old_answer.text != @answer.text)) then
 				proceed = true
 			end
-            
-			if (@answer.question.question_format.title == I18n.t("helpers.checkbox") || 
+
+			if (@answer.question.question_format.title == I18n.t("helpers.checkbox") ||
                 @answer.question.question_format.title == I18n.t("helpers.multi_select_box") ||
-                @answer.question.question_format.title == I18n.t("helpers.radio_buttons") || 
+                @answer.question.question_format.title == I18n.t("helpers.radio_buttons") ||
                 @answer.question.question_format.title == I18n.t("helpers.dropdown")) then
-				if (old_answer.nil? && @answer.option_ids.count > 0) || ((!old_answer.nil?) && (old_answer.option_ids - @answer.option_ids).count != 0 && (@answer.option_ids - old_answer.option_ids).count != 0) then
+				if(old_answer.nil? && @answer.option_ids.count > 0)
+					proceed = true
+				elsif(!old_answer.nil? && old_answer.option_ids.nil? && @answer.option_ids.count > 0)
+					proceed = true
+				elsif(!old_answer.nil? && (old_answer.option_ids.length - @answer.option_ids.length) != 0)
 					proceed = true
 				end
 			end

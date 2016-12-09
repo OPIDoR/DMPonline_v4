@@ -22,7 +22,7 @@ DMPonline4::Application.configure do
 
 	# Add the fonts path
 	config.assets.paths << Rails.root.join('app', 'assets', 'fonts', 'videos')
-	
+
 	# Precompile additional assets
 	config.assets.precompile += %w( .svg .eot .woff .ttf )
 
@@ -64,7 +64,7 @@ DMPonline4::Application.configure do
   config.action_mailer.default_url_options = { :host => "localhost:3000" }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
-  
+
   ActionMailer::Base.default :from => 'dmp@inist.fr'
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = { :address => "smtpout.intra.inist.fr", :port => 25 }
@@ -78,7 +78,7 @@ DMPonline4::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-	
+
 	 # Error notifications by email
 	 config.middleware.use ExceptionNotification::Rack,
 	  :email => {
