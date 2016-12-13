@@ -48,6 +48,7 @@ fr:
 
   admin:
     org_title: "Nom de l'organisme"
+    other_org_title: "Autre Organisme"
     org: "Organisme"
     orgs: "Organismes"
     org_type: "Type d'organisme"

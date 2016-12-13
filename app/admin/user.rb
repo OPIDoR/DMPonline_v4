@@ -33,11 +33,12 @@ ActiveAdmin.register User do
         link_to user.surname, [:admin, user]
     end
    	column I18n.t('admin.last_logged_in'), :last_sign_in_at
-   	column I18n.t('admin.org_title'), :sortable => 'organisations.name' do |org_title|
+		column I18n.t('admin.org_title'), :sortable => 'organisations.name' do |org_title|
 			if !org_title.organisation.nil? then
       	link_to org_title.organisation.name, [:admin, org_title.organisation]
 			end
    	end
+		column I18n.t('admin.other_org_title'), :other_organisation 
 
   	 actions
   end

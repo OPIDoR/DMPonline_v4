@@ -48,6 +48,7 @@ en:
 
   admin:
     org_title: "Organisation name"
+    other_org_title: "Other Organisation"
     org: "Organisation"
     orgs: "Organisations"
     org_type: "Organisation type"
