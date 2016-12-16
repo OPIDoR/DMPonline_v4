@@ -57,6 +57,7 @@
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
 @background_color: #fff;
+@orange_lighter_colour: #f4a582;
 
 /************************************************************/
 /*              main structure of the t                     */
@@ -108,14 +109,14 @@ footer {
   padding: 25px 10% 100px 10%;
   font-size: @font_size;
   color: @font_colour;
- 
+
 }
 
 /*********************************************/
 /****              header                 ****/
 /*********************************************/
 /* left side*/
-div.header_left{    
+div.header_left{
     clear:both;
     height: 130px;
     }
@@ -130,7 +131,7 @@ div.header_left{
 
 /* right side*/
 div.header_right{
-    flex: 1;    
+    flex: 1;
     height:130px;
     padding-left: 40px;
     position:relative;
@@ -357,7 +358,7 @@ ul.footer-links li a, ul.footer-links li a:active, ul.footer-links li a:visited 
    /* color: @grey_colour; change cf */
   color: @white_colour;
   text-decoration: none;
- 
+
 }
 
 ul.footer-links li a:hover,  ul.footer-links li a:focus{
@@ -732,7 +733,7 @@ input#user_remember_me, input#user_accept_terms{
   padding-bottom:4px;
 }
 
-.cil_message_li > p, .mandatory_field {    
+.cil_message_li > p, .mandatory_field {
   font-size: x-small;
   font-style: italic;
   line-height: 1.5em;
@@ -1607,7 +1608,7 @@ ul.help_ul li{
   float:left;
   width:50%;
   margin: 2px 5px 0 0;
-    
+
   .white_background{
     min-height: 465px;
 
@@ -1634,7 +1635,7 @@ ul.help_ul li{
   width:48%;
   margin: 2px 0 0 5px;
   border-left: 2px solid @rouille;
-    
+
 
   .white_background{
     min-height: 465px;
@@ -1946,4 +1947,43 @@ ul.bullet {
 
 .alert-notice, .alert-warning {
     color: #81562B;
+}
+
+/* Datepicker */
+.dmpinist .ui-datepicker {
+  border-radius: 0;
+  .ui-datepicker-header {
+    background: @blue_lighter_colour;
+    color: #fff;
+    border-radius: 0;
+
+    .ui-datepicker-prev.ui-state-hover, .ui-datepicker-next.ui-state-hover {
+      background: #fff;
+      border-radius: 0;
+    }
+  }
+  .ui-datepicker-calendar td a {
+      background: @blue_very_light_colour;
+      border: 1px solid @blue_lighter_colour;
+      color: #fff;
+  }
+  .ui-datepicker-calendar td a:hover {
+      color: #fff;
+  }
+
+  .ui-datepicker-calendar td a.ui-state-active {
+    background: #fff;
+    border: 1px solid @blue_lighter_colour;
+    color: #000;
+  }
+
+  .ui-datepicker-calendar td a.ui-state-highlight {
+    background: @blue_colour;
+    border: 1px solid @blue_lighter_colour;
+  }
+  .ui-datepicker-calendar td a.ui-state-hover {
+    background: @orange_lighter_colour;
+    border: 1px solid @rouille;
+    color: #fff !important;
+  }
 }

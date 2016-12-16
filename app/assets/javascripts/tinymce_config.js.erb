@@ -1,10 +1,9 @@
 
-
     tinymce.init({
         setup: function(editor){
             editor.on('change', function(e){$.fn.check_textarea(editor)});
         },
-        content_css: "<%= asset_path('application.css') %>",    
+        content_css: "<%= asset_path('application.css') %>",
         mode : "none",
         statusbar: false,
         menubar: false,
