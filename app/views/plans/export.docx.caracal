@@ -58,7 +58,6 @@ end
 
             if q_format.title == I18n.t("helpers.checkbox") || q_format.title == I18n.t("helpers.multi_select_box") ||
                q_format.title == I18n.t("helpers.radio_buttons") || q_format.title == I18n.t("helpers.dropdown") then
-               docx.p answer
                 answer.options.each do |option|
                     docx.ul do
                         if !option.text.nil?
