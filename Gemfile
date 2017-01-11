@@ -56,7 +56,7 @@ gem 'cancan'
 #
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'tinymce-rails'
+gem 'tinymce-rails', '~> 4.4.0'
 gem 'friendly_id'
 gem 'contact_us'
 gem 'recaptcha'

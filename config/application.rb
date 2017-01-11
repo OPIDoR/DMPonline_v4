@@ -57,6 +57,7 @@ module DMPonline4
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.tinymce.install = :compile
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
@@ -68,6 +69,7 @@ module DMPonline4
     config.assets.precompile += %w(toolbar.js)
     config.assets.precompile += %w(admin.js)
     config.assets.precompile += %w(admin.css)
+
 
     config.autoload_paths += %W(#{config.root}/lib)
 

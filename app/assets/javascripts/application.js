@@ -30,14 +30,14 @@ $( document ).ready(function() {
 	$(function() {
 		$(".question_date_field").datepicker({ dateFormat: 'yy-mm-dd' });
 	});
-    
+
     $(function() {
        $("#tutorials").owlCarousel({
         navigation : true,
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem : true
-       }); 
+       });
     });
 
 
@@ -47,10 +47,10 @@ $( document ).ready(function() {
 
 	$('.accordion-body').on('show', function() {
 		var plus = $(this).parent().children(".accordion-heading").children(".accordion-toggle").children(".icon-plus").removeClass("icon-plus").addClass("icon-minus");
-        
+
 	}).on('hide', function(){
 		var minus = $(this).parent().children(".accordion-heading").children(".accordion-toggle").children(".icon-minus").removeClass("icon-minus").addClass("icon-plus");
-    
+
 	});
 
 	//accordion home page
@@ -138,9 +138,9 @@ $( document ).ready(function() {
 		$("#other-org-link").hide();
 		$("#user_organisation_id").change();
 	});
-    
-    
-    //alert dialog for unlink Shibbileth account 
+
+
+    //alert dialog for unlink Shibbileth account
    	$("#unlink-institutional-credentials-dialog").on("show", function(){
 		$('.select2-choice').hide();
 	});
@@ -153,7 +153,7 @@ $( document ).ready(function() {
 	$("#unlink-shibboleth-confirmed").click(function (){
         $("#unlink_flag").val('true');
 		$("#edit_user").submit();
-		
+
 	});
 
 
