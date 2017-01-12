@@ -19,7 +19,9 @@ json.sections do
       json.questions do
         @exported_plan.questions_for_section(section.id).each do |question|
           json.set! question.number do
-            cleaned_q = Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')).text
+            cleaned_q = Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')
+                                                    .gsub("\n", '\\n')
+                                                    .gsub("\r", ' ')).text
             json.question_text strip_tags(cleaned_q)
 
             answer = @exported_plan.plan.answer(question.id, false)
@@ -37,7 +39,10 @@ json.sections do
                     json.comment_text (answer.try(:text) || 'No comment')
                   end
                 else
-                    cleaned_a = Nokogiri::HTML((answer.try(:text) || 'Question not answered').gsub(/<li>/, ' * ')).text
+                    cleaned_a = Nokogiri::HTML((answer.try(:text) || 'Question not answered')
+                                                            .gsub(/<li>/, ' * ')
+                                                            .gsub("\n", '\\n')
+                                                            .gsub("\r", ' ')).text
                     json.answer_text strip_tags(cleaned_a)
                 end
             end

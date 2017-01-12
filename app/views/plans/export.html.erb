@@ -46,7 +46,7 @@
 								<th class="dmp_th_border" >
 									<p>- <%= raw question.text %></p>
 								</th>
-	        					<td class="dmp_td_border" >	
+	        					<td class="dmp_td_border" >
 									<% answer = @plan.answer(question.id, false) %>
 									<% if answer.nil? then %>
 										<p>Question not answered.</p>
@@ -65,13 +65,13 @@
 										<%else%>
                                             <%= raw answer.text %>
                                         <%end%>
-									<% end %>	
+									<% end %>
 								</td>
 							</tr>
 						<% end %>
-					</tbody>	
-				</table>			
+					</tbody>
+				</table>
 			<% end %>
-		</div>	
-	</div>	
+		</div>
+	</div>
 </div>
