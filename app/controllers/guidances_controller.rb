@@ -104,7 +104,7 @@ class GuidancesController < ApplicationController
   def update_questions
     # updates songs based on artist selected
     section = Section.find(params[:section_id])
-    @questions = section.questions.map{|s| [s.text, s.id]}.insert(0, "Select a question")
+    @questions = section.questions.map{|s| [s.text.gsub(/<li>/, ' * ').html_safe, s.id]}.insert(0, "Select a question")
   end
 
 
