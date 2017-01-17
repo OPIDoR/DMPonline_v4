@@ -36,7 +36,11 @@ json.sections do
                     end
                   end
                   if question.option_comment_display == true
-                    json.comment_text (answer.try(:text) || 'No comment')
+                    cleaned_c = Nokogiri::HTML((answer.try(:text) || 'No comment')
+                                                            .gsub(/<li>/, ' * ')
+                                                            .gsub("\n", '\\n')
+                                                            .gsub("\r", ' ')).text
+                    json.comment_text strip_tags(cleaned_c)
                   end
                 else
                     cleaned_a = Nokogiri::HTML((answer.try(:text) || 'Question not answered')
