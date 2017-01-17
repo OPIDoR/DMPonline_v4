@@ -27,18 +27,23 @@
 
 $( document ).ready(function() {
 
+
+	$(function() {
+		$('.video').click(function(){this.paused?this.play():this.pause();});
+	})
+
 	$(function() {
 		$(".question_date_field").datepicker({ dateFormat: 'yy-mm-dd' });
 	});
 
-    $(function() {
-       $("#tutorials").owlCarousel({
-        navigation : true,
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem : true
-       });
-    });
+  $(function() {
+     $("#tutorials").owlCarousel({
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true
+     });
+  });
 
 
 	$(function() {
