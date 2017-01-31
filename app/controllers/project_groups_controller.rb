@@ -1,5 +1,5 @@
 class ProjectGroupsController < ApplicationController
-	
+
 	def create
 		@project_group = ProjectGroup.new(params[:project_group])
 		access_level = params[:project_group][:access_level].to_i
@@ -23,11 +23,11 @@ class ProjectGroupsController < ApplicationController
 							else
 								@project_group.user = User.find_by_email(params[:project_group][:email])
 								@project_group.save
-								UserMailer.sharing_notification(@project_group).deliver
+								UserMailer.sharing_notification(@project_group, current_user).deliver
 								logger.debug("Email sent from here?")
 							end
 						else
-							UserMailer.sharing_notification(@project_group).deliver
+							UserMailer.sharing_notification(@project_group, current_user).deliver
 							logger.debug("Email sent from there?")
 						end
 						flash[:notice] = message
@@ -42,13 +42,13 @@ class ProjectGroupsController < ApplicationController
 					format.html { redirect_to :controller => 'projects', :action => 'share', :id => @project_group.project.slug }
 					format.json { render json: @project_group, status: :created, location: @project_group }
 				end
-			end			
+			end
 		else
 			render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)
 		end
-		
+
 	end
-	
+
 	def update
     	@project_group = ProjectGroup.find(params[:id])
     	access_level = params[:project_group][:access_level].to_i
@@ -95,5 +95,5 @@ class ProjectGroupsController < ApplicationController
 			render(:file => File.join(Rails.root, 'public/403.html'), :status => 403, :layout => false)
 		end
 	end
-	
+
 end
