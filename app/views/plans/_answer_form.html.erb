@@ -100,22 +100,22 @@
 						<%# end %>
 					<%# end %> -->
 
-                    <!-- Comment text area for the multiple choice answers-->
-                    <% if question.option_comment_display == true then%>
-                        <%= label_tag("answer-text-#{question.id}".to_sym, t("helpers.comment")) %>
-                        <%= text_area_tag("answer-text-#{question.id}".to_sym, answer.text, class: "tinymce") %>
-                    <%end%>
+					<!-- Comment text area for the multiple choice answers-->
+					<% if question.option_comment_display == true then%>
+					<%= label_tag("answer-text-#{question.id}".to_sym, t("helpers.comment")) %>
+					<%= text_area_tag("answer-text-#{question.id}".to_sym, answer.text, class: "tinymce") %>
+					<%end%>
 
-                <!--text field display-->
-                <% elsif q_format.title == t("helpers.text_field") then %>
-                    <%= text_field_tag("answer-text-#{question.id}".to_sym, strip_tags(answer.text), class: "question_text_field") %>
-		<!--date field display-->
-		<% elsif q_format.title == t("helpers.date") then%>
-		    <%= text_field_tag("answer-text-#{question.id}".to_sym, strip_tags(answer.text), class: "question_date_field") %>
-                <!--text area display-->
-                <% elsif q_format.title == t("helpers.text_area") then%>
-                    <%= text_area_tag("answer-text-#{question.id}".to_sym, answer.text, class: "tinymce") %>
-                <% end %>
+					<!--text field display-->
+					<% elsif q_format.title == t("helpers.text_field") then %>
+					<%= text_field_tag("answer-text-#{question.id}".to_sym, strip_tags(answer.text), class: "question_text_field") %>
+					<!--date field display-->
+					<% elsif q_format.title == t("helpers.date") then%>
+					<%= text_field_tag("answer-text-#{question.id}".to_sym, strip_tags(answer.text), class: "question_date_field", placeholder: sanitize("&#x1f4c5;")) %>
+					<!--text area display-->
+					<% elsif q_format.title == t("helpers.text_area") then%>
+					<%= text_area_tag("answer-text-#{question.id}".to_sym, answer.text, class: "tinymce") %>
+					<% end %>
 
 
             <% end %>
