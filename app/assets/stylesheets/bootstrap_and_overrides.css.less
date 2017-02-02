@@ -52,7 +52,7 @@
 @grey_darker_colour: #515151;
 @background_lighter_colour: #f9f9f9;
 @background_darker_colour: #d1d5d4;
-@green_colour: #114b8b;
+@green_colour: #d6604d;
 @red_colour: #ec563c;
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
@@ -151,7 +151,7 @@ div.header_right{
 }
 
 .main_nav_tabs{
-    width: 500px;
+    width: 600px;
     float:left;
     position:absolute;
     bottom:0;
@@ -182,6 +182,24 @@ div.header_right{
     color: @white_colour !important;
     font-weight: bold;
     border: 1px solid @blue_lighter_colour;
+    padding: 4px 15px 4px 15px;
+    text-decoration: none !important;
+}
+
+#main-nav-tabs li a.admin_area{
+    background-color: @orange_lighter_colour;
+    color: @white_colour;
+    font-weight: bold;
+    padding: 4px 15px 4px 15px;
+    margin-bottom: 1px;
+    text-decoration: none !important;
+}
+
+#main-nav-tabs li a.admin_area:hover{
+    background-color: @green_colour;
+    color: @white_colour !important;
+    font-weight: bold;
+    border: 1px solid @green_colour;
     padding: 4px 15px 4px 15px;
     text-decoration: none !important;
 }

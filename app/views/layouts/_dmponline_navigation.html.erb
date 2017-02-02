@@ -7,6 +7,10 @@
 	<ul class="nav nav-tabs" data-tabs="tabs">
         <!-- Navigation for organisation admin -->
         <% if (user_signed_in? && current_user.is_org_admin? && ( action_name.include? "admin_" ) ) %>
+
+						<li>
+							<%= link_to t("org_admin.public_area_label"), "/projects", :class => "public_area"%>
+						</li>
              <% if namespace == "dmptemplates" then %>
                 <li class="active">
             <% else %>
@@ -33,10 +37,16 @@
             <% else %>
                 <li>
             <% end %>
-                <%= link_to t("org_admin.user_list_label"), "/org/admin/users", :class => "main_nav_last_li"%>
+                <%= link_to t("org_admin.user_list_label"), "/org/admin/users"%>
             </li>
         <% else %>
             <% if user_signed_in? %>
+
+								<% if (current_user.is_org_admin?) %>
+									<li>
+										<%= link_to t("org_admin.admin_area"), admin_index_dmptemplate_path(current_user.organisation_id), :class => "admin_area" %>
+									</li>
+								<% end %>
                 <!-- project and plan page -->
                 <% if (namespace == "projects" || namespace == "plans") && current_path != "/projects/new" then %>
                     <li class="active">

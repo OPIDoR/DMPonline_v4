@@ -105,6 +105,7 @@ fr:
     template_label: "Modèles"
     user_list_label: "Utilisateurs"
     org_details_label:  "Renseignements sur l'organisme"
+    public_area_label:  "Section publique"
     org_text: "Il s'agit des renseignements de base concernant votre organisme."
     org_abbr_help_text_html: "Ce sont les éléments affichés comme étiquettes sur vos recommandations, par ex. 'Recommandations sur les métadonnées du CNRS'. Il vaut mieux utiliser une abréviation ou un nom abrégé."
     users_list: "Liste des utilisateurs"

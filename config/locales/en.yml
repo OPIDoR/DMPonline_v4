@@ -105,6 +105,7 @@ en:
     template_label: "Templates"
     user_list_label: "Users"
     org_details_label:  "Organisation details"
+    public_area_label:  "Public Area"
     org_text: "These are the basic details for your organisation."
     org_abbr_help_text_html: "This is what displays as a label on your guidance, e.g. 'CNRS guidance on Metadata'. It's best to use an abbreviation or short name."
     users_list: "List of users"
