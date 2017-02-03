@@ -19,11 +19,10 @@ xml.plan("id" => @plan.id) do
 				xml.answers do
 					questions =  @exported_plan.questions_for_section(section.id)
 					questions.each do |question|
-
-          	xml.question("id" => question.id, "number" => question.number, "question_format" => question.question_format  ) do
-	            q_format = question.question_format
-							cleaned_q = Nokogiri::HTML(question.text.gsub(/<li>/, ' * ')).text
-							xml.question_text strip_tags(cleaned_q)
+                        					
+                        xml.question("id" => question.id, "number" => question.number, "question_format" => question.question_format  ) do
+                            q_format = question.question_format
+							xml.question_text question.text
 							answer = @plan.answer(question.id, false)
 							if ! answer.nil? then
 								xml.answer("id" => answer.id) do #should add user and date info here
@@ -35,20 +34,12 @@ xml.plan("id" => @plan.id) do
 											end
 										end
                                         if question.option_comment_display == true then
-																					cleaned_c = Nokogiri::HTML((answer.try(:text) || 'No comment')
-											                                                            .gsub(/<li>/, ' * ')
-											                                                            .gsub("\n", '\\n')
-											                                                            .gsub("\r", ' ')).text
-											                    xml.comment_text strip_tags(cleaned_c)
+                                            xml.comment_text answer.text
                                         end
                                     else
-																			cleaned_a = Nokogiri::HTML((answer.try(:text) || 'Question not answered')
-									                                                            .gsub(/<li>/, ' * ')
-									                                                            .gsub("\n", '\\n')
-									                                                            .gsub("\r", ' ')).text
-									                    xml.answer_text strip_tags(cleaned_a)
+                                        xml.answer_text answer.text
 									end
-
+									
 								end
 							end
 						end
