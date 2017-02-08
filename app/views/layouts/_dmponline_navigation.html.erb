@@ -8,9 +8,6 @@
         <!-- Navigation for organisation admin -->
         <% if (user_signed_in? && current_user.is_org_admin? && ( action_name.include? "admin_" ) ) %>
 
-						<li>
-							<%= link_to t("org_admin.public_area_label"), "/projects", :class => "public_area"%>
-						</li>
              <% if namespace == "dmptemplates" then %>
                 <li class="active">
             <% else %>
@@ -39,14 +36,12 @@
             <% end %>
                 <%= link_to t("org_admin.user_list_label"), "/org/admin/users"%>
             </li>
+						<li>
+							<%= link_to t("org_admin.public_area_label"), "/projects", :class => "public_area"%>
+						</li>
         <% else %>
             <% if user_signed_in? %>
 
-								<% if (current_user.is_org_admin?) %>
-									<li>
-										<%= link_to t("org_admin.admin_area"), admin_index_dmptemplate_path(current_user.organisation_id), :class => "admin_area" %>
-									</li>
-								<% end %>
                 <!-- project and plan page -->
                 <% if (namespace == "projects" || namespace == "plans") && current_path != "/projects/new" then %>
                     <li class="active">
@@ -98,8 +93,15 @@
             <% else %>
                 <li>
             <% end %>
-                <%= link_to t("helpers.help_label"), "/help", :class => "main_nav_last_li"%>
+                <%= link_to t("helpers.help_label"), "/help"%>
             </li>
+
+						<% if (user_signed_in? && current_user.is_org_admin?) %>
+							<li>
+								<%= link_to t("org_admin.admin_area"), admin_index_dmptemplate_path(current_user.organisation_id), :class => "admin_area" %>
+							</li>
+						<% end %>
+
         <%end%>
     </ul>
 
