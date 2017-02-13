@@ -98,6 +98,7 @@ fr:
     sug_answers: "Suggestions de réponse"
     old_temp_field: "Ancien champ de modèle"
     old_theme_field: "Ancien champ de thème"
+    confirmation_link: "Lien de confirmation"
 
 
   org_admin:

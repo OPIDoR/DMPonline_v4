@@ -38,7 +38,7 @@ ActiveAdmin.register User do
       	link_to org_title.organisation.name, [:admin, org_title.organisation]
 			end
    	end
-		column I18n.t('admin.other_org_title'), :other_organisation 
+		column I18n.t('admin.other_org_title'), :other_organisation
 
   	 actions
   end
@@ -74,6 +74,13 @@ ActiveAdmin.register User do
   			row :shibboleth_id
   			row :last_sign_in_at
   			row :sign_in_count
+				row I18n.t('admin.confirmation_link'), :confirmation_token do |user|
+  				if !user.confirmation_token.nil? && user.confirmed_at.nil? then
+  					link_to 'Confirm account', "/users/confirmation?confirmation_token=#{user.confirmation_token}"
+					else
+						'-'
+  				end
+  			end
 
   		end
   end
