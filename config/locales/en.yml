@@ -890,6 +890,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <p>The information collected is not disclosed to third parties nor used for other purposes.</p>
     <p>Your browser can be configured to notify you of the cookies stored on your computer and to ask you to accept them or not. You can accept or reject cookies on a case-by-case basis or choose to systematically reject them. Remember that changing settings may modify your access conditions to our services which require the use of cookies.</p>
     <p>Each browser has a different cookies configuration. This configuration is mostly described in your browser's help menu.</p>
+    <iframe style=\"border: 0; width: 100%;\" src='https://piwik2.inist.fr/index.php?module=CoreAdminHome&action=optOut&language=en'></iframe>  
     <h3>Law applicable</h3>
     <p>The site is governed by French legislation, no matter where the website is used. In the event of potential disputes and following failed attempts to find an amicable solution, the French courts alone shall handle the dispute.</p>
     <p>If you have any comments or queries about our terms of use, please do not hesitate to contact us, e.g. by sending an email to <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>

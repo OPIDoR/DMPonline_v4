@@ -891,6 +891,7 @@ fr:
     <p>Les données ne sont pas cédées à des tiers ni utilisées à d’autres fins.</p>
     <p>Vous pouvez paramétrer votre navigateur afin qu’il vous signale la présence de cookies et vous propose de les accepter ou non. Vous pouvez accepter ou refuser les cookies au cas par cas ou bien les refuser une fois pour toutes. Il est rappelé que ce paramétrage est susceptible de modifier vos conditions d’accès aux services du site nécessitant l’utilisation de cookies.</p>
     <p>Le paramétrage des cookies est différent pour chaque navigateur et en général décrit dans les menus d’aide.</p>
+    <iframe style=\"border: 0; width: 100%;\" src='https://piwik2.inist.fr/index.php?module=CoreAdminHome&action=optOut&language=fr'></iframe>  
     <h3>Droit applicable</h3>
     <p>Quel que soit le lieu d’utilisation, le présent site est régi par le droit français. En cas de contestation éventuelle, et après l’échec de toute tentative de recherche d’une solution amiable, les tribunaux français seront seuls compétents pour connaître de ce litige.</p>
     <p>Pour toute question relative aux présentes conditions d’utilisation du site, vous pouvez nous contacter par courriel: <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
