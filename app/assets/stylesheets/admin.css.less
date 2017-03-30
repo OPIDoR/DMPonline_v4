@@ -57,6 +57,7 @@
 @red_colour: #ec563c; /*#e3000f*/
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
+@background_color_even: #f4f5f5;
 @background_color: #fff;
 
 /************************************************************/
@@ -756,6 +757,18 @@ table.dmp_table thead th{
 
 table.dmp_table tbody td{
   background-color: @white_colour;
+  color: @font_colour;
+  padding: 4px 4px 4px 15px;
+}
+
+table.dmp_table tbody td{
+  background-color: @white_colour;
+  color: @font_colour;
+  padding: 4px 4px 4px 15px;
+}
+
+table.dmp_table tbody tr:nth-child(even) td{
+  background-color: @background_color_even;
   color: @font_colour;
   padding: 4px 4px 4px 15px;
 }
