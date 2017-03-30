@@ -1,6 +1,6 @@
 # [+Project:+] DMPonline v4
 # [+Description:+] This controller is responsible for all the actions in the admin interface under templates (e.g. phases, versions, sections, questions, suggested answer) (index; show; create; edit; delete)
-# [+Copyright:+] Digital Curation Centre 
+# [+Copyright:+] Digital Curation Centre
 
 class DmptemplatesController < ApplicationController
 
@@ -168,18 +168,18 @@ class DmptemplatesController < ApplicationController
 			end
 		end
 	end
-	
+
 	#preview a phase
 	def admin_previewphase
 		if user_signed_in? && current_user.is_org_admin? then
-			
+
 			@version = Version.find(params[:id])
-			
-				
+
+
 			respond_to do |format|
 				format.html
 			end
-		end	
+		end
 	end
 
 
@@ -268,7 +268,7 @@ class DmptemplatesController < ApplicationController
             if @version.published && !@phase.dmptemplate.published then
                 @phase.dmptemplate.published = true
             end
-            
+
             @all_versions = @phase.versions.where('published = ?', true)
             @all_versions.each do |v|
                 if v.id != @version.id && v.published == true then
@@ -431,6 +431,11 @@ class DmptemplatesController < ApplicationController
 	   	@section = @question.section
 			@version = @section.version
 	   	@phase = @version.phase
+      if Guidance.exists?(question_id: @question.id)
+        @guidance = Guidance.find_by_question_id(@question.id)
+        @guidance.question_id = nil
+        @guidance.save
+      end
 	    @question.destroy
 
 	    respond_to do |format|
