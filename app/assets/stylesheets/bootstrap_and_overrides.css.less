@@ -56,6 +56,7 @@
 @red_colour: #ec563c;
 @red_lighter_colour: #EE6B54;
 @white_colour: #ffffff;
+@background_color_even: #f4f5f5;
 @background_color: #fff;
 @orange_lighter_colour: #f4a582;
 
@@ -786,6 +787,10 @@ table.dmp_table tbody td{
   background-color: @white_colour;
   color: @font_colour;
   padding: 4px 4px 4px 15px;
+}
+
+table.list_table tbody tr:nth-child(even) td{
+  background-color: @background_color_even;
 }
 
 table.dmp_table tbody td.dmp_td_big, table.dmp_table thead th.dmp_th_big{
