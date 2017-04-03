@@ -1,7 +1,7 @@
 <!-- preview a question and its guidance.  Question is passed as an argument-->
 
 <div class="question-div">
-	
+
 	<!--question format-->
 	<% q_format = question.question_format%>
 	<form action="">
@@ -9,7 +9,7 @@
 			<!-- verify if the question has multiple choice -->
 			<% if q_format.title == t("helpers.checkbox") || q_format.title == t("helpers.multi_select_box") || q_format.title == t("helpers.radio_buttons") || q_format.title == t("helpers.dropdown") then%>
 				<% options = question.options.order("number") %>
-										
+
 				<!--checkbox display-->
 				<% if q_format.title == t("helpers.checkbox") then %>
 					<%if !options.nil? then %>
@@ -20,7 +20,7 @@
 									<li class="choice"><label ><input type="checkbox" ><%= raw op.text %></label></li>
 								<%end%>
 							</ol>
-						</fieldset>	
+						</fieldset>
 					<%end%>
 				<!--multi select box display-->
 				<% elsif q_format.title == t("helpers.multi_select_box") then %>
@@ -42,7 +42,7 @@
 									<li class="choice"><label ><input type="radio"><%= raw op.text %></label></li>
 								<%end%>
 							</ol>
-						</fieldset>	
+						</fieldset>
 					<%end%>
 				<!--dropdown display-->
 				<% elsif q_format.title == t("helpers.dropdown") then%>
@@ -52,10 +52,10 @@
 							<% options.each do |op|%>
 								<option><%= raw op.text %></option>
 							<%end%>
-						</select>	
+						</select>
 					<%end%>
 				<% end %>
-				
+
 				<!--Suggested answer area-->
 				<% suggested_answer = question.suggested_answers.find_by_organisation_id(current_user.organisation_id) %>
 				<% if !suggested_answer.nil? && suggested_answer.text != "" then %>
@@ -97,14 +97,16 @@
 						</div>
 					</div>
 				<% end %>
-				
+
 			<% end %>
-			
-			
-			
+
+
+
 			<!--text field display-->
 			<% if q_format.title == t("helpers.text_field") then %>
 				<input type ='text' style='width: 97%;'/>
+			<% elsif q_format.title == t("helpers.date") then%>
+				<input type ='text' class="question_date_field" placeholder="&#x1f4c5;"/>
 			<!--text area display-->
 			<%elsif q_format.title == t("helpers.text_area") then%>
 				<textarea rows="4" style='width: 97%;' ></textarea>
@@ -112,13 +114,13 @@
 			<br/>
 			<!-- button without action-->
 			<%= link_to t("helpers.save"), '#', :class => 'btn btn-primary', :onclick => 'event.preventDefault();' %>
-			
+
 			<span class="label label-warning answer-status"><%= t('helpers.notanswered') %></span>
-	
+
 		</div>
 	</form>
-</div>	
+</div>
 
-		
+
 <!--guidance block -->
 <%= render :partial => 'guidance_display', locals: {question: question}%>
