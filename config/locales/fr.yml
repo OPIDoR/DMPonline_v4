@@ -677,7 +677,7 @@ fr:
         Une vingtaine d'exemples de DMP proposés à la <i>National Science Foundation</i> (NSF) aux États-Unis par des enseignants chercheurs de l'Université de Californie à San Diego
       </li>
       <li>
-        <a target='_blank' href='http://inside.mines.edu/RDS-example-plans'>Exemples de l'École des Mines du Colorado (<i>Colorado School of Mines examples</i>)</a> [pageWeb]<br />
+        <a target='_blank' href='http://rss.mines.edu/RSS-data-management-plan'>Exemples de l'École des Mines du Colorado (<i>Colorado School of Mines examples</i>)</a> [pageWeb]<br />
         Plusieurs exemples de DMP américains de cette école et d'autres établissements
       </li>
       <li>
@@ -707,8 +707,8 @@ fr:
         Le projet DoRANum a pour objectif de mettre en place un dispositif de formation à distance d’accès coordonné, intégrant différentes ressources d’auto-formation sur la thématique de la gestion et du partage des données de la recherche.
       </li>
       <li>
-        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5442/40415/version/5/file/CoopIST_initiation_donnees_recherche_20151120.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
-        <i>Deboin M.C. 2014. Montpellier (FRA) : CIRAD.</i>
+        <a target='_blank' href='coop-ist.cirad.fr/content/download/6118/44587/version/6/file/CoopIST_initiation_donnees_recherche_20170113.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
+        <i>Deboin M.C. 2017. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
         <a target='_blank' href='http://coop-ist.cirad.fr/content/download/5705/42112/version/2/file/CoopIST-rendre-publics-jeux-donnees-avril-2015.pdf'>Rendre publics ses jeux de données scientifiques en 6 points</a> [PDF, 6 pages]<br />
@@ -891,7 +891,7 @@ fr:
     <p>Les données ne sont pas cédées à des tiers ni utilisées à d’autres fins.</p>
     <p>Vous pouvez paramétrer votre navigateur afin qu’il vous signale la présence de cookies et vous propose de les accepter ou non. Vous pouvez accepter ou refuser les cookies au cas par cas ou bien les refuser une fois pour toutes. Il est rappelé que ce paramétrage est susceptible de modifier vos conditions d’accès aux services du site nécessitant l’utilisation de cookies.</p>
     <p>Le paramétrage des cookies est différent pour chaque navigateur et en général décrit dans les menus d’aide.</p>
-    <iframe style=\"border: 0; width: 100%;\" src='https://piwik2.inist.fr/index.php?module=CoreAdminHome&action=optOut&language=fr'></iframe>  
+    <iframe style=\"border: 0; width: 100%;\" src='https://piwik2.inist.fr/index.php?module=CoreAdminHome&action=optOut&language=fr'></iframe>
     <h3>Droit applicable</h3>
     <p>Quel que soit le lieu d’utilisation, le présent site est régi par le droit français. En cas de contestation éventuelle, et après l’échec de toute tentative de recherche d’une solution amiable, les tribunaux français seront seuls compétents pour connaître de ce litige.</p>
     <p>Pour toute question relative aux présentes conditions d’utilisation du site, vous pouvez nous contacter par courriel: <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
