@@ -1,4 +1,4 @@
-/*
+/* 
 **Project: DMPonline v4
 **Description: This file include all javascript regarding admin interface
 **Copyright: Digital Curation Centre
@@ -19,7 +19,7 @@ $( document ).ready(function() {
 			}, 1000);
 		}
 	}
-
+		
 	//set the tinymce popover help text
 	$(".template_desc_popover, .phase_desc_popover, .version_desc_popover, .section_desc_popover, .question_format_popover," +
 			" .default_answer_popover, .suggested_answer_popover, .question_guidance_popover, .question_themes_popover," +
@@ -28,47 +28,33 @@ $( document ).ready(function() {
 			" .guidance_by_question_popover, .guidance_group_select_popover, .org_abbr_popover").on('click', function(e) {
 	    e.preventDefault();
 	}).popover();
-
+	
 	//show or hide divs based on what the user selects from the question format. New question
 	$('.ques_format').on("change", function(e) {
 		var s_id = $(this).prev(".section_id").val();
-
+		
 		var selected_format = $('#new-select-format-'+ s_id).val();
-
+		
 		//text area
 		if (selected_format == 1){
-      $("#new-default-text-area-"+ s_id).show();
-      $("#new-default-value-field-"+ s_id).show();
-
 			$("#new-options-"+ s_id).hide();
 			$("#new-default-text-field-"+ s_id).hide();
-      $("#new-default-value-text-field-"+ s_id).hide();
+			$("#new-default-text-area-"+ s_id).show();
+			$("#new-default-value-field-"+ s_id).show();
 		}
 		//text field
 		else if (selected_format == 2){
+			$("#new-options-"+ s_id).hide();
 			$("#new-default-text-field-"+ s_id).show();
-      $("#new-default-value-text-field-"+ s_id).show();
-
-  		$("#new-options-"+ s_id).hide();
-			$("#new-default-value-field-"+ s_id).hide();
+			$("#new-default-value-field-"+ s_id).show();
 			$("#new-default-text-area-"+ s_id).hide();
 		}
 		//checkbox,radio button, dropdown, multi select
 		else if (selected_format == 3 ||selected_format == 4 || selected_format == 5 || selected_format == 6){
 			$("#new-options-"+ s_id).show();
-
 			$("#new-default-text-field-"+ s_id).hide();
 			$("#new-default-text-area-"+ s_id).hide();
 			$("#new-default-value-field-"+ s_id).hide();
-      $("#new-default-value-text-field-"+ s_id).hide();
-		}
-		//date
-		else if (selected_format == 7 ){
-			$("#new-options-"+ s_id).hide();
-			$("#new-default-text-field-"+ s_id).hide();
-			$("#new-default-text-area-"+ s_id).hide();
-			$("#new-default-value-field-"+ s_id).hide();
-      $("#new-default-value-text-field-"+ s_id).hide();
 		}
 		delete selected_format;
 	}).trigger('change');
@@ -81,36 +67,22 @@ $( document ).ready(function() {
 		var selected_format = $('#'+ q_id +'-select-format').val();
 		//text area
 		if (selected_format == 1){
-      $("#default-text-area-"+ q_id).show();
-      $("#default-value-field-"+ q_id).show();
-
 			$("#options-"+ q_id).hide();
 			$("#default-text-field-"+ q_id).hide();
-			$("#default-value-text-field-"+ q_id).hide();
+			$("#default-text-area-"+ q_id).show();
+			$("#default-value-field-"+ q_id).show();
 		}
 		//text field
 		else if (selected_format == 2){
-			$("#default-value-text-field-"+ q_id).show();
+			$("#options-"+ q_id).hide();
 			$("#default-text-field-"+ q_id).show();
-
-  		$("#options-"+ q_id).hide();
-			$("#default-value-field-"+ q_id).hide();
+			$("#default-value-field-"+ q_id).show();
 			$("#default-text-area-"+ q_id).hide();
 		}
 		//checkbox,radio button, dropdown, multi select
 		else if (selected_format == 3 ||selected_format == 4 || selected_format == 5 || selected_format == 6){
 			$("#options-"+ q_id).show();
-
 			$("#default-text-field-"+ q_id).hide();
-			$("#default-value-text-field-"+ q_id).hide();
-			$("#default-text-area-"+ q_id).hide();
-			$("#default-value-field-"+ q_id).hide();
-		}
-		//date
-		else if (selected_format == 7 ){
-			$("#options-"+ q_id).hide();
-			$("#default-text-field-"+ q_id).hide();
-			$("#default-value-text-field-"+ q_id).hide();
 			$("#default-text-area-"+ q_id).hide();
 			$("#default-value-field-"+ q_id).hide();
 		}
@@ -201,7 +173,7 @@ return false;
 	 				section_id : $('#sections_select').val()
 	 			}
 		 	});
-
+		 	
 		 	//$('#phases_select').show();
 		 	//$('#versions_select').show();
 		 	//$('#sections_select').show();
@@ -237,11 +209,11 @@ return false;
 		 var q_id = $(this).prev(".question_id").val();
 		 $('#edit_question_div_'+ q_id).show();
 		 $('#show_question_div_'+ q_id).hide();
-
+         
          $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
             tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
         });
-
+         
 		 e.preventDefault();
 	 });
 
@@ -250,49 +222,49 @@ return false;
 		 var q_id = $(this).prev(".question_id").val();
 		 $('#edit_question_div_'+ q_id).hide();
 		 $('#show_question_div_'+ q_id).show();
-
+        
         $('#edit_question_div_'+ q_id).find("textarea").each(function(index, ta) {
             tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
          });
-
+        
 		 e.preventDefault();
 	 });
 
-
+    
 	 //action for adding a new question
 	 $('.add_question_button').click(function(e){
          var s_id = $(this).prev(".section_id").val();
          $('#add_question_block_div_'+ s_id).show();
          $('#add_question_button_div_'+ s_id).hide();
-
+        
           $('#add_question_block_div_'+ s_id).find("textarea").each(function(index, ta) {
             tinymce.execCommand('mceAddEditor',true, $(ta).attr('id'));
          });
-
+         
          e.preventDefault();
-
+            
 	 });
-
-    //if question text area is empty send alert
-    $('.new_question_save_button').click(function(e){
+     
+    //if question text area is empty send alert 
+    $('.new_question_save_button').click(function(e){   
         var s_id = $(this).prev(".section_id").val();
         if (tinymce.get('new_question_text_'+ s_id).getContent() == ''){
             alert('Question text is empty, please enter your question.');
             return false;
         }
     });
-
+   
 	 //action for cancelling a new question
 	 $('.cancel_add_new_question').click(function(e){
         var s_id_new = $(this).prev(".section_id_new").val();
         $('#add_question_block_div_'+ s_id_new).hide();
         $('#add_question_button_div_'+ s_id_new).show();
-
-
+         
+         
         $('#add_question_block_div_'+ s_id_new).find("textarea").each(function(index, ta) {
             tinymce.execCommand('mceRemoveEditor',true, $(ta).attr('id'));
          });
-
+         
         e.preventDefault();
 	 });
 
@@ -336,47 +308,47 @@ return false;
 		 $('#show_suggested_answer_div_'+ q_id).hide();
 		 e.preventDefault();
 	 });
-
-
-    //Add new guidance Alerts
+     
+     
+    //Add new guidance Alerts 
     $("#return_to_new_guidance").click(function(){
         $('#new_guidance_alert_dialog').modal("hide");
     });
-
-
+    
+    
     $('#new_guidance_submit').click( function(e){
        // $('#new_guidance_alert_dialog').on("hide", function(){
-
+            
         var alert_message = [];
         //verify if text area is not nil
         var editorContent = tinyMCE.get('guidance-text').getContent();
         if (editorContent == ''){
             alert_message.push("add guidance text");
-        }
-        //verify dropdown with questions has a selected option if guidance for a question being used
+        }  
+        //verify dropdown with questions has a selected option if guidance for a question being used 
         if ($('#g_options').val() == '2') {
             if ($('#questions_select').val() == '' || isNaN($('#questions_select').val())){
                 alert_message.push("select a question");
-
+                
             }
         }
 
-        //verify dropdown with questions has a selected option if guidance for a question being used
+        //verify dropdown with questions has a selected option if guidance for a question being used 
         if ($('#g_options').val() == '1' ){
             if($('#guidance_theme_ids').val() == undefined || $('#guidance_theme_ids').val() == ''){
                 alert_message.push("select at least one theme");
             }
         }
-        //verify if guidance group is selected
+        //verify if guidance group is selected 
         if ( ($('#guidance_guidance_group_ids').val() == '') || $('#guidance_guidance_group_ids').val() == undefined ) {
             alert_message.push("select a guidance group");
-
+            
         }
-
+        
         if(alert_message.length == 0){
             //clear dropdowns before submission
             $('#new_guidance_alert_dialog').modal("hide");
-
+           
             if ($('#g_options').val() == '2'){
                 $('#guidance_theme_ids').val(null);
             }
@@ -385,12 +357,12 @@ return false;
             }
             $('#new_guidance_form').submit();
            return false;
-
+         
         }
         else if (alert_message.length != 0){
             var message = '';
             $('#new_guidance_alert_dialog').on("show", function(){
-
+                
                 $("#missing_fields_new_guidance").empty();
                 $.each(alert_message, function(key, value){
                     message += "<li> "+value+"</li>";
@@ -402,43 +374,43 @@ return false;
         delete alert_message;
         e.preventDefault();
     });
-
+   
     //edit guidance alerts
     $("#return_to_edit_guidance").click(function(){
         $('#edit_guidance_alert_dialog').modal("hide");
     });
-
-
+    
+    
     $('#edit_guidance_submit').click( function(e){
        // $('#new_guidance_alert_dialog').on("hide", function(){
-
+            
         var alert_message = [];
         //verify if text area is not nil
         var editorContent = tinyMCE.get('guidance-text').getContent();
         if (editorContent == ''){
             alert_message.push("add guidance text");
-        }
-        //verify dropdown with questions has a selected option if guidance for a question being used
+        }  
+        //verify dropdown with questions has a selected option if guidance for a question being used 
         if ($('#g_options').val() == '2') {
             if ($('#questions_select').val() == '' || isNaN($('#questions_select').val())){
                 alert_message.push("select a question");
             }
         }
-        //verify dropdown with questions has a selected option if guidance for a question being used
+        //verify dropdown with questions has a selected option if guidance for a question being used 
         if ($('#g_options').val() == '1' ){
             if($('#guidance_theme_ids').val() == undefined || $('#guidance_theme_ids').val() == ''){
                 alert_message.push("select at least one theme");
             }
         }
-        //verify if guidance group is selected
+        //verify if guidance group is selected 
         if ( ($('#guidance_guidance_group_ids').val() == '') || $('#guidance_guidance_group_ids').val() == undefined  ) {
             alert_message.push("select a guidance group");
         }
-
+        
         if(alert_message.length == 0){
             //clear dropdowns before submission
             $('#edit_guidance_alert_dialog').modal("hide");
-
+           
             if ($('#g_options').val() == '2'){ $('#guidance_theme_ids').val(null);}
             if($('#g_options').val() == '1'){$('#questions_select').val(null);}
             $('#edit_guidance_form').submit();
@@ -447,7 +419,7 @@ return false;
         else if (alert_message.length != 0){
             var message = '';
             $('#edit_guidance_alert_dialog').on("show", function(){
-
+                
                 $("#missing_fields_edit_guidance").empty();
                 $.each(alert_message, function(key, value){
                     message += "<li> "+value+"</li>";
@@ -458,22 +430,22 @@ return false;
         }
         delete alert_message;
         e.preventDefault();
-    });
-
-
+    }); 
+    
+    
     //Validate banner_text area for less than 165 character
     $("form#edit_org_details").submit(function(){
-
+           
         if (getStats('org_banner_text').chars > 165) {
             alert("Please only enter up to 165 characters, you have used "+getStats('org_banner_text').chars+". If you are entering an URL try to use something like http://tinyurl.com/ to make it smaller.");
             return false;
         }
 
     });
-
-
-
-
+    
+    
+   
+     
  });
 
 
@@ -498,8 +470,8 @@ function add_object(link, association, content) {
 // Returns text statistics for the specified editor by id
 function getStats(id) {
     var body = tinymce.get(id).getBody(), text = tinymce.trim(body.innerText || body.textContent);
-
+    
     return {
         chars: text.length
     };
-}
+} 
