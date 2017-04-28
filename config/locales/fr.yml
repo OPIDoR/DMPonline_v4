@@ -98,7 +98,7 @@ fr:
     sug_answers: "Suggestions de réponse"
     old_temp_field: "Ancien champ de modèle"
     old_theme_field: "Ancien champ de thème"
-    confirmation_link: "Lien de confirmation"
+    confirmation_link: "Lien de Confirmation"
 
 
   org_admin:
@@ -657,7 +657,7 @@ fr:
     <h3>Exemples de DMP</h3>
     <ul class='help_ul'>
       <li>
-        <a target='_blank' href='http://data.blogs.ilrt.org/files/2014/02/data.bris-AHRC-example-Technical-Plan.pdf'>Comment élaborer un plan de gestion et de partage de données</a> [PDF, 7 pages]<br />
+        <a target='_blank' href='http://www.dcc.ac.uk/webfm_send/2507'>Comment élaborer un plan de gestion et de partage de données</a> [PDF, 7 pages]<br />
         Un DMP présenté par un chercheur de l'Université de Bristol, avec les commentaires des auditeurs.
       </li>
       <li>
@@ -707,7 +707,7 @@ fr:
         Le projet DoRANum a pour objectif de mettre en place un dispositif de formation à distance d’accès coordonné, intégrant différentes ressources d’auto-formation sur la thématique de la gestion et du partage des données de la recherche.
       </li>
       <li>
-        <a target='_blank' href='coop-ist.cirad.fr/content/download/6118/44587/version/6/file/CoopIST_initiation_donnees_recherche_20170113.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
+        <a target='_blank' href='http://coop-ist.cirad.fr/content/download/6118/44587/version/6/file/CoopIST_initiation_donnees_recherche_20170113.pdf'>S'initier en ligne aux données de la recherche et à leur gestion en 4 points</a> [PDF, 5 pages]<br />
         <i>Deboin M.C. 2017. Montpellier (FRA) : CIRAD.</i>
       </li>
       <li>
