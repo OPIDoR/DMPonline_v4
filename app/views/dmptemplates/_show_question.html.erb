@@ -41,7 +41,7 @@
 			<%if !question.default_value.nil? then %>
 				<tr>
 					<td class="first_template"><%= t('org_admin.questions.default_value_label')%></td>
-					<td><%= raw question.default_value %></td>
+					<td class="default-answer-td"><%= raw question.default_value %></td>
 				</tr>
 			<%end%>
 		<% end %>
