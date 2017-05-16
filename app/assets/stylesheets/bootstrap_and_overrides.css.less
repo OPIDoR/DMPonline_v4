@@ -1172,18 +1172,23 @@ ol .choices-group{
 }
 
 
-table.dmp_details_table {
+table.dmp_details_table
+{
    margin: 0 0 0 0;
+  
+  .suggested-answer-td td, .default-answer-td td, .question-text-td td {
+    border: 1px solid #000;
+  }
+  tr td {
+    padding-left: 15px;
+    min-width:150px;
+  }
 }
 
-table.dmp_details_table tr td{
+.question-div .question_text td{
+  border: 1px solid #000;
   padding-left: 15px;
   min-width:150px;
-}
-
-table.dmp_details_table .suggested-answer-td td,
-table.dmp_details_table .default-answer-td td{
-  border: 1px solid #000;
 }
 
 .suggested-answer-div td{
