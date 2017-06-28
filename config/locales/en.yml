@@ -623,7 +623,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     body_text_tab_2_html: "<h3>Useful resources on Data Management Planning</h3>
       <ul class='help_ul'>
         <li>
-          <a target='_blank' href='http://www.univ-paris-diderot.fr/DocumentsFCK/recherche/Realiser_un_DMP_V1.pdf'>Réaliser un plan de gestion de données</a> [PDF, 30 pages]<br />
+          <a target='_blank' href='http://www.parisdescartes.fr/content/download/25025/146514/file/Realiser_un_DMP_V1.pdf'>Réaliser un plan de gestion de données</a> [PDF, 30 pages]<br />
           <i>Cartier A., Moysan M., Reymonet N. 2015. Université Paris Diderot et Université Paris Descartes.</i>
         </li>
         <li>
@@ -640,7 +640,7 @@ Select what format you wish to use and click to 'Export'.</p>"
         </li>
         <li>
           <a target='_blank' href='http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf'>Guidelines on Open Access to Scientific Publications and Research Data in Horizon 2020</a> [PDF, 10 pages]<br />
-          <i>European Commission. 2016, v3.1.</i>
+          <i>European Commission. 2017, v3.2.</i>
         </li>
         <li>
           <a target='_blank' href='http://www.dcc.ac.uk/resources/data-management-plans/checklist'>DCC Checklist for a Data Management Plan</a> [PDF, 4 pages]<br />
@@ -724,6 +724,10 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>
         <a target='_blank' href='http://guides-formadoct.ueb.eu/donnees_recherche?hs=a'>Les données de la recherche</a> [webpage]<br />
         <i>Serres A., Vignale F. In UEB (Université Européenne de Bretagne). Form@doct. Rennes : UEB, janvier  2016</i>
+      </li>
+      <li>
+        <a target='_blank' href='http://prodinra.inra.fr/?locale=fr#!ConsultNotice:382263'>Ouverture des données de la recherche. Guide d'analyse du cadre juridique en France</a> [PDF, 46 pages]<br />
+        <i>Becard N., Castets-Renard C., Chassang G., Courtois M.-A., Dantant M., Gandon N., Martin C., Martelletti A., Mendoza-Caminade A., Morcrette N., Neirac C. 2016. DOI : 10.15454/1.481273124091092E12.</i>
       </li>
       <li>
         <a target='_blank' href='http://www.data-archive.ac.uk/media/2894/managingsharing.pdf'>Managing and Sharing Data: best practice for researchers</a> [PDF, 36 pages]<br />
