@@ -59,7 +59,7 @@ gem 'jquery-ui-rails'
 gem 'tinymce-rails', '~> 4.4.0'
 gem 'friendly_id'
 gem 'contact_us'
-gem 'recaptcha'
+gem "recaptcha", require: "recaptcha/rails"
 gem 'owlcarousel-rails'
 #gem 'owlcarousel-rails', :git => "git://github.com/acrogenesis/owlcarousel-rails", :branch => "OwlCarousel2"
 gem 'colorbox-rails'
