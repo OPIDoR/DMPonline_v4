@@ -1,6 +1,6 @@
 <p>Hello <%= @resource.email %>!</p>
 
-<p><%= @resource.firstname + " " + @resource.surname %> has invited you to contribute to their Data Management Plan at <%= link_to 'DMPOPIDoR', root_url %></p>
+<p><%= @resource.inviterfirstname + " " + @resource.invitersurname %> has invited you to contribute to their Data Management Plan at <%= link_to 'DMPOPIDoR', root_url %></p>
 
 <p><%= link_to 'Click here to accept the invitation', accept_invitation_url(@resource, :invitation_token => @token) %> (or copy <%= accept_invitation_url(@resource, :invitation_token => @token) %> into your browser).</p>
 

@@ -17,7 +17,7 @@ class ProjectGroupsController < ApplicationController
 						if @project_group.user.nil? then
 							if User.find_by_email(params[:project_group][:email]).nil? then
 								User.invite!(:email => params[:project_group][:email],
-														 :firstname => current_user.firstname, :surname => current_user.surname)
+														 :inviterfirstname => current_user.firstname, :invitersurname => current_user.surname)
 								message = 'Invitation issued successfully.'
 								@project_group.user = User.find_by_email(params[:project_group][:email])
 								@project_group.save
