@@ -295,7 +295,7 @@ en:
     sign_up: "Create an account"
     sign_up_text: "New to DMP OPIDoR? Create an account today."
     sign_up_cil_message: "<p>The information collected that concerns you will be processed and is destined for the Inist-CNRS (UPS76) and the correspondent for Computing and Liberties (CIL). For the following goal: management of user accounts. The recipients of this data are the administrators of the Inist-CNRS. The duration of conservation of the data is 5 years following the last login.</p>
-                            <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their processing. You can oppose the processing of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='mailto:info-opidor@inist.fr'>info-opidor@inist.fr</a>. You can also direct a complaint at a controlling body.</p>"
+                            <p>You have the right of access, of correction, of portability, or of removal of this data, or of a limitation of their processing. You can oppose the processing of the data that concerns you and you have the right to withdraw your agreement at any time, by contacting: <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>. You can also direct a complaint at a controlling body.</p>"
     signed_in: "Logged in as "
     institution_sign_in_link: "Log in"
     institution_sign_in_text: " (French researchers only)"
@@ -607,11 +607,11 @@ Select what format you wish to use and click to 'Export'.</p>"
     </ul>
     <p>And start creating or editing your DMP.</p>
     <p>Please visit the <a href='/help'>'Help'</a> page for guidance.</p>
-    <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    <p>If you have any questions or comments about DMP OPIDoR, please contact <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
     <h3>Additional Information</h3>
-    <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    <p>We are constantly improving the user interface and functionality of DMP OPIDoR. If you would like to contribute with feedback and suggestions, please contact us by emailing <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
     <h3>Customise DMP OPIDoR</h3>
-    <p>DMP OPIDoR can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p></div></br>"
+    <p>DMP OPIDoR can be customised by institutions and scholarly communities. You can add templates for users in your organisation and tailored guidance that explains local support and services. Example answers can also be offered to help users understand what to write in a Data Management Plan. To do this you’ll need to request admin access, so please email us on <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p></div></br>"
 
    # body_text_tab_2_html: "<p>DMP OPIDoR is based on <a href='https://dmponline.dcc.ac.uk/' target='_blank'>DMPonline</a> code, originally developped by UK's <a href='http://www.dcc.ac.uk/' target='_top'>Digital Curation Centre</a> (DCC). DCC has made the source code available on <a href='https://github.com/DigitalCurationCentre/DMPonline_v4' target='_top'>GitHub</a> under a GNU Affero General Public License to permit others to reuse the code freely.</p></br>"
 
@@ -684,6 +684,9 @@ Select what format you wish to use and click to 'Export'.</p>"
   5 DMPs submitted to the NSF, shared by the DataOne initiative
       </li>
       <li>
+#        <a target='_blank' href='http://library.umassmed.edu/necdmc/dmp'>Biology and chemistry DMPs</a> [webpage]<br />
+#  Three example DMPs from the USA shared by NECDMC, an instructional tool for teaching RDM to undergraduates, graduate students, and researchers in the health sciences, sciences and engineering.
+      </li><li>
         <a target='_blank' href='http://www.neh.gov/divisions/odh/grant-news/data-management-plans-successful-grant-applications-2011-2014-now-available'>Data management plans from successful grant applications (2011-2014)</a> [webpage]<br />
   National Endowment for the Humanities (NEH).
       </li><li>
@@ -769,7 +772,7 @@ Select what format you wish to use and click to 'Export'.</p>"
 
   contact_page:
     title: "Contact us"
-    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    intro_text_html: "<p>DMP OPIDoR is provided by the Institute for Scientific and Technical Information-CNRS (Inist-CNRS). You can find out more about us on our <a href='http://www.inist.fr/' target='_blank'>website</a>. If you would like to contact us about DMP OPIDoR, please enter your query in the form below or email <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
     <p>DMP OPIDoR is based on software <a href='https://dmponline.dcc.ac.uk' target='_blank'>DMPonline</a> produced by the UK's <a target='_blank' href='http://www.dcc.ac.uk/'>Digital Curation Centre</a>.</p>"
     github_text_html: "<p>If you have a feature request or think you have found a bug, please check out the <a href='https://github.com/DigitalCurationCentre/DMPonline_v4/issues?state=open' target='_blank'>list of issues on GitHub (DCC)</a>. If your issue isn't listed there, please add it; if it is, please add a comment if you have more information or just to let us know how important it is to you. This will help us to prioritise future developments.</p>"
     address_text_html: "<ul>
@@ -781,7 +784,7 @@ Select what format you wish to use and click to 'Export'.</p>"
       <li>FRANCE</li>
      </ul>
         <p>Tel. +33 (0) 383504632</p>
-        <p>Email <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>"
+        <p>Email <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a></p>"
 
   # roadmap_page:
     # title: "Roadmap"
@@ -865,12 +868,12 @@ Select what format you wish to use and click to 'Export'.</p>"
         </ul>
     <p><b>Publisher:</b> Alain Fuchs</p>
     <p><b>Editorial Director:</b> Dominique Wolf</p>
-    <p><b>User support Department:</b> <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
+    <p><b>User support Department:</b> <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a></p>
     <h3>Your personal details</h3>
     <p>To help identify and administer your account with DMP OPIDoR, we need to store specific user information: email address, surname, first name, home institution, ORCID, last login. We may also use it to inform you of the latest developments of the tool, maintenance and security issues. We will not sell, rent, deliver or trade any personal information you provide us with.</p>
     <p>This site contains personal data about DMP OPIDoR’s users and has been registered with the French Data Protection Authority, the CIL-CNRS (record number : 2-16052).</p>
     <p>According to the law n° 78-17 of January 6, 1978 'Informatique et Libertés/software and freedoms' (articles 38, 39 and 40), you have the right to access the information as well as to rectify and delete data on this site that concerns you personally.</p>
-    <p>To exercise this right, please contact us at <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a></p>
+    <p>To exercise this right, please contact us at <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a></p>
     <p>Data from an unused account (as a result of non-use of the service by the user) will be systematically anonymized within the 5 years following the last connection and you will no longer have access to the application and consequently to your data management plans.</p>
     <p>Moreover, authorized officers of your home institution (CNRS or other research organizations) have access to your email address, your surname/first name, last logged in and how many data management plans you have created. <b>It is up to these officers to make use of this information in accordance with regulations in force and recommendations of the CNIL.</b></p>
     <h3>Privacy policy</h3>
@@ -894,7 +897,7 @@ Select what format you wish to use and click to 'Export'.</p>"
     <iframe style=\"border: 2px solid #d6604d; width: 100%;\" src='https://piwik2.inist.fr/index.php?module=CoreAdminHome&action=optOut&language=en'></iframe>
     <h3>Law applicable</h3>
     <p>The site is governed by French legislation, no matter where the website is used. In the event of potential disputes and following failed attempts to find an amicable solution, the French courts alone shall handle the dispute.</p>
-    <p>If you have any comments or queries about our terms of use, please do not hesitate to contact us, e.g. by sending an email to <a href='mailto:info-opidor@inist.fr' target='_top'>info-opidor@inist.fr</a>.</p>
+    <p>If you have any comments or queries about our terms of use, please do not hesitate to contact us, e.g. by sending an email to <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;' target='_top'>&#105;&#110;&#102;&#111;&#45;&#111;&#112;&#105;&#100;&#111;&#114;&#64;&#105;&#110;&#105;&#115;&#116;&#46;&#102;&#114;</a>.</p>
     <h3>Changes to the terms of use</h3>
     <p>The CNRS reserves the right to modify at any time the present terms of use to adapt to the changing of the site and/or its holding.</p>
     <p>Users will be provided with information on such modifications on the home page. If users do not agree with the new terms of use, they will be able to close their accounts.</p>
